@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Trade}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}\cite {Fernandesetal2023}}{2}{subsection.1.1}%
+\contentsline {section}{Bibliography}{3}{section*.2}%
