@@ -1,0 +1,136 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\usepackage{setspace}
+\usepackage{parskip}
+\parskip=1\baselineskip %\advance\parskip by 0pt plus 2pt% to change between paragraphs space
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+% \usepackage{gravarphicx} % support the \includegravarphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{natbib}
+\usepackage{scrextend}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\usepackage{lscape}
+\usepackage{longtable}
+ \usepackage{booktabs}
+
+
+
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\rmfamily\bfseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\usepackage[colorlinks,citecolor=black,urlcolor=black,bookmarks=false,hypertexnames=true]{hyperref} 
+%%% END Article customizations
+%%% The "real" document content comes below...
+
+\title{Solution_Akcigit_Ates_JPE_2023}
+\author{Xing Mingjie 3036029301}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\Section{Consumer}
+
+Consumer solves 
+\begin{aligned}
+	V_t = \max_{C_s} \integral_t^\infty exp{-\rho(s-t)lnC_ds}\\
+\end{aligned}
+The Bellman aligned reads 
+\begin{aligned}
+	V_t(A_t) = \max_{C_s} lnC_s + exp{-\rho) V(A_{t+1})\\
+\end{aligned}
+
+Set up the Hamiltonian
+
+\Section{Final Producer}
+
+Final producer solves
+\begin{aligned}
+	\max_{y_{jt}} P_t Y_t - \integral_0^1 p_{jt} y_{jt} dj\\
+	\text{subject to} ln{Y_t} = \integral_0^1 ln y_{jt} dj
+\end{aligned}
+
+The marginal profit of the Final producer should equal the marginal cost:
+\begin{aligned}
+	\frac{\partial P_t Y_t}{\partial y_{jt}} = p_{jt}\\
+	\Rightarrow
+	P_t \times exp(\integral_0^1 ln y_{jt} d) \times \frac{1}{y_{jt}} = p_{jt}\\
+	\Rightarrow
+	P_t Y_t = p_{jt}y_{jt}
+	\Leftrightarrow
+	lnY_t &= \integral^1_0 ln \frac{P_tY_t}{p_{jt}}dj\\
+		&= lnP_tY_t - \integral^1_0 ln p_{jt}dj
+	\Leftrightarrow
+	lnP_t = \integral^1_0 ln p_{jt}dj
+\end{aligned}
+which is the optimal demand.
+
+\Section{Sectoral intermediate production}
+On sectoral level, the intermediate production's optimal supply of products solves
+\begin{aligned}
+	
+\end{aligned}
+
+
+
+
+
+
+\footnotesize
+\bibliographystyle{apalike}
+%\bibliography{RP}
+
+
+\end{document}
