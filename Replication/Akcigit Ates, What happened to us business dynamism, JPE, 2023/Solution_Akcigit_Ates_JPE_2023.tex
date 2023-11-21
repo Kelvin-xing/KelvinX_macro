@@ -73,7 +73,7 @@
 %%% END Article customizations
 %%% The "real" document content comes below...
 
-\title{Solution_Akcigit_Ates_JPE_2023}
+\title{Solution Akcigit Ates JPE 2023}
 \author{Xing Mingjie 3036029301}
 \date{\today} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -81,49 +81,65 @@
 \begin{document}
 \maketitle
 
-\Section{Consumer}
+\section{Consumer}
 
 Consumer solves 
-\begin{aligned}
-	V_t = \max_{C_s} \integral_t^\infty exp{-\rho(s-t)lnC_ds}\\
-\end{aligned}
-The Bellman aligned reads 
-\begin{aligned}
-	V_t(A_t) = \max_{C_s} lnC_s + exp{-\rho) V(A_{t+1})\\
-\end{aligned}
+\[\begin{equation}
+	V_t = \mathop{max}\limits_{C_s} \int_t^\infty \exp{(-\rho(s-t))}\ln C_s \, ds
+\end{equation}\]
+
+The Bellman reads 
+
+\[\begin{equation}
+	V_t(A_t) = \mathop{max}\limits_{C_s} \ln C_s + \exp{(-\rho)} V(A_{t+1})
+\end{equation}\]
 
 Set up the Hamiltonian
 
-\Section{Final Producer}
+\section{Final Producer}
 
 Final producer solves
-\begin{aligned}
-	\max_{y_{jt}} P_t Y_t - \integral_0^1 p_{jt} y_{jt} dj\\
-	\text{subject to} ln{Y_t} = \integral_0^1 ln y_{jt} dj
-\end{aligned}
+\[\begin{equation*}
+	\mathop{max}\limits_{y_{jt}} P_t Y_t - \int_0^1 p_{jt} y_{jt} \, dj\\
+	\text{subject to} \ln{Y_t} = \int_0^1 \ln y_{jt} \, dj
+\end{equation*}\]
 
 The marginal profit of the Final producer should equal the marginal cost:
-\begin{aligned}
-	\frac{\partial P_t Y_t}{\partial y_{jt}} = p_{jt}\\
+\[\begin{align}
+	\frac{\partial P_t Y_t}{\partial y_{jt}} &= p_{jt}\\
 	\Rightarrow
-	P_t \times exp(\integral_0^1 ln y_{jt} d) \times \frac{1}{y_{jt}} = p_{jt}\\
+	P_t \times \exp{(\int_0^1 \ln y_{jt} \,dj)} \times \frac{1}{y_{jt}} &= p_{jt}\\
 	\Rightarrow
-	P_t Y_t = p_{jt}y_{jt}
+	P_t Y_t &= p_{jt}y_{jt}\\
+	\Rightarrow
+	\ln Y_t &= \int^1_0 \ln \frac{P_tY_t}{p_{jt}}\, dj\\
+		&= \ln P_tY_t - \int^1_0 \ln p_{jt}\, dj\\
+\end{align}\]
+\[\begin{equation}
 	\Leftrightarrow
-	lnY_t &= \integral^1_0 ln \frac{P_tY_t}{p_{jt}}dj\\
-		&= lnP_tY_t - \integral^1_0 ln p_{jt}dj
-	\Leftrightarrow
-	lnP_t = \integral^1_0 ln p_{jt}dj
-\end{aligned}
+	lnP_t = \int^1_0 \ln p_{jt}\, dj\\
+\end{equation}\]
 which is the optimal demand.
 
-\Section{Sectoral intermediate production}
+\section{Sectoral intermediate production}
 On sectoral level, the intermediate production's optimal supply of products solves
-\begin{aligned}
-	
-\end{aligned}
 
+\[\begin{equation*}
+	\mathop{max}\limits_{y_{ijt},y_{-ijt}} P_{jt} Y_{jt} - (p_{ijt}y_{ijt}+p_{-ijt}y_{-ijt})\\
+	\text{subject to } Y_{jt} = (y_{ijt}^\beta +y_{-ijt}^\beta)^{1/ \beta}
+ \end{equation*}\]
 
+Setting marginal cost and product equal yields
+\[\begin{align}
+	P_{jt} \frac{\partial Y_{jt}}{\partial y_{ijt}} = p_{ijt}\\
+	P_{jt} \frac{1}{\beta} (y_{ijt}^\beta +y_{-ijt}^\beta)^\frac{1-\beta}{\beta} \cdot \beta y_{ijt}^{\beta-1}=p_{ijt}\\
+	y_{ijt} = (\frac{p_{ijt}}{P_{jt}})^\frac{1}{\beta-1}\cdot Y_{jt}
+\end{align}\]
+Symmetry gives
+\[
+y_{-ijt} = (\frac{p_{-ijt}}{P_{jt}})^\frac{1}{\beta-1}\cdot Y_{jt}
+\]
+Substituting into 
 
 
 
