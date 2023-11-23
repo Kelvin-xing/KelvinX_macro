@@ -1,4 +1,5 @@
 ## BGP (Balanced Growth Path) struct that contains endogenous variables
+using Parameters
 @with_kw struct BGP
     p::StrParam                 # Parameters of the BGP
     numericp::NumParam          # Numeric parameters of the BGP

@@ -1,3 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# Tex files
+*.log
+*.pdf
+*.synctex.gz
+*.blg
