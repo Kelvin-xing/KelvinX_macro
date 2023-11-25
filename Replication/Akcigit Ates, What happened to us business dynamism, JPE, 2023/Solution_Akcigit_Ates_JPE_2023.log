@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  21 NOV 2023 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  24 NOV 2023 18:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -487,24 +487,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./Solution_Akcigit_Ates_JPE_2023.aux)
 \openout1 = `Solution_Akcigit_Ates_JPE_2023.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -567,7 +567,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 81.
+Package hyperref Info: Link coloring ON on input line 78.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -577,34 +577,34 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count315
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:87: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:84: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \[\begin{equation}
+l.84 \[\begin{equation}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: Missing \endgroup inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.89 \end{equation}
+l.86 \end{equation}
                    \]
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -613,35 +613,35 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: LaTeX Error: \begin{equation*} on input line 87 ended by \end{equation}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: LaTeX Error: \begin{equation*} on input line 84 ended by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \end{equation}
+l.86 \end{equation}
                    \]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \end{equation}\]
+l.86 \end{equation}\]
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: Extra }, or forgotten $.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: Extra }, or forgotten $.
 \endmathdisplay@fleqn ...kip \@mathmargin \egroup 
                                                   \ifnum \badness <\inf@bad ...
-l.89 \end{equation}\]
+l.86 \end{equation}\]
                      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -650,22 +650,22 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: LaTeX Error: \begin{document} ended by \end{equation*}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \end{equation}\]
+l.86 \end{equation}\]
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: Missing $ inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: Missing $ inserted.
 <inserted text> 
                 $
-l.89 \end{equation}\]
+l.86 \end{equation}\]
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -673,30 +673,30 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:89: Extra \endgroup.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:86: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.89 \end{equation}\]
+l.86 \end{equation}\]
                      
 Things are pretty mixed up, but I think the worst is over.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:93: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:92: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 \[\begin{equation}
+l.92 \[\begin{equation}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: Missing \endgroup inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.95 \end{equation}
+l.94 \end{equation}
                    \]
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -705,35 +705,35 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: LaTeX Error: \begin{equation*} on input line 93 ended by \end{equation}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: LaTeX Error: \begin{equation*} on input line 92 ended by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{equation}
+l.94 \end{equation}
                    \]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{equation}\]
+l.94 \end{equation}\]
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: Extra }, or forgotten $.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: Extra }, or forgotten $.
 \endmathdisplay@fleqn ...kip \@mathmargin \egroup 
                                                   \ifnum \badness <\inf@bad ...
-l.95 \end{equation}\]
+l.94 \end{equation}\]
                      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -742,22 +742,22 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: LaTeX Error: \begin{document} ended by \end{equation*}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{equation}\]
+l.94 \end{equation}\]
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: Missing $ inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: Missing $ inserted.
 <inserted text> 
                 $
-l.95 \end{equation}\]
+l.94 \end{equation}\]
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -765,30 +765,33 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:95: Extra \endgroup.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:94: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.95 \end{equation}\]
+l.94 \end{equation}\]
                      
 Things are pretty mixed up, but I think the worst is over.
 
+[1
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:102: LaTeX Error: Bad math environment delimiter.
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:113: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 \[\begin{equation*}
+l.113 \[\begin{equation*}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:105: Missing \endgroup inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:116: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.105 \end{equation*}
+l.116 \end{equation*}
                      \]
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -797,22 +800,22 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:105: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:116: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 \end{equation*}\]
+l.116 \end{equation*}\]
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:105: Extra }, or forgotten $.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:116: Extra }, or forgotten $.
 \endmathdisplay@fleqn ...kip \@mathmargin \egroup 
                                                   \ifnum \badness <\inf@bad ...
-l.105 \end{equation*}\]
+l.116 \end{equation*}\]
                        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -821,22 +824,22 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:105: LaTeX Error: \begin{document} ended by \end{equation*}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:116: LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 \end{equation*}\]
+l.116 \end{equation*}\]
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:105: Missing $ inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:116: Missing $ inserted.
 <inserted text> 
                 $
-l.105 \end{equation*}\]
+l.116 \end{equation*}\]
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -844,46 +847,43 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:105: Extra \endgroup.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:116: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.105 \end{equation*}\]
+l.116 \end{equation*}\]
                        
 Things are pretty mixed up, but I think the worst is over.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:117: Package amsmath Error: Erroneous nesting of equation structures;
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:128: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \end{align}
+l.128 \end{align}
                  \]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:118: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:129: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 \[\begin{equation}
+l.129 \[\begin{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: Missing \endgroup inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.121 \end{equation}
+l.132 \end{equation}
                     \]
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -892,35 +892,35 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: LaTeX Error: \begin{equation*} on input line 118 ended by \end{equation}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: LaTeX Error: \begin{equation*} on input line 129 ended by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \end{equation}
+l.132 \end{equation}
                     \]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: LaTeX Error: Bad math environment delimiter.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \end{equation}\]
+l.132 \end{equation}\]
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: Extra }, or forgotten $.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: Extra }, or forgotten $.
 \endmathdisplay@fleqn ...kip \@mathmargin \egroup 
                                                   \ifnum \badness <\inf@bad ...
-l.121 \end{equation}\]
+l.132 \end{equation}\]
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -929,22 +929,22 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: LaTeX Error: \begin{document} ended by \end{equation*}.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \end{equation}\]
+l.132 \end{equation}\]
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: Missing $ inserted.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: Missing $ inserted.
 <inserted text> 
                 $
-l.121 \end{equation}\]
+l.132 \end{equation}\]
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -952,119 +952,525 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:121: Extra \endgroup.
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:132: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.121 \end{equation}\]
+l.132 \end{equation}\]
                       
 Things are pretty mixed up, but I think the worst is over.
 
+[2]
 
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:127: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 \[\begin{equation*}
-                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:130: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.130  \end{equation*}
-                      \]
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:130: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130  \end{equation*}\]
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:130: Extra }, or forgotten $.
-\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
-                                                  \ifnum \badness <\inf@bad ...
-l.130  \end{equation*}\]
-                        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:130: LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130  \end{equation*}\]
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:130: Missing $ inserted.
-<inserted text> 
-                $
-l.130  \end{equation*}\]
-                        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:130: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.130  \end{equation*}\]
-                        
-Things are pretty mixed up, but I think the worst is over.
-
-
-/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:137: Package amsmath Error: Erroneous nesting of equation structures;
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:148: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 \end{align}
+l.148 \end{align}
                  \]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[2] (./Solution_Akcigit_Ates_JPE_2023.aux) ) 
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:159: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 \[\begin{equation}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.161 \end{equation}
+                    \]
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: LaTeX Error: \begin{equation*} on input line 159 ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \end{equation}
+                    \]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \end{equation}\]
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: Extra }, or forgotten $.
+\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
+                                                  \ifnum \badness <\inf@bad ...
+l.161 \end{equation}\]
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \end{equation}\]
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: Missing $ inserted.
+<inserted text> 
+                $
+l.161 \end{equation}\]
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:161: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.161 \end{equation}\]
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:164: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 \[\begin{equation}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.166 \end{equation}
+                    \]
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: LaTeX Error: \begin{equation*} on input line 164 ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \end{equation}
+                    \]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \end{equation}\]
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: Extra }, or forgotten $.
+\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
+                                                  \ifnum \badness <\inf@bad ...
+l.166 \end{equation}\]
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \end{equation}\]
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: Missing $ inserted.
+<inserted text> 
+                $
+l.166 \end{equation}\]
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:166: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.166 \end{equation}\]
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:169: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \[\begin{equation}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.171 \end{equation}
+                    \]
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: LaTeX Error: \begin{equation*} on input line 169 ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \end{equation}
+                    \]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \end{equation}\]
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: Extra }, or forgotten $.
+\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
+                                                  \ifnum \badness <\inf@bad ...
+l.171 \end{equation}\]
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \end{equation}\]
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: Missing $ inserted.
+<inserted text> 
+                $
+l.171 \end{equation}\]
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:171: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.171 \end{equation}\]
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:175: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \[\begin{equation}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.177 \end{equation}
+                    \]\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[3]
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: LaTeX Error: \begin{equation*} on input line 175 ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \end{equation}
+                    \]\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \end{equation}\]
+                      \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: Extra }, or forgotten $.
+\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
+                                                  \ifnum \badness <\inf@bad ...
+l.177 \end{equation}\]
+                      \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \end{equation}\]
+                      \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: Missing $ inserted.
+<inserted text> 
+                $
+l.177 \end{equation}\]
+                      \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:177: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.177 \end{equation}\]
+                      \\
+Things are pretty mixed up, but I think the worst is over.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:183: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 \end{align*}
+                  \]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:189: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \[\begin{equation}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.191 \end{equation}
+                    \]\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: LaTeX Error: \begin{equation*} on input line 189 ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \end{equation}
+                    \]\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \end{equation}\]
+                      \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: Extra }, or forgotten $.
+\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
+                                                  \ifnum \badness <\inf@bad ...
+l.191 \end{equation}\]
+                      \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \end{equation}\]
+                      \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: Missing $ inserted.
+<inserted text> 
+                $
+l.191 \end{equation}\]
+                      \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/mingjiexing/Desktop/Python/Macro/Replication/Akcigit Ates, What happened to us business dynamism, JPE, 2023/Solution_Akcigit_Ates_JPE_2023.tex:191: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.191 \end{equation}\]
+                      \\
+Things are pretty mixed up, but I think the worst is over.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+[4] [5] (./Solution_Akcigit_Ates_JPE_2023.aux) ) 
 Here is how much of TeX's memory you used:
- 14971 strings out of 478268
- 242486 string characters out of 5846347
- 565395 words of memory out of 5000000
+ 14980 strings out of 478268
+ 242573 string characters out of 5846347
+ 569395 words of memory out of 5000000
  32958 multiletter control sequences out of 15000+600000
  477408 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,106p,733b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Solution_Akcigit_Ates_JPE_2023.pdf (2 pages, 125583 bytes).
+ 108i,12n,106p,733b,352s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Solution_Akcigit_Ates_JPE_2023.pdf (5 pages, 141362 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

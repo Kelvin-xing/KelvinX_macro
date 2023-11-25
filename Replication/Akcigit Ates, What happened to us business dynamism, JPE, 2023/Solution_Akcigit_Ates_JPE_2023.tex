@@ -1,8 +1,5 @@
-% !TEX TS-program = pdflatex
-% !TEX encoding = UTF-8 Unicode
-
-% This is a simple template for a LaTeX document using the "article" class.
-% See "book", "report", "letter" for other types of document.
+%% !TEX TS-program = pdflatex
+%% !TEX encoding = UTF-8 Unicode
 
 \documentclass[12pt]{article} % use larger type; default would be 10pt
 
@@ -88,13 +85,27 @@ Consumer solves
 	V_t = \mathop{max}\limits_{C_s} \int_t^\infty \exp{(-\rho(s-t))}\ln C_s \, ds
 \end{equation}\]
 
+subject to $\dot{A_t} = w_t L_t + r_t A_t + G_t - P_t C_t$.
+
 The Bellman reads 
 
 \[\begin{equation}
-	V_t(A_t) = \mathop{max}\limits_{C_s} \ln C_s + \exp{(-\rho)} V(A_{t+1})
+	\rho V(A_t) = \mathop{max}\limits_{C_t} \ln C_t + V^\prime(A_{t}) \dot{A_t}
 \end{equation}\]
 
-Set up the Hamiltonian
+Take derivate w.r.t. $C_t$ gives
+\[0 = \frac{1}{C_t} - V^\prime(A_t) P_t\]
+So we have 
+\[C_t = P_t^{-1}V^\prime (A_t)^{-1}\]
+
+And the Envelope theorem
+\[\begin{aligned}
+	(\rho-r_t) V^\prime(A_t) &= V^{\prime\prime}(A_t)\dot{A_t}\\
+	(\rho-r_t) (P_t C_t)^{-1} &= -P_t^{-1} C_t^{-2} \frac{dC_t}{dA_t} \frac{dA_t}{dt}\\
+	\frac{\dot{C_t}}{C_t} & = r_t - \rho\\
+	r_t &= \rho + g_t\\
+\end{aligned}\]
+where $g_t = \frac{\dot{C_t}}{C_t}$ and $V^{\prime\prime}(A_t) = -P_t^{-1}C_t^{-2}C_t^\prime$.
 
 \section{Final Producer}
 
@@ -124,10 +135,10 @@ which is the optimal demand.
 \section{Sectoral intermediate production}
 On sectoral level, the intermediate production's optimal supply of products solves
 
-\[\begin{equation*}
+\[
 	\mathop{max}\limits_{y_{ijt},y_{-ijt}} P_{jt} Y_{jt} - (p_{ijt}y_{ijt}+p_{-ijt}y_{-ijt})\\
 	\text{subject to } Y_{jt} = (y_{ijt}^\beta +y_{-ijt}^\beta)^{1/ \beta}
- \end{equation*}\]
+\]
 
 Setting marginal cost and product equal yields
 \[\begin{align}
@@ -139,9 +150,80 @@ Symmetry gives
 \[
 y_{-ijt} = (\frac{p_{-ijt}}{P_{jt}})^\frac{1}{\beta-1}\cdot Y_{jt}
 \]
-Substituting into 
+Substituting into sectoral constraint gives 
+\[
+	Y_{jt} = ((\frac{p_{ijt}}{P_{jt}})^\frac{\beta}{\beta-1}+(\frac{p_{-ijt}}{P_{jt}})^\frac{\beta}{\beta-1})^{1/\beta} Y_{jt}\\
+\]
+This gives the expression of $P_{jt}$
 
+\[\begin{equation}
+	P_{jt} = (p_{ijt}^\frac{\beta}{\beta-1}+p_{-ijt}^\frac{\beta}{\beta-1})^\frac{\beta-1}{\beta}
+\end{equation}\]
 
+And we combine with the firm level production and the fact that $P_t Y_t = p_{jt} y_{jt}$
+\[\begin{equation}
+	y_{ijt} = \frac{p_{ijt}^{\frac{1}{\beta-1}}}{p_{ijt}^\frac{\beta}{\beta-1}+p_{-ijt}^\frac{\beta}{\beta-1}} Y_t
+\end{equation}\] 
+
+The market share is given by
+\[\begin{equation}
+	z_{ijt} = \frac{p_{ijt}y_{ijt}}{Y_t} = \frac{p_{ijt}^{\frac{\beta}{\beta-1}}}{p_{ijt}^\frac{\beta}{\beta-1}+p_{-ijt}^\frac{\beta}{\beta-1}}
+\end{equation}\]
+
+\section{Firm Production}
+Firm maximizes its profit by choosing price and production
+\[\begin{equation}
+	\pi_{ijt} = \max_{y_{ijt},p_{ijt}} (p_{ijt}-mc_{ijt})y_{ijt}\\
+\end{equation}\]\\
+Taking derivative of $p_{ijt}$
+\[\begin{align*}
+	y_{ijt} +(p_{ijt}-mc_{ijt})\frac{dy_{ijt}}{dp_{ijt}} = 0\\
+	\frac{p_{ijt}^{\frac{1}{\beta-1}}}{p_{ijt}^\frac{\beta}{\beta-1}+p_{-ijt}^\frac{\beta}{\beta-1}} Y_t
+	+ (p_{ijt}-mc_{ijt})\frac{\frac{1}{\beta-1}p_{ijt}^\frac{2-\beta}{\beta-1}-p_{ijt}^\frac{1}{\beta-1}\frac{\beta}{\beta-1}p_{ijt}^\frac{1}{\beta-1}}{(p_{ijt}^\frac{\beta}{\beta-1}+p_{-ijt}^\frac{\beta}{\beta-1})^2} Y_t = 0\\
+\end{align*}\]
+Making use of the definition of $z_{ijt}$ gives
+\[
+	(\beta-1)p_{ijt} + (p_{ijt}-mc_{ijt})(1-\beta z_{ijt})=0\\
+\]
+We yield
+\[\begin{equation}
+	p_{ijt} = \frac{1-\beta z_{ijt}}{\beta(1-z_{ijt})}mc_{ijt}
+\end{equation}\]\\
+We derive
+\[\begin{aligned}
+	\frac{p_{-ijt}}{p_{ijt}} &= \frac{1-\beta z_{-ijt}}{1-\beta z_{ijt}} \frac{\beta(1-z_{ijt})}{\beta(1-z_{-ijt})} \frac{q_{ijt}}{q_{-ijt}}\\
+	&=\Xi(z_{ijt})\lambda^{\mathbb{F}(m_{ijt})}\\
+	&=\Xi(z_{ijt})\lambda^m_{ijt}
+\end{aligned}\]\\
+
+Suppressing $j$ and we have the labour demand
+\[\begin{aligned}
+	l(m_{it}) &= \frac{y_{it}}{q_{it}}\\
+	&= q_{it}^{-1}\frac{z_{it}}{p_{it}}Y_t\\
+	&= \frac{z_{it}}{w_{it}}\frac{\beta(1-z_{it})}{1-\beta z_{it}} Y_t\\
+	&= \omega_t^{-1} z_it \frac{\beta(1-z_{it})}{1-\beta z_{it}}\\
+\end{aligned}\]\\
+
+where $\omega_t = \frac{Y_t}{w_t}$ is the proportion of labor wage in the economy.
+
+The profit
+\[\begin{aligned}
+	\pi (m_{it}) &= (p_{it}-mc_{it})y_{it}\\
+	&= \frac{(1-\beta)z_{it}}{1-\beta z_{it}}Y_t\\
+\end{aligned}\]
+
+And markup
+\[\begin{aligned}
+	mu(m_{it}) &= \frac{p_{it}}{mc_{it}}-1\\
+	&= \frac{1-\beta}{\beta(1-z_{it})}\\
+\end{aligned}\]
+
+And finally the elasticity of price
+\[\begin{aligned}
+	\varepsilon_{ijt} &= \frac{\partial \ln y_{ijt}}{\partial \ln p_{ijt}}\\
+	&= \frac{\partial}{\partial\ln p_{ijt}} (\frac{1}{\beta-1}\ln p_{ijt}-\ln(p_{ijt}^\frac{\beta}{\beta-1}+p_{-ijt}^\frac{\beta}{\beta-1})+\ln Y_t)\\
+	&= \frac{1-\beta z_{ijt}}{\beta-1} 
+\end{aligned}\]
 
 
 \footnotesize
