@@ -1,0 +1,87 @@
+%% Initialize
+clear;
+close;
+clc
+=seed = 1;
+rng(seed);
+tol = 1e-6;
+max_iter = 1000;
+
+%% Q(a)
+% Calibration
+s = 0.1;                        % Separation rate
+r = 0.012;                      % Discount rate
+delta_ = 1 / (1 + r);
+z = 0.4;                        % Leisure value           
+m = 1.355;                      % Average of job flow arrival rate
+alpha = 0.72;
+q = @(theta_) m * theta_^(-alpha); % recruiting rate for firm
+f = @(theta_) m * theta_^(1-alpha); % job arrival rate for the unemployed
+beta_ = 0.72;                   % Bargaining power
+c = 0.213;                      % Cost of vacancy
+
+% AR(1) process and transition matrix
+mu_logp = 1;                       % Labor productivity
+sigma_logp = 0.015;
+rho = 0.8;
+mu_epsilon = 0;                 % Stochastic term of labor productivity
+sigma_epsilon = 0.03;
+n = 1000;                       % Grid size of productivity
+% p = lognrnd(mu_p, sigma_p, 1, 1000);% Grid of productivity for discretization
+% p = sort(p);
+% Q = zeros(n);
+% pdf = lognpdf(p,mu_p,sigma_p);  % PDF of p
+% for i = 1:n
+%     Q(i,:) = pdf ./ sum(pdf);   % Transition matrix
+% end
+
+%% 1) Discretization method 
+% Initialize
+[U, W, J] = deal(ones(n));
+V = zeros(n);
+
+% Algorithm: 
+% 1) define a grid of p make initial guesses of UWJV of the same size
+% 2) for each p, calculate conduct value function iteration of each value function
+% 3) fing the optimal q(theta) and w for each p
+% 4) calculate the unemployment rate
+
+[qstar, thetastar, wstar] = ones(n,1); % Optimal control
+[q, theta, w]
+
+for i = 1:n 
+    % iterate over productivity grids
+    for I = 1:max_iter
+        % value function iteration
+        U(I) = z + delta_ * (f(theta_(I)) * W(I+1) + ...
+                            (1-f(theta_(I)) * U(I+1)));
+        W(I) = w(I) + delta_ * ((1-s) * W(I+1) + ...
+                                s * U(I+1));
+        J(I) = p(I) - w(I) + delta_ * (1-s) * J(I+1);
+        V(I) = -c + delta_ * q(theta_(I)) * J(I+1);
+    
+
+        
+        % Check convergence
+        diffU = norm(U(I+1) - U(I));
+        diffW = norm(W(I+1) - W(I));
+        diffJ = norm(J(I+1) - J(I));
+        diffV = norm(V(I+1) - V(I));
+        diff = max([diffV, diffJ, diffW, diffU]);
+        if diff < tol
+            break
+        end
+    end
+    % For the converged value function, derive the optimal control
+    % q(theta)
+    qstar(i) = 
+    thetastar(i) = exp(qstar(i) / m, -1 / alpha);
+end
+
+%%% Approximation
+
+%% Q(b)
+% logp = [0.4 0.7 1 1.3 1.6];
+
+%% Q(c)
+

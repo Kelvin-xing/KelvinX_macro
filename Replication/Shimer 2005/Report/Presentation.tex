@@ -1,0 +1,107 @@
+\documentclass{beamer}
+\usepackage{xmpmulti}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{csquotes}% Recommended
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{bbm}
+\usepackage{comment}
+\usepackage{bm}
+\usepackage{makecell}
+\usepackage{url}
+\setbeamertemplate{footline}[frame number]
+
+
+
+\AtBeginSection[]{
+    \begin{frame}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\begin{comment}
+    \AtBeginSubsection[]{
+        \begin{frame}
+            \tableofcontents[currentsection]
+        \end{frame}
+    }
+\end{comment}
+
+
+\title{The Cyclical Behavior of Equilibrium Unemployment and Vacancies\\
+\citet{Shimer2005}}
+\author{Presented by: XING Mingjie}
+\date{\today}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Bellman Equation}{Worker}
+    \begin{itemize}
+        \item Unempolyment value
+            \begin{equation}\label{BellmanUnemploy}
+                U_p = z + \delta \{f(\theta_p)\mathbb{E}_p W_{p^\prime} + (1-f(\theta_p))\mathbb{E}_p U_{p^\prime}\}
+            \end{equation}
+        \item Employment value
+            \begin{equation}\label{BellmanEmploy}
+                W_p = w_p + \delta \{(1-s))\mathbb{E}_p W_{p^\prime} + s\mathbb{E}_p U_{p^\prime}\}
+            \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Bellman Equation}{Firm}
+    \begin{itemize}
+        \item Hiring value
+            \begin{equation}\label{BellmanHire}
+                J_p = p - w_p + \delta (1-s)\mathbb{E}_p J_{p^\prime}
+            \end{equation}
+        \item Vacancy value
+            \begin{equation}\label{BellmanVacancy}
+                V_p = -c + \delta q(\theta_p)\mathbb{E}_p J_{p^\prime} \equiv 0
+            \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Optimal Control}{Market tightness}
+    \begin{itemize}
+        \item Control in this problem consists of \(w_p, \theta_p, u_p\) and the state is \(p\)
+        \item Market tightness \(\theta_p\) is given by solving following equation for hire rate from free entry condition \begin{equation}\label{HireRate}
+            q(\theta_p) = \frac{c}{\delta \mathbb{E}_p J_{p^\prime}}\end{equation}
+        \item And market tightness \begin{equation}
+            \label{MarketTightness}
+            \theta_p = (\frac{q(\theta_p)}{\mu})^{-\frac{1}{\eta}}
+            \end{equation}
+        \item Employ Rate is given by \begin{equation}\label{EmployRate}
+            f(\theta_p) = \mu^\frac{1}{\eta} q^\frac{\eta-1}{\eta}
+        \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Optimal Control}{Continued}
+    \begin{itemize}
+        \item Optimal wage at each productivity level is given by the Nash Bargaining: 
+        \begin{equation}W_p - U_p = \beta (W_p - U_p + J_p)\end{equation}
+        \item Note Bellman Equation of \(W_p\) given by \ref{BellmanEmploy}, \(U_p\) given by \ref{BellmanUnemploy}, \(J_p\) given by \ref{BellmanHire}
+        \item Following the algebra given in slide \ref{OptWage}, optimal wage for each \(p\) is \[
+            w_p = \beta p + (1-\beta)z + \beta c \theta_p\]
+        \item And unemployment rate \begin{equation}\label{UnemployRate}
+            u_p = \frac{\delta}{\delta + f(\theta_p)}
+        \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Appendix A}{Optimal wage}\label{OptWage}
+
+    a
+\end{frame}
+
+\setbeamertemplate{footline}{}
+\begin{frame}[allowframebreaks,noframenumbering]{Reference}
+    \footnotesize
+    \bibliographystyle{agsm}
+\bibliography{Shimer2005}
+\end{frame}
+\end{document}
