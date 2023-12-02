@@ -47,7 +47,7 @@
             \end{equation}
         \item Employment value
             \begin{equation}\label{BellmanEmploy}
-                W_p = w_p + \delta \{(1-s))\mathbb{E}_p W_{p^\prime} + s\mathbb{E}_p U_{p^\prime}\}
+                W_p = w_p + \delta \{(1-s)\mathbb{E}_p W_{p^\prime} + s\mathbb{E}_p U_{p^\prime}\}
             \end{equation}
     \end{itemize}
 \end{frame}
@@ -65,10 +65,21 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Productivity}
+    The log of productivity follows AR(1) process
+    \begin{equation}\label{productivityprocess}
+    \log(p) = \rho \log(p) + \varepsilon 
+    \end{equation}
+    where \[\log(p) \sim N(\mu_\lambda, \sigma^2_\lambda),\ 
+    \varepsilon \sim N(\mu_\varepsilon,\sigma^2_\varepsilon)\]
+\end{frame}
+
+
 \begin{frame}{Optimal Control}{Market tightness}
     \begin{itemize}
         \item Control in this problem consists of \(w_p, \theta_p, u_p\) and the state is \(p\)
-        \item Market tightness \(\theta_p\) is given by solving following equation for hire rate from free entry condition \begin{equation}\label{HireRate}
+        \item Market tightness \(\theta_p\) is given by solving the following equation of hire rate from free entry condition 
+            \begin{equation}\label{HireRate}
             q(\theta_p) = \frac{c}{\delta \mathbb{E}_p J_{p^\prime}}\end{equation}
         \item And market tightness \begin{equation}
             \label{MarketTightness}
@@ -83,19 +94,81 @@
 \begin{frame}{Optimal Control}{Continued}
     \begin{itemize}
         \item Optimal wage at each productivity level is given by the Nash Bargaining: 
-        \begin{equation}W_p - U_p = \beta (W_p - U_p + J_p)\end{equation}
+        \begin{equation}\label{Nash}W_p - U_p = \beta (W_p - U_p + J_p)\end{equation}
         \item Note Bellman Equation of \(W_p\) given by \ref{BellmanEmploy}, \(U_p\) given by \ref{BellmanUnemploy}, \(J_p\) given by \ref{BellmanHire}
-        \item Following the algebra given in slide \ref{OptWage}, optimal wage for each \(p\) is \[
-            w_p = \beta p + (1-\beta)z + \beta c \theta_p\]
+        \item Following the algebra given in slide \ref{OptWage}, optimal wage for each \(p\) is \begin{equation}\label{OptimalWage}
+            w_p = \beta p + (1-\beta)z + \beta c \theta_p\end{equation}
         \item And unemployment rate \begin{equation}\label{UnemployRate}
             u_p = \frac{\delta}{\delta + f(\theta_p)}
         \end{equation}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Appendix A}{Optimal wage}\label{OptWage}
+\begin{frame}[allowframebreaks]{Question a}{Descretization Algorithm}
+    Inspired by Karen A. Kopecky 2006 Lecture Note
+    \begin{enumerate}
+        \item Choose a relateive error tolerance level \texttt{tol};
+        \item Discretize the state space by constructing a grid for productivity \[
+            p = \exp\{logp\}
+            \text{\ where\ } logp = \{logp_1, logp_2, \ldots, logp_n\} \] given by the Tauchen-Hussey (1991) method.
+            The n is chosen at 100;
+        \item Start with an initial guess of the value function \(V^{(0)}(p)\) is a vector of length \(n\), i.e., \(V^{(0)}(p) = \{V^{(0)}_i\}_{i=1}^n\), where \(V^{(0)}_i = V^{(0)}(p_i)\).
+            \(V\) here represents \(U, W, J\). The initial guess is ones.
+        \framebreak
+        \item Update the value function using eqautions \ref{BellmanUnemploy} to \ref{OptimalWage}, specifically
+            \begin{enumerate}
+                \item Fix the current productivity level at one of the grid points, \(p_i\) from \(i=1\)
+                \item For each possible choice of productivity next period, calculate optimal control in the following order:
+                \begin{gather*}
+                    q(\theta_{p_i}) = \frac{c}{\delta \sum_{j=1}^{n}p_{i,j}J^{(0)}(p_j)}\\
+                    f(\theta_{p_i}) = \mu^\frac{1}{\eta} q^\frac{\eta-1}{\eta}\\
+                    \theta_{p_i} = (\frac{q(\theta_{p_i})}{\mu})^{-\frac{1}{\eta}}\\
+                    w_{p_i} = \beta p_i + (1-\beta)z + \beta c \theta_{p_i}
+                \end{gather*}
+                \item and update the value function system with 
+                \framebreak
+                \begin{gather*}
+                    U^{(1)}_{p_i} = z + \delta\{f(\theta_{p_i})\sum_{j=1}^{n}p_{i,j}W^{(0)}(p_j) + (1-f(\theta_{p_i}))\sum_{j=1}^{n}p_{i,j}U^{(0)}(p_j)\}\\
+                    W^{(1)}_{p_i} = w_{p_i} + \delta\{(1-s)\sum_{j=1}^{n}p_{i,j}W^{(0)}(p_j) + s\sum_{j=1}^{n}p_{i,j}U^{(0)}(p_j)\}\\
+                    J^{(1)}_{p_i} = p_i - w_{p_i} + \delta (1-s)\sum_{j=1}^{n}p_{i,j}J^{(0)}(p_j)
+                \end{gather*}
+                \item Choose a new grid point for productivity, go through 4.1 to 4.3. Once we have done the update for all productivity grid, we have new system of value function \({V^{(1)}_p}\)
+                \item Compute distance between the two systems of value functions following the sup norm \[
+                    d = \max\limits_{i\in\{1,\ldots,n\}}|V^{(0)}_i-V^{(1)}_i|\]
+                \framebreak
+                \item If distance is within the error tolerance level, \(d \leq tol * ||V^{(1)}_1||\), the functions have converged and go to step 5, or else go back to step 4.
+            \end{enumerate}
+            \item Calculate the optimal control for each productivity level:
+            \begin{gather*}
+                q(\theta^*_{p_i}) = \frac{c}{\delta \sum_{j=1}^{n}p_{i,j}J^* (p_j)}\\
+                f(\theta^*_{p_i}) = \mu^\frac{1}{\eta} q^\frac{\eta-1}{\eta}\\
+                \theta^*_{p_i} = (\frac{q(\theta^*_{p_i})}{\mu})^{-\frac{1}{\eta}}\\
+                w^*_{p_i} = \beta p_i + (1-\beta)z + \beta c \theta^*_{p_i}\\
+                u^*_p = \frac{\delta}{\delta + f(\theta^*_p)}
+            \end{gather*}
+            where \(J^*\) is the converged value function.
+    \end{enumerate}
+\end{frame}
 
-    a
+\begin{frame}{Calibration}
+    
+\end{frame}
+    
+\begin{frame}{Appendix A}{Optimal wage}\label{OptWage}
+    \begin{gather*}
+        W_p - U_p = \beta (W_p - U_p + J_p)\\
+        \Leftrightarrow
+        w_p - z + \delta (1-s-f(\theta_p))(\mathbb{E}_p W_{p^\prime}-\mathbb{E}_p U_{p^\prime}) =\\
+        \beta (p-z+\delta (1-s-f(\theta_p))(\mathbb{E}_p W_{p^\prime}-\mathbb{E}_p U_{p^\prime}) +\delta(1-s)\mathbb{E}_p J_{p^\prime})\\
+        \Leftrightarrow
+        w_p = \beta p + (1-\beta)z + (\beta-1)\delta(1-s-f(\theta_p))(\mathbb{E}_p W_{p^\prime}-\mathbb{E}_p U_{p^\prime})\\
+         + \frac{\beta c(1-s)}{q(\theta_p)}\\
+        \Leftrightarrow
+        w_p = \beta p + (1-\beta)z - \frac{\beta c\delta(1-s-f(\theta_p))}{q(\theta_p)} + \frac{\beta c(1-s)}{q(\theta_p)}\\
+        \Leftrightarrow
+        w_p = \beta p + (1-\beta)z + \beta c \theta_p
+    \end{gather*}
+    where we use the fact that \(\mathbb{E}_p W_{p^\prime}-\mathbb{E}_p U_{p^\prime} = \frac{\beta}{1-\beta}\mathbb{E}_p J_{p^\prime}\) and \(f(\theta_p)/q(\theta_p)=\theta_p\)
 \end{frame}
 
 \setbeamertemplate{footline}{}

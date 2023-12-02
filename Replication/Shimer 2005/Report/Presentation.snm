@@ -2,8 +2,11 @@
 \beamer@slide {BellmanEmploy}{2}
 \beamer@slide {BellmanHire}{3}
 \beamer@slide {BellmanVacancy}{3}
-\beamer@slide {HireRate}{4}
-\beamer@slide {MarketTightness}{4}
-\beamer@slide {EmployRate}{4}
-\beamer@slide {UnemployRate}{5}
-\beamer@slide {OptWage}{6}
+\beamer@slide {productivityprocess}{4}
+\beamer@slide {HireRate}{5}
+\beamer@slide {MarketTightness}{5}
+\beamer@slide {EmployRate}{5}
+\beamer@slide {Nash}{6}
+\beamer@slide {OptimalWage}{6}
+\beamer@slide {UnemployRate}{6}
+\beamer@slide {OptWage}{12}
