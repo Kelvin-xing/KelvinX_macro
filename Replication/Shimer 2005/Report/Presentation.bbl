@@ -1,23 +1,15 @@
 \begin{thebibliography}{xx}
 
-\harvarditem[Salzer et~al.]{Salzer, Zucker \harvardand\
-  Capuano}{1952}{Salzer1952}
-Salzer, H.~E., Zucker, R. \harvardand\ Capuano, R.  \harvardyearleft
-  1952\harvardyearright , `Table of the zeros and weight factors of the first
-  20 hermite polynomials', {\em Journal of research of the National Bureau of
-  Standards} {\bf 48},~111.
-\newline\harvardurl{https://api.semanticscholar.org/CorpusID:124752941}
+\harvarditem{Kirkby}{2023}{Kirkby2023}
+Kirkby, R.  \harvardyearleft 2023\harvardyearright , `Value function iteration
+  (vfi) toolkit for matlab',
+  \url{https://github.com/vfitoolkit/VFIToolkit-matlab}.
+\newblock Github.
 
 \harvarditem{Shimer}{2005}{Shimer2005}
 Shimer, R.  \harvardyearleft 2005\harvardyearright , `The cyclical behavior of
   equilibrium unemployment and vacancies', {\em American Economic Review} {\bf
   95}(1),~25--49.
 \newline\harvardurl{https://www.aeaweb.org/articles?id=10.1257/0002828053828572}
-
-\harvarditem{van Damme}{2023}{VanDamme2023}
-van Damme, G.  \harvardyearleft 2023\harvardyearright , `Legendre laguerre and
-  hermite - gauss quadrature',
-  \url{https://www.mathworks.com/matlabcentral/fileexchange/26737-legendre-laguerre-and-hermite-gauss-quadrature}.
-\newblock MATLAB Central File Exchange.
 
 \end{thebibliography}

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Presentation"] 1701626903 "Presentation.aux" "Presentation.bbl" "Presentation" 1701627224
+["bibtex Presentation"] 1701701476 "Presentation.aux" "Presentation.bbl" "Presentation" 1701701477
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/harvard/agsm.bst" 1136766823 25549 e3d0f1ab4ae55e777f7352db30e2c6f7 ""
-  "Presentation.aux" 1701627224 5090 f405353788c973a6478aedf5a5c46c87 "pdflatex"
+  "Presentation.aux" 1701701477 5048 43466eecd5aebdde564484fa76a7f247 "pdflatex"
   "Shimer2005.bib" 1701621117 2729 be4806a4b9b8174317f9bd7efc0ad1d4 ""
   (generated)
   "Presentation.bbl"
   "Presentation.blg"
-["pdflatex"] 1701627222 "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" "Presentation.pdf" "Presentation" 1701627224
-  "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" 1701627222 11351 ee3a99a0b195ab67d1e27d20d63e9f87 ""
+["pdflatex"] 1701701476 "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" "Presentation.pdf" "Presentation" 1701701477
+  "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" 1701701474 12777 c2e5ec9b968c8899870f7335cce718a5 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -258,11 +258,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663576759 2826438 1ae54c060c8f7bb1b3b78240a682546f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Presentation.aux" 1701627224 5090 f405353788c973a6478aedf5a5c46c87 "pdflatex"
-  "Presentation.bbl" 1701626903 1069 df23a34153b6370f8c9b1cf5e7dcbab5 "bibtex Presentation"
-  "Presentation.nav" 1701627224 2028 57bbe9065ded29dcbcd7a26a2d7fab79 "pdflatex"
-  "Presentation.out" 1701627224 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
-  "Presentation.tex" 1701627222 11351 ee3a99a0b195ab67d1e27d20d63e9f87 ""
+  "Presentation.aux" 1701701477 5048 43466eecd5aebdde564484fa76a7f247 "pdflatex"
+  "Presentation.bbl" 1701701476 571 59d4fea8c713e41beee48f7c1543b5a9 "bibtex Presentation"
+  "Presentation.nav" 1701701477 1933 430dc972c70184970c8070230900a274 "pdflatex"
+  "Presentation.out" 1701701477 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
+  "Presentation.tex" 1701701474 12777 c2e5ec9b968c8899870f7335cce718a5 ""
   (generated)
   "Presentation.aux"
   "Presentation.log"

@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Presentation.aux
 The style file: agsm.bst
 Database file #1: Shimer2005.bib
-You've used 3 entries,
+You've used 2 entries,
             2909 wiz_defined-function locations,
-            662 strings with 5417 characters,
-and the built_in function-call counts, 8844 in all, are:
-= -- 1397
-> -- 118
+            653 strings with 5076 characters,
+and the built_in function-call counts, 3681 in all, are:
+= -- 548
+> -- 48
 < -- 0
-+ -- 646
-- -- 35
-* -- 736
-:= -- 1857
-add.period$ -- 4
-call.type$ -- 3
-change.case$ -- 42
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 43
-empty$ -- 92
-format.name$ -- 42
-if$ -- 1568
++ -- 233
+- -- 14
+* -- 278
+:= -- 835
+add.period$ -- 3
+call.type$ -- 2
+change.case$ -- 28
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 27
+empty$ -- 61
+format.name$ -- 18
+if$ -- 640
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 15
-num.names$ -- 31
-pop$ -- 13
+missing$ -- 1
+newline$ -- 11
+num.names$ -- 20
+pop$ -- 11
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 30
 quote$ -- 0
-skip$ -- 36
+skip$ -- 23
 stack$ -- 0
-substring$ -- 1937
-swap$ -- 7
-text.length$ -- 42
+substring$ -- 728
+swap$ -- 4
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 8
 warning$ -- 0
-while$ -- 65
+while$ -- 43
 width$ -- 0
-write$ -- 44
+write$ -- 29

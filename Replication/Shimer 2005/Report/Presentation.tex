@@ -68,14 +68,14 @@
     \end{itemize}
 \end{frame}
 
-% \begin{frame}{Productivity}
-%     The log of productivity follows AR(1) process
-%     \begin{equation}\label{productivityprocess}
-%     \log(p) = \rho \log(p) + \varepsilon 
-%     \end{equation}
-%     where \[\log(p) \sim N(\mu_\lambda, \sigma^2_\lambda),\ 
-%     \varepsilon \sim N(\mu_\varepsilon,\sigma^2_\varepsilon)\]
-% \end{frame}
+\begin{frame}{Productivity}
+    The log of productivity follows AR(1) process
+    \begin{equation}\label{productivityprocess}
+    \log(p) = \rho \log(p) + \varepsilon 
+    \end{equation}
+    where \[\log(p) \sim N(\mu_\lambda, \sigma^2_\lambda),\ 
+    \varepsilon \sim N(\mu_\varepsilon,\sigma^2_\varepsilon)\]
+\end{frame}
 
 
 \begin{frame}{Optimal Control}{Market tightness}
@@ -132,7 +132,7 @@
         \end{table}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Question a}{Descretization Algorithm}
+\begin{frame}[allowframebreaks]{Question a}{Discretization Algorithm}
     Inspired by Karen A. Kopecky 2006 Lecture Note
     \begin{enumerate}
         \item Choose a relateive error tolerance level \texttt{tol};
@@ -143,6 +143,7 @@
         \item Start with an initial guess of the value function \(V^{(0)}(p)\) is a vector of length \(n\), i.e., \(V^{(0)}(p) = \{V^{(0)}_i\}_{i=1}^n\), where \(V^{(0)}_i = V^{(0)}(p_i)\).
             \(V\) here represents \(U, W, J\). The initial guess is ones.
         \framebreak
+        \label{update}
         \item Update the value function using eqautions \ref{BellmanUnemploy} to \ref{OptimalWage}, specifically
             \begin{enumerate}
                 \item Fix the current productivity level at one of the grid points, \(p_i\) from \(i=1\)
@@ -180,20 +181,46 @@
 
 
 \begin{frame}{Tauchen-Hussey 1991}
-    The Hermite roots and weights are produced with \cite{VanDamme2023} and checked with \cite{Salzer1952}. The results comes with 4 decimals.
+    Use \texttt{discretizeAR1\_Tauchen} function from the Matlab Toolbox of \cite{Kirkby2023} .
 \end{frame}
 
     
-\begin{frame}{Matlab Code}{Discretization Method}
+% \begin{frame}{Matlab Code}{Discretization Method}
     
+% \end{frame}
+
+\begin{frame}{Question a}{Parametric Approximation}
+    \begin{enumerate}\addtocounter{enumi}{-1}
+        \item Choose Hermite interpolation polynomials to approximate $\hat{V}(p;\textbf{coefs})$ in the form of \(
+            f(x) = a (x-x_1)^3 + b(x-x_1)^2 + c(x-x_1)+d 
+            \) with Matlab code \texttt{pchip}. Report initial paramters with \texttt{pp.coefs} for each value function, save as \texttt{old}
+        \item Maximize control and calculate value function at each productivity level as done in Discretization method
+        \item Fit for new value function system and report parameters and save as \texttt{new}
+        \item If \(||\hat{V}(p;\textbf{coef\_sold})-\hat{V}(p;\textbf{coefs\_new})||<tol\), stop; else go to step 1.
+    \end{enumerate}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Question a}{Parametric Approximation}
-\end{frame}
-
-\begin{frame}{Matlab Code}{Discretization Method}
+% \begin{frame}{Matlab Code}{Discretization Method}
     
-\end{frame}
+% \end{frame}
+
+% \begin{frame}{Optimal Controls from two methods}
+%     \begin{figure}[ht]
+%         \begin{minipage}[b]{0.45\linewidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Discretization.jpg"}
+%             \caption{Label for a}
+%             \label{fig:a}
+%         \end{minipage}
+%         \hspace{0.5cm}
+%         \begin{minipage}[b]{0.45\linewidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Approximation.jpg"}
+%             \caption{Label for b}
+%             \label{fig:b}
+%         \end{minipage}
+%     \end{figure}
+% \end{frame}
 
 \begin{frame}{Two Results}{Question b}
     To use the polynomial interpolation function from class directly
