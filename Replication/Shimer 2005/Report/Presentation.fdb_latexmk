@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Presentation"] 1701709051 "Presentation.aux" "Presentation.bbl" "Presentation" 1701709763
+["bibtex Presentation"] 1701709051 "Presentation.aux" "Presentation.bbl" "Presentation" 1701713000
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/harvard/agsm.bst" 1136766823 25549 e3d0f1ab4ae55e777f7352db30e2c6f7 ""
-  "Presentation.aux" 1701709763 5177 a77fc4b3b5d5b2e9931e67642e2aad98 "pdflatex"
+  "Presentation.aux" 1701712999 5177 a77fc4b3b5d5b2e9931e67642e2aad98 "pdflatex"
   "Shimer2005.bib" 1701621117 2729 be4806a4b9b8174317f9bd7efc0ad1d4 ""
   (generated)
   "Presentation.bbl"
   "Presentation.blg"
-["pdflatex"] 1701709761 "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" "Presentation.pdf" "Presentation" 1701709763
-  "/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Approximation.jpg" 1701709755 64159 b9c44f4037638f4b076c68d556d3eec9 ""
-  "/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Discretization.jpg" 1701709751 64320 1487d87e29f6680ce60d055367bf9010 ""
-  "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" 1701709761 12995 aa88e06af0d95871fed463788dd0b1df ""
+["pdflatex"] 1701712997 "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" "Presentation.pdf" "Presentation" 1701713000
+  "/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Approximation.jpg" 1701712683 64159 b9c44f4037638f4b076c68d556d3eec9 ""
+  "/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Discretization.jpg" 1701712679 64320 1487d87e29f6680ce60d055367bf9010 ""
+  "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer 2005/Report/Presentation.tex" 1701712997 13159 551eeaba57ef4e13be0199d23e69df08 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -233,6 +233,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1575499565 5766 13a9e8766c47f30327caf893ece86ac8 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty" 1249334690 15773 2dd7dde1ec1c2a3d0c85bc3b273e04d8 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty" 1291685959 45456 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1601326656 410 615550c46f918fcbee37641b02a862d9 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty" 1601326656 306 c56a323ca5bf9242f54474ced10fca71 ""
@@ -260,11 +261,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663576759 2826438 1ae54c060c8f7bb1b3b78240a682546f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Presentation.aux" 1701709763 5177 a77fc4b3b5d5b2e9931e67642e2aad98 "pdflatex"
+  "Presentation.aux" 1701712999 5177 a77fc4b3b5d5b2e9931e67642e2aad98 "pdflatex"
   "Presentation.bbl" 1701709051 571 59d4fea8c713e41beee48f7c1543b5a9 "bibtex Presentation"
-  "Presentation.nav" 1701709763 2026 8b212315c7e784dad5a863200f52c0af "pdflatex"
-  "Presentation.out" 1701709763 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
-  "Presentation.tex" 1701709761 12995 aa88e06af0d95871fed463788dd0b1df ""
+  "Presentation.nav" 1701712999 2026 8b212315c7e784dad5a863200f52c0af "pdflatex"
+  "Presentation.out" 1701712999 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
+  "Presentation.tex" 1701712997 13159 551eeaba57ef4e13be0199d23e69df08 ""
   (generated)
   "Presentation.aux"
   "Presentation.log"
