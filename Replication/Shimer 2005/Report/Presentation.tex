@@ -138,8 +138,8 @@
         \item Choose a relateive error tolerance level \texttt{tol};
         \item Discretize the state space by constructing a grid for productivity \[
             p = \exp\{logp\}
-            \text{\ where\ } logp = \{logp_1, logp_2, \ldots, logp_n\} \] given by the Tauchen-Hussey (1991) method.
-            The n is chosen at 100;
+            \text{\ where\ } logp = \{logp_1, logp_2, \ldots, logp_n\} \] given by the Tauchen method.
+            The n is chosen at %;
         \item Start with an initial guess of the value function \(V^{(0)}(p)\) is a vector of length \(n\), i.e., \(V^{(0)}(p) = \{V^{(0)}_i\}_{i=1}^n\), where \(V^{(0)}_i = V^{(0)}(p_i)\).
             \(V\) here represents \(U, W, J\). The initial guess is ones.
         \framebreak
@@ -180,7 +180,7 @@
 \end{frame}
 
 
-\begin{frame}{Tauchen-Hussey 1991}
+\begin{frame}{Tauchen Method}
     Use \texttt{discretizeAR1\_Tauchen} function from the Matlab Toolbox of \cite{Kirkby2023} .
 \end{frame}
 
@@ -204,26 +204,31 @@
     
 % \end{frame}
 
-% \begin{frame}{Optimal Controls from two methods}
-%     \begin{figure}[ht]
-%         \begin{minipage}[b]{0.45\linewidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Discretization.jpg"}
-%             \caption{Label for a}
-%             \label{fig:a}
-%         \end{minipage}
-%         \hspace{0.5cm}
-%         \begin{minipage}[b]{0.45\linewidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Approximation.jpg"}
-%             \caption{Label for b}
-%             \label{fig:b}
-%         \end{minipage}
-%     \end{figure}
-% \end{frame}
+\begin{frame}{Optimal Controls from two methods}
+    \begin{columns}[c]
+        % create the column with the first image, that occupies
+        % half of the slide
+            \begin{column}{.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.9\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Discretization.jpg"}
+                \caption{Discretization}
+            \end{figure}      
+            \end{column}
+        % create the column with the second image, that also
+        % occupies half of the slide
+            \begin{column}{.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.9\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Approximation.jpg"}
+                \caption{Approximation}
+            \end{figure}
+            \end{column}
+        \end{columns}
+\end{frame}
 
 \begin{frame}{Two Results}{Question b}
-    To use the polynomial interpolation function from class directly
+    To use the polynomial interpolation function from course material directly
     \begin{table}[]
         \begin{tabular}{
         >{\columncolor[HTML]{FFFFFF}}l 
