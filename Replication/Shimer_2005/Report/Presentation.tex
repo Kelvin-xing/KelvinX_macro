@@ -85,13 +85,12 @@
         \item Market tightness \(\theta_p\) is given by solving the following equation of hire rate from free entry condition 
             \begin{equation}\label{HireRate}
             q(\theta_p) = \frac{c}{\delta \mathbb{E}_p J_{p^\prime}}\end{equation}
+        \item Employ Rate is given by \begin{equation}\label{EmployRate}
+            f(\theta_p) = \mu^\frac{1}{\eta} q^\frac{\eta-1}{\eta}\end{equation}
         \item And market tightness \begin{equation}
             \label{MarketTightness}
-            \theta_p = (\frac{q(\theta_p)}{\mu})^{-\frac{1}{\eta}}
+            \theta_p = \frac{q(\theta_p)}{f(\theta_p)}
             \end{equation}
-        \item Employ Rate is given by \begin{equation}\label{EmployRate}
-            f(\theta_p) = \mu^\frac{1}{\eta} q^\frac{\eta-1}{\eta}
-        \end{equation}
     \end{itemize}
 \end{frame}
 
@@ -140,7 +139,7 @@
         \item Discretize the state space by constructing a grid for productivity \[
             p = \exp\{logp\}
             \text{\ where\ } logp = \{logp_1, logp_2, \ldots, logp_n\} \] given by the Tauchen method.
-            The n is chosen at %;
+            The n is chosen at 250; deviation step is 35. 
         \item Start with an initial guess of the value function \(V^{(0)}(p)\) is a vector of length \(n\), i.e., \(V^{(0)}(p) = \{V^{(0)}_i\}_{i=1}^n\), where \(V^{(0)}_i = V^{(0)}(p_i)\).
             \(V\) here represents \(U, W, J\). The initial guess is ones.
         \framebreak
@@ -197,7 +196,7 @@
             \) with Matlab code \texttt{pchip}. Report initial paramters with \texttt{pp.coefs} for each value function, save as \texttt{old}
         \item Maximize control and calculate value function at each productivity level as done in Discretization method
         \item Fit for new value function system and report parameters and save as \texttt{new}
-        \item If \(||\hat{V}(p;\textbf{coef\_sold})-\hat{V}(p;\textbf{coefs\_new})||<tol\), stop; else go to step 1.
+        \item If \(||\hat{V}(p;\textbf{coefs\_old})-\hat{V}(p;\textbf{coefs\_new})||<tol\), stop; else go to step 1.
     \end{enumerate}
 \end{frame}
 
@@ -209,19 +208,19 @@
     \begin{columns}[c]
         % create the column with the first image, that occupies
         % half of the slide
-            \begin{column}{.5\textwidth}
+            \begin{column}{.6\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.9\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Discretization.jpg"}
+                \includegraphics[width=\textwidth]{"//Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Discretization.jpg"}
                 \caption{Discretization}
             \end{figure}      
             \end{column}
         % create the column with the second image, that also
         % occupies half of the slide
-            \begin{column}{.5\textwidth}
+            \begin{column}{.6\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.9\textwidth]{"/Users/mingjiexing/Desktop/HKU/Courses/6096_Computational_Method/Final/Shimer_2005/Approximation.jpg"}
+                \includegraphics[width=\textwidth]{"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Approximation.jpg"}
                 \caption{Approximation}
             \end{figure}
             \end{column}

@@ -87,7 +87,7 @@ hold on
 plot(p,fstar_d);
 plot(p,wstar_d);
 plot(p,ustar_d);
-xlabel("Productivity grids");
+xlabel("Productivity");
 legend("Job finding rate", "Wage", "Unemployment rate");
 title('Job Finding Rate, Wage and Unemployment Rate on Productivity by Discretization');
 hold off
@@ -172,7 +172,7 @@ hold on
 plot(p,fstar_a);
 plot(p,wstar_a);
 plot(p,ustar_a);
-xlabel("Productivity grids");
+xlabel("Productivity");
 legend("Job finding rate", "Wage", "Unemployment rate");
 title('Job Finding Rate, Wage and Unemployment Rate on Productivity by Approximation');
 hold off
