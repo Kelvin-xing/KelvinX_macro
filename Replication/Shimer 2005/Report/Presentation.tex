@@ -10,7 +10,10 @@
 \usepackage{bm}
 \usepackage{makecell}
 \usepackage{url}
+\usepackage{colortbl}
 \setbeamertemplate{footline}[frame number]
+\setbeamertemplate{caption}[numbered]
+
 
 
 
@@ -65,14 +68,14 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Productivity}
-    The log of productivity follows AR(1) process
-    \begin{equation}\label{productivityprocess}
-    \log(p) = \rho \log(p) + \varepsilon 
-    \end{equation}
-    where \[\log(p) \sim N(\mu_\lambda, \sigma^2_\lambda),\ 
-    \varepsilon \sim N(\mu_\varepsilon,\sigma^2_\varepsilon)\]
-\end{frame}
+% \begin{frame}{Productivity}
+%     The log of productivity follows AR(1) process
+%     \begin{equation}\label{productivityprocess}
+%     \log(p) = \rho \log(p) + \varepsilon 
+%     \end{equation}
+%     where \[\log(p) \sim N(\mu_\lambda, \sigma^2_\lambda),\ 
+%     \varepsilon \sim N(\mu_\varepsilon,\sigma^2_\varepsilon)\]
+% \end{frame}
 
 
 \begin{frame}{Optimal Control}{Market tightness}
@@ -102,6 +105,31 @@
             u_p = \frac{\delta}{\delta + f(\theta_p)}
         \end{equation}
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Calibration}
+    \begin{table}
+        \begin{tabular}{
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l }
+        \hline
+        Parameter         & Symbol                                                & Value \\ \hline
+        Productivity std. & $\sigma_{logp}$                       & 0.05  \\
+        Productivity mean & $\mu_{logp}$                          & 1     \\
+        Stochastic std.   & $\sigma_{\varepsilon}$ & 0.03  \\
+        Stochastic mean   & $\mu_{\varepsilon}$                    & 0     \\
+        Separation rate   & $s$                                                     & 0.1   \\
+        Discount rate     & $r$                                                     & 0.012 \\
+        Value of leisure  & $z$                                                     & 0.4   \\
+        Matching function & $\mu$                                                    & 1.355 \\
+        Matching function & $\alpha$                                                 & 0.72  \\
+        Bargaining Power  & $\beta$                                                  & 0.72  \\
+        Cost of vacancy   & $c$                                                     & 0.213 \\ \hline
+        \end{tabular}
+        \caption{Parameter Calibration}
+        \label{Calibration}
+        \end{table}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Question a}{Descretization Algorithm}
@@ -150,14 +178,61 @@
     \end{enumerate}
 \end{frame}
 
-\begin{frame}
+
+\begin{frame}{Tauchen-Hussey 1991}
     The Hermite roots and weights are produced with \cite{VanDamme2023} and checked with \cite{Salzer1952}. The results comes with 4 decimals.
 \end{frame}
 
-\begin{frame}{Calibration}
+    
+\begin{frame}{Matlab Code}{Discretization Method}
     
 \end{frame}
+
+\begin{frame}[allowframebreaks]{Question a}{Parametric Approximation}
+\end{frame}
+
+\begin{frame}{Matlab Code}{Discretization Method}
     
+\end{frame}
+
+\begin{frame}{Two Results}{Question b}
+    To use the polynomial interpolation function from class directly
+    \begin{table}[]
+        \begin{tabular}{
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l }
+        \hline
+        log(p) & w & u & f \\ \hline
+        0.400  &   &   &   \\
+        0.700  &   &   &   \\
+        1.000  &   &   &   \\
+        1.300  &   &   &   \\
+        1.600  &   &   &   \\ \hline
+        \end{tabular}
+        \caption{Wage, Unemployment rate and Job Finding Rate}
+        \label{Qb}
+        \end{table}
+\end{frame}
+
+\begin{frame}{Two Results}{Question c}
+    \begin{table}[]
+        \begin{tabular}{
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l 
+        >{\columncolor[HTML]{FFFFFF}}l }
+        \hline
+                                  & u     & f     & p     \\ \hline
+        Data Std.                 & 0.190 & 0.118 & 0.020 \\
+        Approximation Model Std.  &       &       &       \\
+        Discretization Model Std. &       &       &       \\ \hline
+        \end{tabular}
+        \caption{Model fit on Unemployment, Job finding rate and productivity}
+        \label{Qc}
+        \end{table}
+\end{frame}
 
 \begin{frame}{Appendix A}{Optimal wage}\label{OptWage}
     \begin{gather*}
