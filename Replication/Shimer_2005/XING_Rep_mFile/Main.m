@@ -26,8 +26,10 @@ sigma_logp = 0.05;
 rho = 0.8;                          % Persistence
 mu_epsilon = 0;                     % Stochastic term of labor productivity
 sigma_epsilon = 0.03;
-n = 250;                            % Grid size of productivity
-[grid_logp, P] = discretizeAR1_Tauchen(0,rho,sigma_epsilon,n,35);
+n = 25;                            % Grid size of productivity
+[grid_logp, P] = discretizeAR1_Tauchen(0,rho,sigma_epsilon,n,3);
+% [grid_logp, P] = discretizeAR1_TauchenHussey(0.1,rho,sigma_epsilon,n);
+% grid_logp = sort(grid_logp);
 p = exp(grid_logp);                 % p's grid
 
 %% 1) Discretization method 
@@ -166,7 +168,12 @@ else
     end
 end
 
-% print("For the approximation method, the coeffecients for U, W and J are given by %6.4f", coefs);
+Coefs = array2table(coefs,"VariableNames",{ ...
+    'aU','bU','cU','dU', ...
+    'aW','bW','cW','dW', ...
+    'aJ','bJ','cJ','dJ'});
+fprintf("For the approximation method, the coeffecients for U, W and J are given by:\n");
+disp(Coefs);
 figure
 hold on
 plot(p,fstar_a);
@@ -180,10 +187,10 @@ saveas(gcf,"Approximation.jpg");
 
 
 %% Q(b)
-logp_e = [0.4 0.7 1 1.3 1.6];
+logp_e = [0.4 0.7 1 1.3 1.6]-1;
 p_e = exp(logp_e);                             % Productivity to evaluate
-q_e = real(pchip(p,qstar_a,p_e));
-f_e = real(m^(1/alpha) * q_e.^(1 - 1/alpha));
+q_e = pchip(p,qstar_a,p_e);
+f_e = m^(1/alpha) * q_e.^(1 - 1/alpha);
 w_e = beta_ * p_e + (1-beta_) * z + beta_ * c * f_e ./ q_e;
 u_e = delta_ ./ (delta_ + f_e);
 Table_b = array2table([logp_e' p_e' w_e' u_e' f_e'], ...
