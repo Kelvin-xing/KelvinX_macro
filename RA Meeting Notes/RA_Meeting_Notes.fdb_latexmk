@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex RA_Meeting_Notes"] 1700103079 "RA_Meeting_Notes.aux" "RA_Meeting_Notes.bbl" "RA_Meeting_Notes" 1700126181
+["bibtex RA_Meeting_Notes"] 1701829892 "RA_Meeting_Notes.aux" "RA_Meeting_Notes.bbl" "RA_Meeting_Notes" 1701852116
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "RA_Meeting_Notes.aux" 1700126181 1411 78e8af94a9b96fc1e2578b1517167642 "pdflatex"
+  "RA_Meeting_Notes.aux" 1701852116 1646 175abffabc950b294279793714d0972e "pdflatex"
   "RA_Meeting_Notes.bib" 1699715001 10642 4d617fe1c51d682838625d410473dca1 ""
   (generated)
   "RA_Meeting_Notes.bbl"
   "RA_Meeting_Notes.blg"
-["pdflatex"] 1700126180 "/Users/mingjiexing/Desktop/Python/Macro/RA Meeting Notes/RA_Meeting_Notes.tex" "RA_Meeting_Notes.pdf" "RA_Meeting_Notes" 1700126181
-  "/Users/mingjiexing/Desktop/Python/Macro/RA Meeting Notes/RA_Meeting_Notes.tex" 1700126180 5752 886bd85fa77c3e0e185a7bd578b0bbca ""
+["pdflatex"] 1701852115 "/Users/mingjiexing/Desktop/Python/Macro/RA Meeting Notes/RA_Meeting_Notes.tex" "RA_Meeting_Notes.pdf" "RA_Meeting_Notes" 1701852116
+  "/Users/mingjiexing/Desktop/Python/Macro/RA Meeting Notes/RA_Meeting_Notes.tex" 1701852115 6823 3629db8c69fc7e01edc619b14f1623d5 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -113,10 +113,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663576759 2826438 1ae54c060c8f7bb1b3b78240a682546f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "RA_Meeting_Notes.aux" 1700126181 1411 78e8af94a9b96fc1e2578b1517167642 "pdflatex"
-  "RA_Meeting_Notes.bbl" 1700103079 49 0eba253fc001332e731e8aba3f23127b "bibtex RA_Meeting_Notes"
-  "RA_Meeting_Notes.tex" 1700126180 5752 886bd85fa77c3e0e185a7bd578b0bbca ""
-  "RA_Meeting_Notes.toc" 1700126181 433 a7271eea7ddf8214052f477152f497f0 "pdflatex"
+  "RA_Meeting_Notes.aux" 1701852116 1646 175abffabc950b294279793714d0972e "pdflatex"
+  "RA_Meeting_Notes.bbl" 1701829892 49 0eba253fc001332e731e8aba3f23127b "bibtex RA_Meeting_Notes"
+  "RA_Meeting_Notes.tex" 1701852115 6823 3629db8c69fc7e01edc619b14f1623d5 ""
+  "RA_Meeting_Notes.toc" 1701852116 586 4151b222844a85175eac9476664c1029 "pdflatex"
   (generated)
   "RA_Meeting_Notes.aux"
   "RA_Meeting_Notes.log"
