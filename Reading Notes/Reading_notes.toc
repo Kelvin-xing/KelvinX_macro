@@ -1,4 +1,6 @@
 \contentsline {section}{\numberline {1}Trade}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}\cite {Fernandesetal2023}}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Data}{3}{section.2}%
+\contentsline {section}{\numberline {2}Innovation}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\cite {Prato2022}}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Data}{3}{section.3}%
 \contentsline {section}{Bibliography}{4}{section*.2}%
