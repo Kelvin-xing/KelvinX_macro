@@ -4,45 +4,45 @@ The top-level auxiliary file: Reading_notes.aux
 The style file: apalike.bst
 Database file #1: Reading_notes.bib
 Warning--empty institution in Prato2022
-You've used 6 entries,
+You've used 9 entries,
             1935 wiz_defined-function locations,
-            512 strings with 4810 characters,
-and the built_in function-call counts, 2219 in all, are:
-= -- 210
-> -- 96
-< -- 5
-+ -- 38
-- -- 32
-* -- 184
-:= -- 407
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 47
-chr.to.int$ -- 6
-cite$ -- 7
-duplicate$ -- 82
-empty$ -- 143
-format.name$ -- 38
-if$ -- 423
+            529 strings with 5197 characters,
+and the built_in function-call counts, 3200 in all, are:
+= -- 305
+> -- 145
+< -- 9
++ -- 56
+- -- 48
+* -- 264
+:= -- 596
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 70
+chr.to.int$ -- 9
+cite$ -- 10
+duplicate$ -- 118
+empty$ -- 197
+format.name$ -- 59
+if$ -- 603
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 3
-newline$ -- 33
-num.names$ -- 18
-pop$ -- 38
+newline$ -- 48
+num.names$ -- 27
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 69
 quote$ -- 0
-skip$ -- 63
+skip$ -- 88
 stack$ -- 0
-substring$ -- 129
-swap$ -- 10
-text.length$ -- 3
+substring$ -- 167
+swap$ -- 13
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 54
 warning$ -- 1
-while$ -- 16
+while$ -- 22
 width$ -- 0
-write$ -- 79
+write$ -- 118
 (There was 1 warning)
