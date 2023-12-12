@@ -1,7 +1,7 @@
-% This is a simple template for a LaTeX document using the "article" class.
-% See "book", "report", "letter" for other types of document.
+%% !TEX TS-program = pdflatex
+%% !TEX encoding = UTF-8 Unicode
 
-\documentclass[10pt]{article} % use larger type; default would be 10pt
+\documentclass[12pt]{article} % use larger type; default would be 10pt
 
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
 
@@ -14,12 +14,13 @@
 \geometry{a4paper} % or letterpaper (US) or a5paper or....
 \usepackage{setspace}
 \usepackage{parskip}
-\parskip = 0.3 \baselineskip %\advance\parskip by 0pt plus 2pt% to change between paragraphs space
+\parskip=1\baselineskip %\advance\parskip by 0pt plus 2pt% to change between paragraphs space
 % \geometry{margin=2in} % for example, change the margins to 2 inches all round
 % \geometry{landscape} % set up the page for landscape
 %   read geometry.pdf for detailed page layout information
 
 % \usepackage{gravarphicx} % support the \includegravarphics command and options
+
 % \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
 %%% PACKAGES
@@ -36,8 +37,15 @@
 \usepackage{graphicx}
 \usepackage{filecontents}
 \usepackage{natbib}
-\usepackage{blindtext}
-\usepackage{titlesec}
+\usepackage{scrextend}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\usepackage{lscape}
+\usepackage{longtable}
+ \usepackage{booktabs}
+
+
 
 
 %%% HEADERS & FOOTERS
@@ -60,61 +68,35 @@
 
 \usepackage[colorlinks,citecolor=black,urlcolor=black,bookmarks=false,hypertexnames=true]{hyperref} 
 %%% END Article customizations
-
-
-
 %%% The "real" document content comes below...
 
-\title{Idea Notes}
-\author{Xing Mingjie}
+\title{ECON6096 Final Report\\
+\cite{Shimer2005}}
+\author{Xing Mingjie 3036029301}
 \date{\today} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
 \begin{document}
 \maketitle
+\section{Model Setup}
+    In the adapted model of \cite{Shimer2005}, the worker 
 
-% \tableofcontents
+\section{Algorithm}
+    \subsection{Discretization}
+    \subsection{Approximation}
 
-% \newpage
+\section{Quantitative Analysis}
+    \subsection{Calibration}
 
-\section{21 Nov 2023}
-\subsection{pharmaceutics as a focus of US-China innovation competition}
-    \begin{itemize}
-        \item fact:
-        \begin{itemize}
-            \item pharma is RD rich
-            \item pharma takes up a large amount of RD effort
-            \item pharma is the next frontier of US-China competition in National Security Commission on Emerging Biotechnology \url{https://www.biotech.senate.gov/}
-            \item \url{https://www.atlanticcouncil.org/blogs/econographics/the-us-is-relying-more-on-china-for-pharmaceuticals-and-vice-versa/}
-        \end{itemize}
-        \item data: FDA patent, biosimilar, generic
-    \end{itemize}
+    \subsection{Results at typical productivity value}
 
-\section{12 Dec 2023}
+    \subsection{Extended Exercise}
+    In this subsection, we 
 
-\subsection{Innovation crowding out}
-\begin{itemize}
-    \item fact:
-    \begin{itemize}
-        \item Nvidia to develop less efficient for commercial use and avoid military adaptation
-        \item Nvidia captures 90\% of China market
-        \item US government to lift export ban for this
-    \end{itemize}
-    \item thinking:
-    \begin{itemize}
-        \item what’s proxy for innovation? How to capture real term innovation
-        \item New product line may not mean a new innovation
-        \item Strike a balance between better performance and profit: endogenous ceiling of innovation capped by political rivalry.
-    \end{itemize}
-    \item mechanism: smaller market for innovation 
-\end{itemize}
+\newpage
+\footnotesize
+\bibliographystyle{apalike}
+\bibliography{Shimer2005}
 
-
-
-% \newpage
-
-% \footnotesize
-% \bibliographystyle{apalike}
-% \bibliography{Reading_notes}
 
 \end{document}

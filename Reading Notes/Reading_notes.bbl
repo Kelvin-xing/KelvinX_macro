@@ -6,15 +6,47 @@ Adão, R., Beraja, M., and Pandalai-Nayar, N. (2020).
   generations.
 \newblock Working Paper 26625, National Bureau of Economic Research.
 
+\bibitem[Aiginger and Rodrik, 2020]{AigingerRodrik2020}
+Aiginger, K. and Rodrik, D. (2020).
+\newblock Rebirth of industrial policy and an agenda for the twenty-first
+  century.
+\newblock {\em Journal of Industry, Competition and Trade}, 20:189--207.
+
+\bibitem[Aiyagari, 1994]{Aiyagari1994}
+Aiyagari, S.~R. (1994).
+\newblock Uninsured idiosyncratic risk and aggregate saving.
+\newblock {\em The Quarterly Journal of Economics}, 109(3):659--684.
+
 \bibitem[Akcigit et~al., 2018]{AkcigitAtesImpullitti2018}
 Akcigit, U., Ates, S.~T., and Impullitti, G. (2018).
 \newblock Innovation and trade policy in a globalized world.
 \newblock Working Paper 24543, National Bureau of Economic Research.
 
+\bibitem[Arellano et~al., 2019]{ArellanoBaiKehoe2019}
+Arellano, C., Bai, Y., and Kehoe, P.~J. (2019).
+\newblock Financial frictions and fluctuations in volatility.
+\newblock {\em Journal of Political Economy}, 127(5):2049--2103.
+
+\bibitem[Arellano et~al., 2012]{ArellanoBaiZhang2012}
+Arellano, C., Bai, Y., and Zhang, J. (2012).
+\newblock Firm dynamics and financial development.
+\newblock {\em Journal of Monetary Economics}, 59(6):533--549.
+
 \bibitem[Bai et~al., 2023]{BaiJinLu2023}
 Bai, Y., Jin, K., and Lu, D. (2023).
 \newblock Technological rivalry and optimal dynamic policy in an open economy.
 \newblock Working Paper 31703, National Bureau of Economic Research.
+
+\bibitem[Cooley and Quadrini, 2001]{CooleyQuadrini2001}
+Cooley, T.~F. and Quadrini, V. (2001).
+\newblock Financial markets and firm dynamics.
+\newblock {\em American Economic Review}, 91(5):1286--1310.
+
+\bibitem[Diao et~al., 2021]{DiaoElllisMcMillanRodrik2021}
+Diao, X., Ellis, M., McMillan, M.~S., and Rodrik, D. (2021).
+\newblock Africa's manufacturing puzzle: Evidence from tanzanian and ethiopian
+  firms.
+\newblock Working Paper 28344, National Bureau of Economic Research.
 
 \bibitem[Fernandes et~al., 2023]{Fernandesetal2023}
 Fernandes, A.~M., Klenow, P.~J., Meleshchuk, S., Pierola, M.~D., and
@@ -22,10 +54,38 @@ Fernandes, A.~M., Klenow, P.~J., Meleshchuk, S., Pierola, M.~D., and
 \newblock The intensive margin in trade: How big and how important?
 \newblock {\em American economic journal. Macroeconomics}, 15(3):320--354.
 
+\bibitem[Hopenhayn, 1992]{Hopenhayn1992}
+Hopenhayn, H.~A. (1992).
+\newblock Entry, exit, and firm dynamics in long run equilibrium.
+\newblock {\em Econometrica}, 60(5):1127--1150.
+
+\bibitem[Hornstein et~al., 2011]{HornsteinKrusellViolante2011}
+Hornstein, A., Krusell, P., and Violante, G.~L. (2011).
+\newblock Frictional wage dispersion in search models: A quantitative
+  assessment.
+\newblock {\em The American Economic Review}, 101(7):2873--2898.
+
 \bibitem[Juhász et~al., 2023]{JuhaszLaneRodrik2023}
 Juhász, R., Lane, N.~J., and Rodrik, D. (2023).
 \newblock The new economics of industrial policy.
 \newblock Working Paper 31538, National Bureau of Economic Research.
+
+\bibitem[Kochen, 2023]{Kochen2023}
+Kochen, F. (2023).
+\newblock Finance over the life cycle of firms.
+\newblock Job market paper, CEMFI.
+
+\bibitem[Krusell and Anthony A.~Smith, 1998]{KrusellSmith1998}
+Krusell, P. and Anthony A.~Smith, J. (1998).
+\newblock Income and wealth heterogeneity in the macroeconomy.
+\newblock {\em Journal of Political Economy}, 106(5):867--896.
+
+\bibitem[Laplane and Mazzucato, 2020]{LaplaneMazzucato2020}
+Laplane, A. and Mazzucato, M. (2020).
+\newblock Socializing the risks and rewards of public investments: Economic,
+  policy, and legal issues.
+\newblock {\em Research Policy}, 49:100008.
+\newblock Articles initially published in Research Policy: X issue 2.
 
 \bibitem[Liu and Ma, 2021]{LiuMa2023}
 Liu, E. and Ma, S. (2021).
@@ -38,11 +98,39 @@ Martin, J., Mejean, I., and Parenti, M. (2023).
   Uncertainty}.
 \newblock {\em The Review of Economics and Statistics}, pages 1--45.
 
+\bibitem[Mazzucato and Rodrik, 2023]{MazzucatoRodrik2023}
+Mazzucato, M. and Rodrik, D. (2023).
+\newblock Industrial policy with conditionalities: A taxonomy and sample cases.
+\newblock September 2023.
+
+\bibitem[McMillan et~al., 2017]{McMillanRodrikSepulveda2017}
+McMillan, M., Rodrik, D., and Sepulveda, C. (2017).
+\newblock Structural change, fundamentals and growth: A framework and case
+  studies.
+\newblock Working Paper 23378, National Bureau of Economic Research.
+
+\bibitem[Mortensen and Pissarides, 1994]{MortensenPissarides1994}
+Mortensen, D.~T. and Pissarides, C.~A. (1994).
+\newblock Job creation and job destruction in the theory of unemployment.
+\newblock {\em The Review of Economic Studies}, 61(3):397--415.
+
 \bibitem[Prato, 2022]{Prato2022}
 Prato, M. (2022).
 \newblock The global race for talent: Brain drain, knowledge transfer, and
   growth.
 \newblock Ssrn working paper.
+
+\bibitem[Rodrik, 2016]{Rodrik2016}
+Rodrik, D. (2016).
+\newblock An african growth miracle?
+\newblock {\em Journal of African Economies Advance Access}.
+\newblock Revised version of the paper written for the Center for Global
+  Development, Richard H. Sabot Lecture, on April 24, 2014.
+
+\bibitem[Rodrik, 2018]{Rodrik2018}
+Rodrik, D. (2018).
+\newblock What do trade agreements really do?
+\newblock {\em Journal of Economic Perspectives}, 23(2):73--90.
 
 \bibitem[Shimer, 2005]{Shimer2005}
 Shimer, R. (2005).
