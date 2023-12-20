@@ -38,11 +38,12 @@
 \usepackage{natbib}
 \usepackage{blindtext}
 \usepackage{titlesec}
+\usepackage[table,xcdraw]{xcolor}
 
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
-\pagestyle{fancy} % options: empty , plain , fancy
+\pagestyle{plain} % options: empty , plain , fancy
 \renewcommand{\headrulewidth}{0pt} % customise the layout...
 \lhead{}\chead{}\rhead{}
 \lfoot{}\cfoot{\thepage}\rfoot{}
@@ -84,6 +85,31 @@
     
     \subsection{\cite{MartinMejeanParenti2023}}
 
+    \subsection{\cite{DemidovaRodriguezClare2009}}
+    \begin{itemize}
+        \item Welfare: productivity, terms of trade, variety, curvature (heteorogenity across varieties)
+        \item consumption subsidy, export tax, import tariff allows small economy to deal with two distortions and reach first-best allocation
+        \item export subsidy generates increase in productivity, but negative on other three, decrease welfare
+        \item import tariff improves small economy's welfare
+    \end{itemize}
+
+    \subsection{\cite{Demidova2017}}
+    \begin{itemize}
+        \item Monopolistic competition with heterogenous firms, endogenous wages, non-separable, non-homothetic quadratic preferences generating variable markups
+        \item optimal level of the revenue generating import tariff is strictly positive
+        \item reductions in cost-shifting trade barriers are welfare-improving
+        \item in both cases, variable markups result in negative pro-competitive effects, reducing gains from trade
+    \end{itemize}
+
+    \subsection{\cite{CostinotRodriguezClareIvan2020}}
+    \begin{itemize}
+        \item Large firms tend to export
+        \item country maximizing domestic welfare, self-selection of heterogenous firms into exports calls for import subsidies on the least profitable foreign firms
+        \item there is no rationale for export subsidies or taxes on the least profitable domestic firms
+    \end{itemize}
+
+    \subsection{\cite{AtkesonBurstein2008}}
+
 \section{Industrial Policy}
     \subsection{\cite{JuhaszLaneRodrik2023}}
 
@@ -98,6 +124,73 @@
             \end{itemize}
         \item Embeddedness, autonomy and the development state matrix
     \end{itemize}
+    % \begin{table}[]
+    %     \begin{tabular}{llllll}
+    %     \hline
+    %     \cellcolor[HTML]{FFFFFF}Case study &
+    %       \cellcolor[HTML]{FFFFFF}Time period &
+    %       \cellcolor[HTML]{FFFFFF}Policy domain &
+    %       \cellcolor[HTML]{FFFFFF}Policy objectives &
+    %       Nature of government incentives &
+    %       Actors involved \\ \hline
+    %     \cellcolor[HTML]{FFFFFF}KfW Energy Efficient Refurbishment and   Construction Programs (Germany) &
+    %       \cellcolor[HTML]{FFFFFF}2009-20211 &
+    %       \cellcolor[HTML]{FFFFFF}Environment, construction &
+    %       \cellcolor[HTML]{FFFFFF}Support energy- efficient new constructions and improve the energy   efficiency of existing buildings &
+    %       Public Bank concessional loans, progressive debt relief, grants &
+    %       Government, Public Bank, private companies, homeowners, municipalities,   municipally- owned companies, independent expert verifiers \\
+    %     \cellcolor[HTML]{FFFFFF}Israel High-Tech R\&D Investment   Incentives (Israel) &
+    %       \cellcolor[HTML]{FFFFFF}1980-Present &
+    %       \cellcolor[HTML]{FFFFFF}Technology- innovation &
+    %       \cellcolor[HTML]{FFFFFF}Support for research and product development in the technology sector &
+    %       R\&D grants &
+    %       Government, local government, private companies, local universities \\
+    %     \cellcolor[HTML]{FFFFFF}ScotWind (Scotland, UK) &
+    %       \cellcolor[HTML]{FFFFFF}2021-Present &
+    %       \cellcolor[HTML]{FFFFFF}Renewable energy &
+    %       \cellcolor[HTML]{FFFFFF}Support the development of offshore wind industry in Scotland &
+    %       Lease agreements, public bank loans &
+    %       Government, local government, public banks, private companies, local   communities, state- created business development corporation \\
+    %     \cellcolor[HTML]{FFFFFF}Oxford/ AstraZeneca (UK) &
+    %       \cellcolor[HTML]{FFFFFF}2010-2018: R\&D technology support 2020 - 2021: pandemic response &
+    %       \cellcolor[HTML]{FFFFFF}Public health (vaccine development) &
+    %       \cellcolor[HTML]{FFFFFF}Create a vaccine response to COVID-19 for the UK &
+    %       Grants, purchase guarantee &
+    %       Government, universities, private companies \\
+    %     \cellcolor[HTML]{FFFFFF}Italy's Law 488/92 Regional Investment   Subsidies (Italy) &
+    %       \cellcolor[HTML]{FFFFFF}1996-2007 &
+    %       \cellcolor[HTML]{FFFFFF}Manufacturing, tourism, transportation &
+    %       \cellcolor[HTML]{FFFFFF}Stimulate economic growth and job creation in lagging regions &
+    %       Subsidies &
+    %       Government, regional government, private companies, local communities \\
+    %     UK Regional Selective Assistance (UK) &
+    %       1997-2020 &
+    %       Manufacturing &
+    %       Create and safeguard employment in areas with low economic growth &
+    %       Discretionary grants &
+    %       Government, regional government, private companies, local communities \\
+    %     South Korean HIC Incentive (South Korea) &
+    %       1970s &
+    %       Structural transformation / export promotion (heavy industries) &
+    %       Export promotion in six strategic sectors: steel, nonferrous metals,   shipbuilding, machinery, electronics, and petrochemicals &
+    %       Subsidies, low- interest loans, export credit, tax exemption,   depreciation allowances, wastage allowances, tariff exemptions, and   concessional credits &
+    %       Government, private companies, public banks, commercial banks, trade   promotion corporation \\
+    %     ARPA-E (USA) &
+    %       2007-Present &
+    %       Technology, innovation, energy &
+    %       Support lab-to-market research in new technologies for the energy sector &
+    %       Grants, contracts, cash prizes and other transactions &
+    %       Government, private companies, independent advisors, universities,   national laboratories \\
+    %     U.S. CHIPS Act (USA) &
+    %       2022-Present &
+    %       Manufacturing (semi-conductor industry) &
+    %       Support domestic investments on advanced manufacturing, with a focus on   semi- conductors &
+    %       Grants, concessional loans, tax credits &
+    %       Government, private companies, public banks, local consortia, research   institutes
+    %     \end{tabular}
+    %     \caption{Summary of case studies}
+    %     \label{tab:my-table}
+    %     \end{table}
 
     \subsection{\cite{Rodrik2018}}
 
@@ -107,8 +200,24 @@
     \end{itemize}
 
     \subsection{\cite{McMillanRodrikSepulveda2017}}
+    \begin{itemize}
+        \item Two theories explaining growth: 1) \textbf{dual-economy.} draws distinction between agriculture as traditional and industry as modern sectors of economy. Different economic logics are at work within so cannot be lumped together. Accumulation innovation and productivity growth take place in the modern sector, the traditional sector remains technologically backward and stagnant. Labor and other resources migration rate to modern sector decides growth rate. Lewis 1954, Ranis and Fei 1961.\\
+        2) \textbf{neoclassical growth model}. presumes different economic activity are structurally similar enough to aggregate into a representative sector. growth depends on the incentives to save, accumulate physical and human capital, and innovate by developing new products and processes. Solow 1956, Grossman and Helpman 1991, Aghion and Howitt 1992.
+        \item two challenge: structural transformation and fundamentals. \textbf{Former}, ensure resources flow rapidly to high productivity. \textbf{Latter}, on broad and long-run growth two driving forces: quality of institutions(governance, law, biz environment) or the level of human capital(education, skills, training). Acemoglu Johnson Robinson 2001, Glaeser et al 2004.
+        \item Results
+        \begin{itemize}
+            \item Brazil and Botswana: structural change important in launching into middle-income but tiny role thereafter
+            \item Vietnam and Ghana: structural change significant contribution
+            \item India, Nigeria Zambia: structural change different way. less rapid decline in the employment share of low-productivity agriculture, exacerbated by the lack of labor-intensive manufacturing for export.
+        \end{itemize}
+        \item Typology of growth patterns: structural transformation $\times$ Investment in fundamentals
+        \item total labor productivity:\(P_t = \sum\limits_{i=1}^{n}\theta_{i,t}P_{i,t}\). \\ Change in total labor productivity \(\Delta P_t = \sum\limits_{i=1}^{n}\theta_{i,t-k}\Delta P_{i,t} + \sum\limits_{i=1}^{n}\Delta P_{i,t-k} + \sum\limits_{i=1}^{n}\Delta\theta_{i,t}\Delta P_{i,t}\)
+        \item productivity change as sum of with-in sector change and structural change \[\Delta P_t = \sum\limits_{i=1}^{n}\theta_{i,t-k}\Delta P_{i,t} + \sum\limits_{i=1}^{n}P_{i,t}\Delta \theta_{i,t}\]
+    \end{itemize}
 
 \section{Innovation}
+    \subsection{\cite{AghionHarrisHowittVickers2001}}
+    
     \subsection{\cite{Prato2022}}
     \begin{itemize}
         \item Meeting rate
@@ -119,11 +228,42 @@
 
     \subsection{\cite{LiuMa2023}}
 
+    \subsection{\cite{KoganPapanikolaouSeruStoffman2017}}
+    \begin{itemize}
+        \item Technological innovation accounts for significant medium-run fluctuations in aggregate economic growth adn TFP.
+        \item patent-level estimates of private economic value are positively related to the scientific value of these patents
+        \item Extended data: \url{https://github.com/KPSS2017/Technological-Innovation-Resource-Allocation-and-Growth-Extended-Data}
+    \end{itemize}
+
+    \subsection{\cite{AghionBloomBlundellGriffithHowitt2005}}
+    \begin{itemize}
+        \item Competition discourages laggard firms from innovating and encourages neck-and-neck firms. This generates and inverted-U, together with competition on equilibrium industry structure
+        \item average tech distance  btw leaders and followers increases with competition
+        \item the inverted-U is steeper when industries are more neck-and-neck
+    \end{itemize}
+
+    \subsection{\cite{KoenigLorenzZilibotti2016}}
+    \begin{itemize}
+        \item Firms endogenously choose between in-house R\&D and imitation other firm's tech subject to limits of absorptive capacities to improve productivity based on profit maximization motive
+        \item closer to technological frontier face fewer imitation opportunities, more in-house
+        \item BGE features persistent productivity differences even when starting from identical firms
+    \end{itemize}
+
+
+
+
 \section{Search and Unemployment}
     \subsection{\cite{MortensenPissarides1994}}
     \subsection{\cite{Shimer2005}}
 
     \subsection{\cite{HornsteinKrusellViolante2011}}
+
+    \subsection{\cite{LenoirMartinMejean2022}}
+    \begin{itemize}
+        \item Search friction of new customers distort the allocation activities across heterogeneous producers in a Ricardian model of trade.
+        \item Markets with high estimated frictions display less dispersion in sales btw high and low productivity firms
+        \item Increase in the level of search frictions pushes out the least productive exporters while increases export sales at the top of the productivity distribution
+    \end{itemize}
 
 \section{Heterogenous Agents}
     \subsection{\cite{Aiyagari1994}}
@@ -142,6 +282,14 @@
         \item the combination of persistent shocks and financial frictions can account for the simultaneous dependence of firm dynamics on size (once we control for age) and on age (once we control for size).
     \end{itemize}
 
+    \subsection{\cite{Jovanovic1982}}
+    \begin{itemize}
+        \item This is the seminal paper to incorporate uncertainty and learning into entrepreneurship and firm dynamics.
+    \end{itemize}
+
+    \subsection{\cite{KletteKortum2004}}
+
+    \subsection{\cite{Melitz2003}}
 \section{Uncertainty}
     \subsection{\cite{ArellanoBaiKehoe2019}}
 \section{Empirical}
@@ -173,11 +321,32 @@
         \item should there be a miracle, it should be agriculture or service led than traditional ones.
     \end{itemize}
 
+    \subsection{\cite{AghionAkcigitHyytinenToivanen2018}}
+    \begin{itemize}
+        \item inventor collect 8\% of total private return
+        \item entrepreneurs get over 44\%
+        \item blue-collar get 26\%
+        \item the rest goes to white-collar workers
+        \item entrepreneurs have negative returns prior to patent application but subsequently become highly positive
+        \item Finland data
+    \end{itemize}
+
+     \subsection{\cite{Akcigitetal2018}}
+    \begin{itemize}
+        \item Higher taxes negatively impact the quantity and the location of innovation, but not average innovation quality.
+        \item state-level elasticities to taxes are large and consistent with the aggregation of the individual level responses of innovation produced and cross-state mobility
+        \item corporate taxes have special effect on corporate inventor's innovation production and mobility
+        \item personal income tax affects quantity of innovation and mobility of inventors.
+        \item panel of patent inventors since 1920
+        \item historical state-level corporate tax database with corp tax rates and tax base information
+        \item existing: state-level personal income taxes
+    \end{itemize}
+
 \newpage
 \section{Data}
     \subsection{Macro}
         \begin{itemize}
-            \item 
+            \item Groningen Growth and Development Centre: indicators of growth and development \url{https://www.rug.nl/ggdc/}
         \end{itemize}
 
     \subsection{Medical}
@@ -214,6 +383,11 @@
             \item GGDC 10 Sector database
             \item expanded africa sector database
             \item UNIDO's Indstat2
+        \end{itemize}
+    
+    \subsection{Transport}
+        \begin{itemize}
+            \item TUD19: multi-city traffic dataset \url{https://utd19.ethz.ch/}; \url{https://github.com/ambuehll/UTD19}
         \end{itemize}
 
 

@@ -1,4 +1,4 @@
-%%%%%% This solves with slight change of Shimer 2005 AER
+%%%%%% This solves an adapted version of Shimer 2005 AER
 
 %% Initialize
 clear;
@@ -21,21 +21,19 @@ beta_ = 0.72;                       % Bargaining power
 c = 0.213;                          % Cost of vacancy
 
 % AR(1) process and transition matrix
-mu_logp = 1;                        % Labor productivity
+mu_logp = 0;                        % Labor productivity
 sigma_logp = 0.05;
 rho = 0.8;                          % Persistence
 mu_epsilon = 0;                     % Stochastic term of labor productivity
 sigma_epsilon = 0.03;
-n = 25;                            % Grid size of productivity
+n = 5;                              % Grid size of productivity
 [grid_logp, P] = discretizeAR1_Tauchen(0,rho,sigma_epsilon,n,3);
-% [grid_logp, P] = discretizeAR1_TauchenHussey(0.1,rho,sigma_epsilon,n);
-% grid_logp = sort(grid_logp);
 p = exp(grid_logp);                 % p's grid
 
 %% 1) Discretization method 
 % Initialize
 [U_d, W_d, J_d] = deal(ones(max_iter,n)*tol);           %Value function
-[fstar_d, qstar_d, thetastar_d, wstar_d, ustar_d] = deal(ones(n,1)); % Optimal control
+[fstar_d, qstar_d, thetastar_d, wstar_d, ustar_d, vstar_d] = deal(ones(n,1)); % Optimal control
 [f, q, theta, w] = deal(ones(n,1));                 % Working control
 [diffU, diffW, diffJ] = deal(ones(n,1));                % Convergence check
 
@@ -43,17 +41,17 @@ for I = 1:max_iter
     % iterate over productivity grids
     for i = 1:n
         % Working maximized control
-        q(i) = c / (delta_ * expec(J_d,P,I,i));
+        q(i) = c / (delta_ * J_d(I,:)*P(i,:)');
         f(i) = m^(1/alpha) * q(i)^(1 - 1/alpha);
         theta(i) = f(i)/q(i);
         w(i) = beta_ * p(i) + (1-beta_) * z + beta_ * c * theta(i);
        
         % Value function iteration
-        U_d(I+1,i) = z + delta_ * (f(i) * expec(W_d,P,I,i) + ...
-                            (1-f(i)) * expec(U_d,P,I,i));
-        W_d(I+1,i) = w(i) + delta_ * ((1-s) * expec(W_d,P,I,i) + ...
-                                s * expec(U_d,P,I,i));
-        J_d(I+1,i) = p(i) - w(i) + delta_ * (1-s) * expec(J_d,P,I,i);
+        U_d(I+1,i) = z + delta_ * (f(i) * W_d(I,:)*P(i,:)' + ...
+                            (1-f(i)) * U_d(I,:)*P(i,:)');
+        W_d(I+1,i) = w(i) + delta_ * ((1-s) * W_d(I,:)*P(i,:)' + ...
+                                s * U_d(I,:)*P(i,:)');
+        J_d(I+1,i) = p(i) - w(i) + delta_ * (1-s) * J_d(I,:)*P(i,:)';
 
         % Convergence
         diffU(i) = abs(U_d(I+1,i) - U_d(I,i));
@@ -76,14 +74,33 @@ if I == max_iter
 else
     % For the converged value function, derive the optimal control given p
     for i = 1:n
-        qstar_d(i) = c / (delta_ * expec(J_d,P,I+1,i));
+        qstar_d(i) = c / (delta_ * J_d(I+1,:)*P(i,:)');
         thetastar_d(i) = (qstar_d(i) / m)^(-1/alpha);
         fstar_d(i) = m^(1/alpha) * qstar_d(i)^(1 - 1/alpha);
         wstar_d(i) = beta_ * p(i) + (1-beta_) * z + beta_ * c * thetastar_d(i);
-        ustar_d(i) = delta_ / (delta_ + fstar_d(i));
+        ustar_d(i) = s / (s + fstar_d(i));
+        vstar_d(i) = ustar_d(i) * thetastar_d(i);
     end
 end
 
+% Plot Value Function
+figure
+hold on
+plot(p,U_d(I+1,:));
+plot(p,W_d(I+1,:));
+xlabel("Productivity");
+legend("Unemployment value", "Employment value", 'Location','northwest');
+title('Value Function by Discretization U&W');
+hold off
+saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueUWDiscretization.jpg");
+
+figure
+plot(p,J_d(I+1,:));
+legend("Hiring value", 'Location','northwest');
+title('Value Function by Discretization J');
+saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueJDiscretization.jpg");
+
+% Plot Optimal Control
 figure
 hold on
 plot(p,fstar_d);
@@ -93,64 +110,67 @@ xlabel("Productivity");
 legend("Job finding rate", "Wage", "Unemployment rate");
 title('Job Finding Rate, Wage and Unemployment Rate on Productivity by Discretization');
 hold off
-saveas(gcf,"Discretization.jpg");
+saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ControlDiscretization.jpg");
+
 
 %% 2) Parametric Approximation
 % Initialize
-[U_a, W_a, J_a] = deal(ones(max_iter,n)*tol);
+[U_coef_old, W_coef_old] = deal(ones(1,n)*70);     
+J_coef_old = ones(1,n)*tol;                         % Initial guess of value function coefficients
+[U_a_old, W_a_old, J_a_old] = deal(ones(1,n));      % Working value function
+[U_a_new, W_a_new, J_a_new] = deal(ones(1,n));      % Working value function
 [fstar_a, qstar_a, thetastar_a, wstar_a, ustar_a] = deal(ones(n,1)); % Optimal control
 [f, q, theta, w] = deal(ones(n,1));                 % Working control
-[diffU, diffW, diffJ] = deal(ones(n,1));            % Convergence check
-
-% We try Hermite Interpolation with pchip
-ppU_old = pchip(p, U_a(1,:));
-ppW_old = pchip(p, W_a(1,:));
-ppJ_old = pchip(p, J_a(1,:));
+% We do a simple Lagrange Interpolation of the value functions
+F_hat = @(p,coef) coef(1) + p * (coef(2) + p * (coef(3) + p * (coef(4) + p * coef(5))));
 
 for I = 1:max_iter
-    U_old = ppval(ppU_old,p);
-    W_old = ppval(ppW_old,p);
-    J_old = ppval(ppJ_old,p);
-    % coefs_old = [ppU_old.coefs, ppW_old.coefs, ppJ_old.coefs];
+    % Initial guess
+    for i = 1:n
+        % Working value function
+        U_a_old(i) = F_hat(p(i),U_coef_old);
+        W_a_old(i) = F_hat(p(i),W_coef_old);
+        J_a_old(i) = F_hat(p(i),J_coef_old);
+    end
     % Maximization
     for i = 1:n
         % Working maximized control
-        q(i) = c / (delta_ * expec(J_a,P,I,i));
+        q(i) = c / (delta_ * J_a_old*P(i,:)');
         f(i) = m^(1/alpha) * q(i)^(1 - 1/alpha);
         theta(i) = f(i)/q(i);
         w(i) = beta_ * p(i) + (1-beta_) * z + beta_ * c * theta(i);
        
         % Value function iteration
-        U_a(I+1,i) = z + delta_ * (f(i) * expec(W_a,P,I,i) + ...
-                            (1-f(i)) * expec(U_a,P,I,i));
-        W_a(I+1,i) = w(i) + delta_ * ((1-s) * expec(W_a,P,I,i) + ...
-                                s * expec(U_a,P,I,i));
-        J_a(I+1,i) = p(i) - w(i) + delta_ * (1-s) * expec(J_a,P,I,i);
-        
-        % % Convergence
-        % diffU(i) = abs(U_d(I+1,i) - U_d(I,i));
-        % diffW(i) = abs(W_d(I+1,i) - W_d(I,i));
-        % diffJ(i) = abs(J_d(I+1,i) - J_d(I,i));
+        U_a_new(i) = z + delta_ * (f(i) * W_a_old*P(i,:)' + ...
+                            (1-f(i)) * U_a_old*P(i,:)');
+        W_a_new(i) = w(i) + delta_ * ((1-s) * W_a_old*P(i,:)' + ...
+                                s * U_a_old*P(i,:)');
+        J_a_new(i) = p(i) - w(i) + delta_ * (1-s) * J_a_old*P(i,:)';
     end
-    % Fit new parameter
-    ppU_new = pchip(p, U_a(I+1,:));
-    ppW_new = pchip(p, W_a(I+1,:));
-    ppJ_new = pchip(p, J_a(I+1,:));
-    
-    % Convergence
-    U_new = ppval(ppU_new,p);
-    W_new = ppval(ppW_new,p);
-    J_new = ppval(ppJ_new,p);
-    diffU = norm(U_new - U_old);
-    diffW = norm(W_new - W_old);
-    diffJ = norm(J_new - J_old);
+
+    % Fitting
+    U_coef_new = fminsearch(@(coef) err(coef, U_a_new, p), U_coef_old);
+    W_coef_new = fminsearch(@(coef) err(coef, W_a_new, p), W_coef_old);
+    J_coef_new = fminsearch(@(coef) err(coef, J_a_new, p), J_coef_old);
+
+    % Convergence check
+    for i = 1:n
+        % Approximation with new coefficients
+        U_a_new(i) = F_hat(p(i),U_coef_new);
+        W_a_new(i) = F_hat(p(i),W_coef_new);
+        J_a_new(i) = F_hat(p(i),J_coef_new);
+    end
+    % errors
+    diffU = norm(U_a_new - U_a_old);
+    diffW = norm(W_a_new - W_a_old);
+    diffJ = norm(J_a_new - J_a_old);
     diff_a = max([diffU,diffW,diffJ]);
     if diff_a <= tol
         break;
     else
-        ppU_old = ppU_new;
-        ppW_old = ppW_new;
-        ppJ_old = ppJ_new;
+        U_coef_old = U_coef_new;
+        W_coef_old = W_coef_new;
+        J_coef_old = J_coef_new;
     end
 end
 
@@ -158,22 +178,39 @@ if I == max_iter
     error('NotConverge');
 else
     % For the converged value function, derive the optimal control given p
-    coefs = [ppU_new.coefs, ppW_new.coefs, ppJ_new.coefs];
     for i = 1:n
-        qstar_a(i) = c / (delta_ * expec(J_a,P,I+1,i));
+        qstar_a(i) = c / (delta_ * J_a_new*P(i,:)');
         thetastar_a(i) = (qstar_a(i) / m)^(-1/alpha);
         fstar_a(i) = m^(1/alpha) * qstar_a(i)^(1 - 1/alpha);
         wstar_a(i) = beta_ * p(i) + (1-beta_) * z + beta_ * c * thetastar_a(i);
-        ustar_a(i) = delta_ / (delta_ + fstar_a(i));
+        ustar_a(i) = s / (s + fstar_a(i));
     end
 end
-
-Coefs = array2table(coefs,"VariableNames",{ ...
-    'aU','bU','cU','dU', ...
-    'aW','bW','cW','dW', ...
-    'aJ','bJ','cJ','dJ'});
+% Show coefficients
+coefs = array2table([U_coef_new' W_coef_new' J_coef_new'], ...
+    "VariableNames",{'U', 'W','J'}, ...
+    "RowNames",{'e'; 'd'; 'c'; 'b'; 'a'});
 fprintf("For the approximation method, the coeffecients for U, W and J are given by:\n");
-disp(Coefs);
+disp(coefs);
+
+% Plot Value Function
+figure
+hold on
+plot(p,U_a_new);
+plot(p,W_a_new);
+xlabel("Productivity");
+legend("Unemployment value", "Employment value", 'Location','northwest');
+title('Value Function by Discretization U&W');
+hold off
+saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueUWApproximation.jpg");
+
+figure
+plot(p,J_a_new);
+legend("Hiring value", 'Location','northwest');
+title('Value Function by Discretization J');
+saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueJApproximation.jpg");
+
+% Plot Optimal Control
 figure
 hold on
 plot(p,fstar_a);
@@ -183,28 +220,38 @@ xlabel("Productivity");
 legend("Job finding rate", "Wage", "Unemployment rate");
 title('Job Finding Rate, Wage and Unemployment Rate on Productivity by Approximation');
 hold off
-saveas(gcf,"Approximation.jpg");
+saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ControlApproximation.jpg");
 
 
 %% Q(b)
-logp_e = [0.4 0.7 1 1.3 1.6]-1;
+logp_e = [-0.10 -0.05 0 0.05 0.10];
 p_e = exp(logp_e);                             % Productivity to evaluate
-q_e = pchip(p,qstar_a,p_e);
+q_e = spline(p,qstar_d,p_e);
 f_e = m^(1/alpha) * q_e.^(1 - 1/alpha);
 w_e = beta_ * p_e + (1-beta_) * z + beta_ * c * f_e ./ q_e;
-u_e = delta_ ./ (delta_ + f_e);
-Table_b = array2table([logp_e' p_e' w_e' u_e' f_e'], ...
-    'VariableNames',{'logp','p','Wage','Unemployment', 'Job Arriving'});
+u_e = s ./ (s + f_e);
+Table_b = array2table([logp_e' w_e' u_e' f_e'], ...
+    'VariableNames',{'logp','Wage','Unemployment', 'Job Arriving'});
 fprintf("The corresponding data are:\n");
 disp(Table_b);
 
 %% Q(c)
+% Standard deviation
 sd_p = std(p);
 sd_u_d = std(ustar_d);
 sd_f_d = std(fstar_d);
 sd_u_a = std(ustar_a);
 sd_f_a = std(fstar_a);
-Table_c = array2table([sd_p,sd_u_d,sd_f_d,sd_u_a,sd_f_a], ...
+
+% Correlation Matrix
+variables = [ustar_d,vstar_d,fstar_d,p];
+corrmain = corrcoef(variables);
+corrmatrix = array2table(corrmain,'RowNames',{'u','v','f','p'}, ...
+                          'VariableNames',{'u','v','f','p'});
+% Table display
+Table_cmain = array2table([sd_p,sd_u_d,sd_f_d,sd_u_a,sd_f_a], ...
     "VariableNames",{'P','Discre std. of Unemploy', 'Discre std. of Job finding','Approxi std. of Unemploy','Approxi std. of Job finding'});
-fprintf("The approximation model gives standard deviation\n");
-disp(Table_c)
+fprintf("The model gives standard deviation\n");
+disp(Table_cmain)
+fprintf("The correlation matrix reads:\n");
+disp(corrmatrix)

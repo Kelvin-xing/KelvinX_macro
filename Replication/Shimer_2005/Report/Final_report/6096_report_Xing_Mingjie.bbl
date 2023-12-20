@@ -1,8 +1,20 @@
 \begin{thebibliography}{}
 
+\bibitem[Kirkby, 2023]{Kirkby2023}
+Kirkby, R. (2023).
+\newblock Value function iteration (vfi) toolkit for matlab.
+\newblock \url{https://github.com/vfitoolkit/VFIToolkit-matlab}.
+\newblock Github.
+
 \bibitem[Shimer, 2005]{Shimer2005}
 Shimer, R. (2005).
 \newblock The cyclical behavior of equilibrium unemployment and vacancies.
 \newblock {\em American Economic Review}, 95(1):25--49.
+
+\bibitem[Tauchen, 1986]{Tauchen1986}
+Tauchen, G. (1986).
+\newblock Finite state markov-chain approximations to univariate and vector
+  autoregressions.
+\newblock {\em Economics Letters}, 20(2):177--181.
 
 \end{thebibliography}

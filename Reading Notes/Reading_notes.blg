@@ -6,45 +6,45 @@ Database file #1: Reading_notes.bib
 Warning--entry type for "MazzucatoRodrik2023" isn't style-file defined
 --line 223 of file Reading_notes.bib
 Warning--empty institution in Prato2022
-You've used 25 entries,
+You've used 39 entries,
             1935 wiz_defined-function locations,
-            648 strings with 8072 characters,
-and the built_in function-call counts, 9117 in all, are:
-= -- 900
-> -- 353
-< -- 22
-+ -- 124
-- -- 114
-* -- 773
-:= -- 1644
-add.period$ -- 77
-call.type$ -- 25
-change.case$ -- 184
-chr.to.int$ -- 25
-cite$ -- 26
-duplicate$ -- 330
-empty$ -- 619
-format.name$ -- 153
-if$ -- 1747
-int.to.chr$ -- 1
+            739 strings with 10536 characters,
+and the built_in function-call counts, 14907 in all, are:
+= -- 1463
+> -- 587
+< -- 29
++ -- 205
+- -- 192
+* -- 1308
+:= -- 2651
+add.period$ -- 119
+call.type$ -- 39
+change.case$ -- 293
+chr.to.int$ -- 38
+cite$ -- 40
+duplicate$ -- 524
+empty$ -- 1033
+format.name$ -- 251
+if$ -- 2876
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 130
-num.names$ -- 75
-pop$ -- 130
+missing$ -- 28
+newline$ -- 200
+num.names$ -- 117
+pop$ -- 206
 preamble$ -- 1
-purify$ -- 182
+purify$ -- 291
 quote$ -- 0
-skip$ -- 251
+skip$ -- 394
 stack$ -- 0
-substring$ -- 631
-swap$ -- 27
-text.length$ -- 8
+substring$ -- 1110
+swap$ -- 41
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 234
 warning$ -- 1
-while$ -- 71
+while$ -- 115
 width$ -- 0
-write$ -- 328
+write$ -- 510
 (There were 2 warnings)
