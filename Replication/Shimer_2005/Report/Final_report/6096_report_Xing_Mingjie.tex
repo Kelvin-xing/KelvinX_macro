@@ -124,7 +124,7 @@
     \[u f(\theta_p) = s(1-u)\]
     
     \subsection{Equilibrium}
-    Market tightness \(\theta_p\) is given by solving the following equation of hire rate from free entry condition 
+    Market tightness \(\theta_p\) is pinned down by solving the following equation of hire rate from free entry condition 
     \begin{equation}\label{HireRate}
     q(\theta_p) = \frac{c}{\delta \mathbb{E}_p J_{p^\prime}}\end{equation}
     Employ Rate is given by \begin{equation}\label{EmployRate}
@@ -151,8 +151,8 @@
 \section{Algorithm}
     \subsection{Tauchen method}
     \cite{Tauchen1986} provides a reliable method to simulate the conditional expectations \(\mathbb{E}_p J_{p^\prime}, \\ \mathbb{E}_p U_{p^\prime}, \mathbb{E}_p W_{p^\prime}\) in the value functions. For AR(1) process \ref{productivityprocess}, taking $F$ as representative value function, instead of computing the integral \(\mathbb{E}[F(p^\prime|p)] = \int_{-\infty}^{\infty}F(p^\prime)f(p^\prime|p)dp^\prime\), we can take a finite set \(\Lambda_{logp} = \{logp_1, \ldots, logp_n\}\) and derive a probability transition matrix where \(p_{i,j}=\textbf{Prob} (\tilde{p^\prime} = p_j | \tilde{p} = p_i)\) based on the distribution of stochastic part of the process, so that the conditional expectation can be solved numerically with formula \[\mathbb{E}[F(p^\prime|p)] =\sum\limits_{j=1}^{n}p_{i,j}F(p^\prime).\]
-    We know that $logp^\prime$ is normally distributed with mean 0 and std. $\sigma_\varepsilon$, we choose the finite set $\Lambda_{logp}$ to be evenly-spaced along the real line, the upper and lower bound of the set to be \(\mu_{logp} \pm m\sigma_{logp}\) where \(\sigma_{logp} = \sigma_\varepsilon/\sqrt{1-\rho^2}\). Let \(\omega = {logp}_j - {logp}_{j-1}\), set the transition matrix to be
-    \[p_{i j}= \begin{cases}\Phi\left(\frac{logp_1+w / 2}{\sigma_{\varepsilon}}\right) & \text { for } j=1 \\ \Phi\left(\frac{logp_j+w / 2}{\sigma_{\varepsilon}}\right)-\Phi\left(\frac{logp_j-w / 2}{\sigma_{\varepsilon}}\right) & \text { for } 1<j<n \\ 1-\Phi\left(\frac{logp_n-w / 2}{\sigma_{\varepsilon}}\right) & \text { for } j=n\end{cases}\] where $\Phi(\cdot)$ is the CDF of normal distribution.
+    We know that $logp^\prime$ is normally distributed with mean 0 and standard deviation $\sigma_\varepsilon$, we choose the finite set $\Lambda_{logp}$ to be evenly-spaced along the real line, the upper and lower bound of the set to be \(\mu_{logp} \pm m\sigma_{logp}\) where \(\sigma_{logp} = \sigma_\varepsilon/\sqrt{1-\rho^2}\). Let \(\omega_j = {logp}_j - {logp}_{j-1}\), set the transition matrix to be
+    \[p_{i j}= \begin{cases}\Phi\left(\frac{logp_1+\omega_j / 2}{\sigma_{\varepsilon}}\right) & \text { for } j=1 \\ \Phi\left(\frac{logp_j+\omega_j / 2}{\sigma_{\varepsilon}}\right)-\Phi\left(\frac{logp_j-\omega_j / 2}{\sigma_{\varepsilon}}\right) & \text { for } 1<j<n \\ 1-\Phi\left(\frac{logp_n-\omega_j / 2}{\sigma_{\varepsilon}}\right) & \text { for } j=n\end{cases}\] where $\Phi(\cdot)$ is the CDF of normal distribution.
     The grid is set to $p$ with simple transformation $\Lambda_p = \exp{(\Lambda_{logp})}$.
     \newline
     We directly apply \texttt{discretizeAR1\_Tauchen} function from the Matlab Toolbox of \cite{Kirkby2023} to realize the above mentioned Tauchen method.
@@ -184,10 +184,10 @@
                     W^{(1)}_{p_i} = w_{p_i} + \delta\{(1-s)\sum_{j=1}^{n}p_{i,j}W^{(0)}(p_j) + s\sum_{j=1}^{n}p_{i,j}U^{(0)}(p_j)\}\\
                     J^{(1)}_{p_i} = p_i - w_{p_i} + \delta (1-s)\sum_{j=1}^{n}p_{i,j}J^{(0)}(p_j)
                 \end{gather*}
-                \item Choose a new grid point for productivity, go through 4.1 to 4.3. Once we have done the update for all productivity grid, we have new system of value function \({V^{(1)}_p}\)
+                \item Choose a new grid point for productivity, go through 4.1 to 4.3. Once we have done the update for all productivity grid, we have new system of value function \({F^{(1)}_p}\)
                 \item Compute distance between the two systems of value functions following the sup L-1 norm \[
-                    d = \max\limits_{i\in\{1,\ldots,n\}}|V^{(0)}_i-V^{(1)}_i|\]
-                \item If distance is within the error tolerance level, \(d \leq tol\), the functions have converged and go to step 5, or else go back to step 4.
+                    d = \max\limits_{i\in\{1,\ldots,n\}}|F^{(0)}_i-F^{(1)}_i|\]
+                \item If distance is within the error tolerance level, \(d \leq \texttt{tol}\), the functions have converged and go to step 5, or else go back to step 4.
             \end{enumerate}
             \item Calculate the optimal control for each productivity level:
             \begin{gather*}
@@ -217,7 +217,7 @@
         \end{gather*}
         Given the smooth property of value functions, we use the Gaussian-Hermite quadrature as in Tauchen's method to calculate the conditional expectation.
         \item Fit for new value function system and report parameters and save as \texttt{new} in an unweighted nonlinear least squares procedure as in \[\min\limits_\textbf{coefs} \sum\limits_{i=1}^{n}(\hat{F}(p_i;\textbf{coefs})-f_i)^2\] and save as \(\textbf{coefs\_new}\) for each value function. $f_i$ stands for the updated value functions $U_{p_i}$, $W_{p_i}$ and $J_{p_i}$ in the maximized procedure. We use Matlab code \texttt{fminsearch} to realize the fitting procedure.
-        \item If the largest norm of all value functions statisfies \(||\hat{F}(p;\textbf{coefs\_old})-\hat{F}(p;\textbf{coefs\_new})||<tol\), stop; else go to step 1, replacing \(\textbf{coefs\_old}\) with \(\textbf{coefs\_new}\). We use Matlab code \texttt{norm} to return an Euclidean norm. 
+        \item If the largest norm of all value functions statisfies \(||\hat{F}(p;\textbf{coefs\_old})-\hat{F}(p;\textbf{coefs\_new})||<\texttt{tol}\), stop; else go to step 1, replacing \(\textbf{coefs\_old}\) with \(\textbf{coefs\_new}\). We use Matlab code \texttt{norm} to return an Euclidean norm. 
     \end{enumerate}
 
 \section{Quantitative Analysis}
@@ -391,7 +391,7 @@ Discretization Model Std.  & 3.14E-03 & 6.56E-02 & \multirow{-2}{*}{\cellcolor[H
 
     \subsubsection{Tune productivity variation}
     In this subsection, we check if tuning $\sigma_\varepsilon$ helps to improve model performance. In a Tauchen method, the standard deviation of $logp$ is defined as \(\sigma_{logp} = \sigma_\varepsilon / \sqrt{1-\rho^2}\) and the lower and upper bound of grid is defined as $\mu_{logp} \pm m\sigma_{logp}$, thus deciding the grid and transition matrix. A higher $\sigma_\varepsilon$ is supposed to increase the volatility of optimal control.\newline
-    We calculate the standard deviations for 5 values of $\sigma_\varepsilon$, \textit{ceteris paribus}, in file \texttt{sigma\_epsilon\_tune.m}, the result is reported in Table \ref{sigepsilon}. Higher productivity variation does lead to higher optimal control volatility as expected. We can conclude that compared with Data, a more volatile productivity shock leads to more volatile job-finding rate and unemployment rate, but is still underestimating the latter two. Even in the case where job-finding rate is about well simulated with $\sigma_\varepsilon = 0.005$, the cost is high productivity variation and the unemployment rate deviation is yet matched. This means that productivity shock is not the only source that creates volatility in unemployment rate and job finding rate.\newline
+    We calculate the standard deviations for 5 values of $\sigma_\varepsilon$, \textit{ceteris paribus}, and derive the standard deviation, the result is reported in Table \ref{sigepsilon}. Higher productivity variation does lead to higher optimal control volatility as expected. We can conclude that compared with Data, a more volatile productivity shock leads to more volatile job-finding rate and unemployment rate, but is still underestimating the latter two. Even in the case where job-finding rate is about well simulated with $\sigma_\varepsilon = 0.005$, the cost is ten times higher productivity variation and the unemployment rate deviation is not yet matched. This means that productivity shock is not the only source that creates volatility in unemployment rate and job finding rate.\newline
 
     \begin{table}\centering
         \begin{tabular}{
@@ -406,11 +406,11 @@ Discretization Model Std.  & 3.14E-03 & 6.56E-02 & \multirow{-2}{*}{\cellcolor[H
         0.04           & 4.20E-03 & 8.75E-02    & 0.159 \\
         0.05           & 5.28E-03 & 1.10E-01    & 0.200\\ \hline
         \end{tabular}
-        \caption{Std. tuning variation of productivity grid}
+        \caption{Tuning variation of productivity grid}
         \label{sigepsilon}
         \end{table}
 
-    Similarly, the Table \ref{corrsigepsilon} reports the correlation matrix of variables with $\sigma_\varepsilon = 0.05$. There is only marginal improvement compared to the baseline model. This means that productivity shocks can only induce very small movements in unemployment and job finding rate.
+    Similarly, the Table \ref{corrsigepsilon} reports the correlation matrix of variables with $\sigma_\varepsilon = 0.05$. There is only marginal improvement compared to the baseline model. This means that productivity shocks can only induce very small movements in unemployment and job finding rate. A lion's share is yet captured.
 
     \begin{table}[]\centering
         \begin{tabular}{
@@ -439,7 +439,7 @@ Discretization Model Std.  & 3.14E-03 & 6.56E-02 & \multirow{-2}{*}{\cellcolor[H
 
     \subsubsection{Set Stochastic Separation Rate}
     We try to improve model fit following \cite{Shimer2005}'s suggestion of setting the separation rate as a stochastic process. 
-    Suppose that the separation rate follows i.i.d. normal distribution with mean 0.1 to 0.8 with step 0.1 and std. 0.1, \textit{ceteris paribus}, draw $N=100$ random numbers and set lower bound 0, apply into value function iteration and use Monte-Carlo integration to evaluate value function $W$ and $J$ in forms of 
+    Suppose that the separation rate follows i.i.d. normal distribution with mean 0.1 to 0.8 with step 0.1 and standard deviation 0.1, \textit{ceteris paribus}, draw $N=100$ random numbers and set lower bound 0, apply into value function iteration and use Monte-Carlo integration to evaluate value function $W$ and $J$ in forms of 
     \[W^{(1)}_{p_i} =\frac{1}{N}\sum\limits_{n=1}^{N}(w_{p_i} + \delta\{(1-s(n))\sum_{j=1}^{n}p_{i,j}W^{(0)}(p_j) + s(n)\sum_{j=1}^{n}p_{i,j}U^{(0)}(p_j)\})\]
     \[J^{(1)}_{p_i} = \frac{1}{N}\sum\limits_{n=1}^{N}(p_i - w_{p_i} + \delta (1-s(n))\sum_{j=1}^{n}p_{i,j}J^{(0)}(p_j))\]
     and unemployment rate
@@ -477,7 +477,7 @@ Discretization Model Std.  & 3.14E-03 & 6.56E-02 & \multirow{-2}{*}{\cellcolor[H
         \label{stocsep}
         \end{table}
 
-    Mean separation rate being 0.8, the correlation between variables is reported in Table \ref{corrstocsep}. To derive the correlation, we set grid size to be 100 and derive another std. matrix reported in Appendix \ref{stocsep100n}. More grids lead to a peripheral improvement in model fit of std. Correlation between $u$ and $f$ is -0.9998, $u$ and $p$ is -0.9979, $u$ and $s$ is 0.1099, whereas data value is 0.709. That between $f$ and $p$ is 0.9991, $f$ and $s$ is -0.1083 while data is -0.574. There is a marginal change compared to the baseline model with respect to std, but fails to replicate the correlation matrix, which accords with the paper. The negative correlation between u and v is again well captured.
+    Mean separation rate being 0.8, the correlation between variables is reported in Table \ref{corrstocsep}. To derive the correlation, we set grid size to be 100 and derive another standard deviation matrix reported in Appendix \ref{stocsep100n}. More grids lead to a peripheral improvement in model fit of standard deviation Correlation between $u$ and $f$ is -0.9998, $u$ and $p$ is -0.9979, $u$ and $s$ is 0.1099, whereas data value is 0.709. That between $f$ and $p$ is 0.9991, $f$ and $s$ is -0.1083 while data is -0.574. Correlation between $v$ and $s$ is -0.1056 while in data it is -0.684. There is a marginal improvement in model fit compared to the baseline model with respect to standard deviation, but fails to replicate the correlation matrix, which shows a simple IID process does not well simulate the separation rate process. Yet on the whole it successfully captures the qualitative nature of the correlation, though there is important statistical difference. The negative correlation between u and v is again well captured (-0.9984), which is different from the paper's conclusion of a strong positive correlation between u and v induced by separation rate shock. This may be explained by the fact that the separation shock process is not correlated to productivity shock process.
    
         \begin{table}[]\centering
             \begin{tabular}{
@@ -504,8 +504,7 @@ Discretization Model Std.  & 3.14E-03 & 6.56E-02 & \multirow{-2}{*}{\cellcolor[H
             \end{table}
     
     \subsubsection{Conclusion}
-    After tuning productivity volatility and separation rate process, we can conclude that the adapted \cite{Shimer2005} model confirms successfully that labor productivity shocks are qualitatively consistent with a downward-sloping Beveridge curve, especially in terms of the negative correlation between unemployment, but it fails to account for the volatility of job finding rate. However, productivity shock only induce very small movement along the Beveridge curve, not even amended with stochastic separation rate, as is shown in the paper. 
-
+    After tuning productivity volatility and separation rate process, we can conclude that the adapted \cite{Shimer2005} model confirms successfully that labor productivity shocks are qualitatively consistent with a downward-sloping Beveridge curve, that is the negative correlation between unemployment and vacancies, but it fails to account for the volatility of job finding rate. What's more, productivity shock only induce very small movement along the Beveridge curve, not even amended with stochastic separation rate. An IID distribution does not well simulate the process of separation shock especially when it comes to replicating its correlation between unemployment and vacancy and job finding rate, nor does it capture the volatility feature of job finding rate.
 
 \newpage
 \footnotesize
