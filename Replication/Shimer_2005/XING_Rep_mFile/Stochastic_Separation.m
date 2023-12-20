@@ -1,4 +1,5 @@
 %%%%%% This sets separation rate as iid draw from normal distribution
+%%%%%% Apply only discretization method for simplification
 
 %% Initialize
 clear;
@@ -112,7 +113,6 @@ end
 %% Correlation Matrix with 0.8 mu_s
 variables = [ustar_d,vstar_d,fstar_d,p,s];
 corrstocsep = corrcoef(variables);
-
 corrmatrix = array2table(corrstocsep,'RowNames',{'u','v','f','p','s'}, ...
                           'VariableNames',{'u','v','f','p','s'});
 

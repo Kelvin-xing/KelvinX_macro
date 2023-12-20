@@ -92,13 +92,13 @@ xlabel("Productivity");
 legend("Unemployment value", "Employment value", 'Location','northwest');
 title('Value Function by Discretization U&W');
 hold off
-saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueUWDiscretization.jpg");
+saveas(gcf,"../Report/Final_report/ValueUWDiscretization.jpg");
 
 figure
 plot(p,J_d(I+1,:));
 legend("Hiring value", 'Location','northwest');
 title('Value Function by Discretization J');
-saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueJDiscretization.jpg");
+saveas(gcf,"../Report/Final_report/ValueJDiscretization.jpg");
 
 % Plot Optimal Control
 figure
@@ -110,7 +110,7 @@ xlabel("Productivity");
 legend("Job finding rate", "Wage", "Unemployment rate");
 title('Job Finding Rate, Wage and Unemployment Rate on Productivity by Discretization');
 hold off
-saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ControlDiscretization.jpg");
+saveas(gcf,"../Report/Final_report/ControlDiscretization.jpg");
 
 
 %% 2) Parametric Approximation
@@ -202,13 +202,13 @@ xlabel("Productivity");
 legend("Unemployment value", "Employment value", 'Location','northwest');
 title('Value Function by Discretization U&W');
 hold off
-saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueUWApproximation.jpg");
+saveas(gcf,"../Report/Final_report/ValueUWApproximation.jpg");
 
 figure
 plot(p,J_a_new);
 legend("Hiring value", 'Location','northwest');
 title('Value Function by Discretization J');
-saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ValueJApproximation.jpg");
+saveas(gcf,"../Report/Final_report/ValueJApproximation.jpg");
 
 % Plot Optimal Control
 figure
@@ -220,7 +220,7 @@ xlabel("Productivity");
 legend("Job finding rate", "Wage", "Unemployment rate");
 title('Job Finding Rate, Wage and Unemployment Rate on Productivity by Approximation');
 hold off
-saveas(gcf,"/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/ControlApproximation.jpg");
+saveas(gcf,"../Report/Final_report/ControlApproximation.jpg");
 
 
 %% Q(b)

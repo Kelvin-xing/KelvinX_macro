@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex 6096_report_Xing_Mingjie"] 1703052267 "6096_report_Xing_Mingjie.aux" "6096_report_Xing_Mingjie.bbl" "6096_report_Xing_Mingjie" 1703054076
+["bibtex 6096_report_Xing_Mingjie"] 1703052267 "6096_report_Xing_Mingjie.aux" "6096_report_Xing_Mingjie.bbl" "6096_report_Xing_Mingjie" 1703054431
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "6096_report_Xing_Mingjie.aux" 1703054076 8231 f99f2b4ba470db86bf441958f070c42a "pdflatex"
+  "6096_report_Xing_Mingjie.aux" 1703054431 8231 f99f2b4ba470db86bf441958f070c42a "pdflatex"
   "Shimer2005.bib" 1702912695 3425 be06ca64466cb6eb10289c17d5015088 ""
   (generated)
   "6096_report_Xing_Mingjie.bbl"
   "6096_report_Xing_Mingjie.blg"
-["pdflatex"] 1703054075 "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/6096_report_Xing_Mingjie.tex" "6096_report_Xing_Mingjie.pdf" "6096_report_Xing_Mingjie" 1703054076
-  "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/6096_report_Xing_Mingjie.tex" 1703054075 35479 29d60297ab0c7784c7f7e647343222a7 ""
+["pdflatex"] 1703054430 "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/6096_report_Xing_Mingjie.tex" "6096_report_Xing_Mingjie.pdf" "6096_report_Xing_Mingjie" 1703054431
+  "/Users/mingjiexing/Desktop/Python/Macro/Replication/Shimer_2005/Report/Final_report/6096_report_Xing_Mingjie.tex" 1703054430 35485 3108c99e8ca952898f7fce8819bc1929 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -155,9 +155,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663576759 2826438 1ae54c060c8f7bb1b3b78240a682546f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "6096_report_Xing_Mingjie.aux" 1703054076 8231 f99f2b4ba470db86bf441958f070c42a "pdflatex"
+  "6096_report_Xing_Mingjie.aux" 1703054431 8231 f99f2b4ba470db86bf441958f070c42a "pdflatex"
   "6096_report_Xing_Mingjie.bbl" 1703052267 638 734ac6ecca0dce79cf98c1f2acf3cc09 "bibtex 6096_report_Xing_Mingjie"
-  "6096_report_Xing_Mingjie.tex" 1703054075 35479 29d60297ab0c7784c7f7e647343222a7 ""
+  "6096_report_Xing_Mingjie.tex" 1703054430 35485 3108c99e8ca952898f7fce8819bc1929 ""
   "ControlApproximation.jpg" 1703000931 59246 1a66e275795565bdca571391ddf7dd3f ""
   "ControlDiscretization.jpg" 1703000926 59410 012083f8f734c951aa9efd7ade4ceae2 ""
   "ValueJApproximation.jpg" 1703000930 50670 5157cffb1a62c83b2741338d4247ccb2 ""
