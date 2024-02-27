@@ -1,50 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Reading_notes.aux
-The style file: apalike.bst
-Database file #1: Reading_notes.bib
-Warning--entry type for "MazzucatoRodrik2023" isn't style-file defined
---line 223 of file Reading_notes.bib
-Warning--empty institution in Prato2022
-You've used 39 entries,
-            1935 wiz_defined-function locations,
-            739 strings with 10536 characters,
-and the built_in function-call counts, 14907 in all, are:
-= -- 1463
-> -- 587
-< -- 29
-+ -- 205
-- -- 192
-* -- 1308
-:= -- 2651
-add.period$ -- 119
-call.type$ -- 39
-change.case$ -- 293
-chr.to.int$ -- 38
-cite$ -- 40
-duplicate$ -- 524
-empty$ -- 1033
-format.name$ -- 251
-if$ -- 2876
-int.to.chr$ -- 2
+I found no \citation commands---while reading file Reading_notes.aux
+I found no \bibdata command---while reading file Reading_notes.aux
+I found no \bibstyle command---while reading file Reading_notes.aux
+You've used 0 entries,
+            0 wiz_defined-function locations,
+            83 strings with 500 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
+int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 28
-newline$ -- 200
-num.names$ -- 117
-pop$ -- 206
-preamble$ -- 1
-purify$ -- 291
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 394
+skip$ -- 0
 stack$ -- 0
-substring$ -- 1110
-swap$ -- 41
-text.length$ -- 9
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 234
-warning$ -- 1
-while$ -- 115
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 510
-(There were 2 warnings)
+write$ -- 0
+(There were 3 error messages)
