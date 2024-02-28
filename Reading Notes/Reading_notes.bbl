@@ -47,6 +47,11 @@ Allen, T. (2014).
 \newblock Information frictions in trade.
 \newblock {\em Econometrica}, 82(6):2041--2083.
 
+\bibitem[Amiti et~al., 2020]{AmitiKongWeinstein2020}
+Amiti, M., Kong, S.~H., and Weinstein, D. (2020).
+\newblock The effect of the u.s.-china trade war on u.s. investment.
+\newblock Working Paper 27114, National Bureau of Economic Research.
+
 \bibitem[Arellano et~al., 2019]{ArellanoBaiKehoe2019}
 Arellano, C., Bai, Y., and Kehoe, P.~J. (2019).
 \newblock Financial frictions and fluctuations in volatility.
@@ -99,6 +104,12 @@ Cooley, T.~F. and Quadrini, V. (2001).
 Costinot, A., Rodríguez-Clare, A., and Werning, I. (2020).
 \newblock Micro to macro: Optimal trade policy with firm heterogeneity.
 \newblock {\em Econometrica}, 88(6):2739--2776.
+
+\bibitem[de~Souza et~al., 2022]{deSouzaetal2022}
+de~Souza, G., Hu, N., Li, H., and Mei, Y. (2022).
+\newblock (trade) war and peace: How to impose international trade sanctions.
+\newblock Available at SSRN: \url{https://ssrn.com/abstract=4153921} or
+  \url{http://dx.doi.org/10.2139/ssrn.4153921}.
 
 \bibitem[Demidova, 2017]{Demidova2017}
 Demidova, S. (2017).
@@ -270,5 +281,10 @@ Suesse, M. (2018).
 \newblock Breaking the unbreakable union: Nationalism, disintegration and the
   soviet economic collapse.
 \newblock {\em The Economic Journal}, 128(615):2933--2967.
+
+\bibitem[Zhang and Wang, 2023]{ZhangWang2023}
+Zhang, L. and Wang, S. (2023).
+\newblock Trusting talent: Cross-country differences in hiring.
+\newblock Working Paper.
 
 \end{thebibliography}

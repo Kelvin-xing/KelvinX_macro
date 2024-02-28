@@ -5,46 +5,47 @@ The style file: apalike.bst
 Database file #1: Reading_notes.bib
 Warning--entry type for "MazzucatoRodrik2023" isn't style-file defined
 --line 223 of file Reading_notes.bib
+Warning--empty journal in deSouzaetal2022
 Warning--empty institution in Prato2022
-You've used 50 entries,
+You've used 53 entries,
             1935 wiz_defined-function locations,
-            817 strings with 12552 characters,
-and the built_in function-call counts, 19401 in all, are:
-= -- 1927
-> -- 721
-< -- 37
-+ -- 249
-- -- 234
-* -- 1718
-:= -- 3408
-add.period$ -- 152
-call.type$ -- 50
-change.case$ -- 369
-chr.to.int$ -- 49
-cite$ -- 51
-duplicate$ -- 678
-empty$ -- 1378
-format.name$ -- 312
-if$ -- 3752
+            831 strings with 13082 characters,
+and the built_in function-call counts, 20391 in all, are:
+= -- 2021
+> -- 775
+< -- 39
++ -- 269
+- -- 252
+* -- 1799
+:= -- 3600
+add.period$ -- 161
+call.type$ -- 53
+change.case$ -- 393
+chr.to.int$ -- 52
+cite$ -- 55
+duplicate$ -- 712
+empty$ -- 1430
+format.name$ -- 335
+if$ -- 3931
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 39
-newline$ -- 255
-num.names$ -- 150
-pop$ -- 252
+missing$ -- 40
+newline$ -- 270
+num.names$ -- 159
+pop$ -- 272
 preamble$ -- 1
-purify$ -- 367
+purify$ -- 391
 quote$ -- 0
-skip$ -- 512
+skip$ -- 539
 stack$ -- 0
-substring$ -- 1564
-swap$ -- 52
-text.length$ -- 9
+substring$ -- 1602
+swap$ -- 53
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 300
-warning$ -- 1
-while$ -- 159
+type$ -- 318
+warning$ -- 2
+while$ -- 165
 width$ -- 0
-write$ -- 653
-(There were 2 warnings)
+write$ -- 690
+(There were 3 warnings)
