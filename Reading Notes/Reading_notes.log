@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  28 FEB 2024 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  3 MAR 2024 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -617,54 +617,59 @@ Overfull \hbox (102.1471pt too wide) in paragraph at lines 463--464
  []
 
 
-Overfull \hbox (8.71434pt too wide) in paragraph at lines 476--478
+Overfull \hbox (3.6883pt too wide) in paragraph at lines 465--466
+[][][]\OT1/cmr/m/n/10 Feenstra et al.[][] ([][]2002[][]) [][]$\OT1/cmtt/m/n/10 https : / / papers . ssrn . com / sol3 / papers . cfm ? abstract _ id = 362069$[][] 
+ []
+
+
+Overfull \hbox (8.71434pt too wide) in paragraph at lines 477--479
 []\OT1/cmr/m/n/10 PATENTS-ICRIOS DATABASE [][]$\OT1/cmtt/m/n/10 https : / / icrios . unibocconi . eu / resources / databases /
  []
 
 
-Overfull \hbox (10.7723pt too wide) in paragraph at lines 482--483
+Overfull \hbox (10.7723pt too wide) in paragraph at lines 483--484
 []\OT1/cmr/m/n/10 FactSet Sup-ply Chain Re-la-tion-ships [][]$\OT1/cmtt/m/n/10 https : / / wrds-[]www . wharton . upenn . edu / pages / about /
  []
 
 
-Overfull \hbox (63.65831pt too wide) in paragraph at lines 485--486
+Overfull \hbox (63.65831pt too wide) in paragraph at lines 486--487
 []\OT1/cmr/m/n/10 MIDAS [][]$\OT1/cmtt/m/n/10 https : / / www . iqvia . com / solutions / commercialization / brand-[]strategy-[]and-[]management /
  []
 
 [11]
-Overfull \hbox (20.1147pt too wide) in paragraph at lines 494--495
+Overfull \hbox (20.1147pt too wide) in paragraph at lines 495--496
 []\OT1/cmr/m/n/10 TUD19: multi-city traf-fic dataset [][]$\OT1/cmtt/m/n/10 https : / / utd19 . ethz . ch/$[][]\OT1/cmr/m/n/10 ; [][]$\OT1/cmtt/m/n/10 https : / / github . com / ambuehll /
  []
 
 
-Overfull \hbox (2.99394pt too wide) in paragraph at lines 499--500
+Overfull \hbox (2.99394pt too wide) in paragraph at lines 501--502
 []\OT1/cmr/m/n/10 Gallup Global Re-search[][]$\OT1/cmtt/m/n/10 https : / / www . gallup . com / analytics / 318875 / global-[]research .
  []
 
 
-Overfull \hbox (54.20197pt too wide) in paragraph at lines 500--501
+Overfull \hbox (54.20197pt too wide) in paragraph at lines 502--503
 []\OT1/cmr/m/n/10 Gallup Coun-try Data Set [][]$\OT1/cmtt/m/n/10 https : / / www . gallup . com / services / 177797 / country-[]data-[]set-[]details .
  []
 
 
-Overfull \hbox (39.27155pt too wide) in paragraph at lines 501--502
+Overfull \hbox (39.27155pt too wide) in paragraph at lines 503--504
 []\OT1/cmr/m/n/10 Bilateral mi-gra-tion data [][]$\OT1/cmtt/m/n/10 https : / / elibrary . worldbank . org / doi / epdf / 10 . 1596 / 1813-[]9450-[]6863$[][] 
  []
 
 [12] (./Reading_notes.bbl [13]) [14] (./Reading_notes.aux) ) 
 Here is how much of TeX's memory you used:
- 14687 strings out of 478268
- 235037 string characters out of 5846347
- 549130 words of memory out of 5000000
- 32547 multiletter control sequences out of 15000+600000
+ 14691 strings out of 478268
+ 235166 string characters out of 5846347
+ 549165 words of memory out of 5000000
+ 32550 multiletter control sequences out of 15000+600000
  478145 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,7n,79p,1258b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Reading_notes.pdf (14 pages, 247228 bytes).
+Output written on Reading_notes.pdf (14 pages, 247363 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 143 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
