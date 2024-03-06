@@ -1,0 +1,208 @@
+%
+% This program has been written by Francois Le Grand and Xavier Rago
+% It is the program for the model in their paper:
+% "Heterogeneous Agents: A Reduced Heterogeneity Framework"
+%
+% comments by Wouter Den Haan
+
+var
+a1 c1 a2 c2 a3 c3 a4 c4 a5 c5 a6 c6 a7 c7 a8 c8 a9 c9 a10 c10 
+a11 c11 a12 c12 a13 c13 a14 c14 a15 c15 a16 c16 r K w A u le; 
+
+varexo eps; 
+
+parameters
+weight1 S1 weight2 S2 weight3 S3 weight4 S4 weight5 S5 weight6 S6 weight7 S7 weight8 S8 weight9 S9 weight10 S10 
+weight11 S11 weight12 S12 weight13 S13 weight14 S14 weight15 S15 weight16 S16 beta alpha phi a_bar delta sigma depr ne nu rho_u;
+
+% the "weight" parameters are the weights in the quasi-planner utility function and can be used to generate a realistic wealth distribution
+%
+% in this (version of the) model, the transition dynamics from unemployment to employment do not depend on aggregate shocks. Consequently, the
+% population size of the different types are fixed. These are captures by the S* parameters.
+%
+% this program is for the version where employment states in the current and last three periods are kept track of (N=4). This means that there
+% the following 16 groups:
+% 1.  uuuu
+% 2.  uuue
+% 3.  uueu
+% 4.  uuee
+% 5.  ueue
+% 6.  ueeu
+% 7.  ueeu
+% 8.  ueee
+% 9.  euuu
+% 10. euu3
+% 11. eueu
+% 12. euee
+% 13. eeuu
+% 14. eeue
+% 15. eeeu
+% 16. eeee
+%
+weight1 = 1;
+S1      = 0.035714;
+weight2 = 1.3631;
+S2      = 0.035714;
+weight3 = 0.54354;
+S3      = 0.014286;
+weight4 = 0.89398;
+S4      = 0.057143;
+weight5 = 0.46064;
+S5      = 0.014286;
+weight6 = 0.64244;
+S6      = 0.014286;
+weight7 = 0.41709;
+S7      = 0.022857;
+weight8 = 0.67361;
+S8      = 0.091429;
+weight9 = 0.019636;
+S9      = 0.035714;
+weight10 = 0.11878;
+S10      = 0.035714;
+
+weight11 = 0.026324;
+S11      = 0.014286;
+weight12 = 0.13354;
+S12      = 0.057143;
+weight13 = 0.052124;
+S13      = 0.057143;
+weight14 = 0.13354;
+S14      = 0.057143;
+weight15 = 0.035554;
+S15      = 0.091429;
+weight16 = 0.14888;
+S16      = 0.36571;
+
+alpha   = 0.37; % curvature production function
+beta    = 0.9;  % discount factor
+phi     = 0.3;  % curvature disutility work
+a_bar   = 0;    % borrowing constraint
+sigma   = 1.5;  % curvature utility function
+depr    = 0.1;  % depreciation rate
+ne      = S9+S10+S11+S12+S13+S14+S15+S16; % 0.71429 mass of employed (this is not the n_{e^N} parameter in the model
+nu      = 0.28571; % not used
+
+
+rho_u   = 0.95; % AR(1) coefficient law of motion aggregate productivity shock
+
+
+delta   = 0.5;  % home production parameter. An unemployed works could work delta hours to produce at home delta consumption goods
+                % note that an unemployed worker can only work delta hours and not say 0.5*delta hours. I suppose that parameters are 
+                % such that an unemployed worker would not want to work LESS than delta hours (it is reasonable to assume that there 
+                % are limit to how much useful home production one could do, but one should of course be free to do less
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+model;
+
+% budget constraints for currently unemployed (beginning-of-period asset holdings come from the two groups that can become members of this group)
+% unemployed workers have a fifty-fifty probability of staying unemployed and becoming unemployed. An example may help. Consider what happens to savings 
+% made by group 4 last period (group 4 is one of the unemployed groups). Its members will go to unemployed group 2 with probability 0.5 and so half of group 4 assets will flow into this group. 
+% Its members will go to employed group 10 with probability 0.5 and so half of group 4 assets will flow into this group. 
+%
+% an employed becomes unemployed with probability 0.2. Thus, 20 percent of its members and 20 percent of the assets of group that was employed in the previous
+% period will go to a currently unemployed group
+
+c1 = delta + (1+r)*0.5*(S2*a2(-1)+S1*a1(-1))/S1-a1;         
+c2 = delta + (1+r)*0.5*(S4*a4(-1)+S3*a3(-1))/S2-a2;
+c3 = delta + (1+r)*0.5*(S6*a6(-1)+S5*a5(-1))/S3-a3;
+c4 = delta + (1+r)*0.5*(S8*a8(-1)+S7*a7(-1))/S4-a4;
+c5 = delta + (1+r)*0.2*(S10*a10(-1)+S9*a9(-1))/S5-a5;
+c6 = delta + (1+r)*0.2*(S12*a12(-1)+S11*a11(-1))/S6-a6;
+c7 = delta + (1+r)*0.2*(S14*a14(-1)+S13*a13(-1))/S7-a7;
+c8 = delta + (1+r)*0.2*(S16*a16(-1)+S15*a15(-1))/S8-a8;
+
+% budget constraints of the employed (weight of 0.5 for groups that were unemployed last period and weight of 0.8 for those employed last period)
+c9  = w*le + (1+r)*0.5*(S2*a2+S1*a1)/S9-a9;
+c10 = w*le + (1+r)*0.5*(S4*a4+S3*a3)/S10-a10;
+c11 = w*le + (1+r)*0.5*(S6*a6+S5*a5)/S11-a11;
+c12 = w*le + (1+r)*0.5*(S8*a8+S7*a7)/S12-a12;
+c13 = w*le + (1+r)*0.8*(S10*a10+S9*a9)/S13-a13;
+c14 = w*le + (1+r)*0.8*(S12*a12+S11*a11)/S14-a14;
+c15 = w*le + (1+r)*0.8*(S14*a14+S13*a13)/S15-a15;
+c16 = w*le + (1+r)*0.8*(S16*a16+S15*a15)/S16-a16;
+
+% Euler equations
+% group 1 is at the constrained (this always needs to be checked ex post. Note that it needs to be always at the constraint)
+% the other groups have an Euler equation that determines savings
+% note that the Euler equation takes into account that a member can flow into an employment and an unemployment group next period
+%
+
+a1 = 0;
+weight2*(c2-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight9*(c9(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight1*(c1(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight3*(c3-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight10*(c10(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight2*(c2(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight4*(c4-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight10*(c10(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight2*(c2(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight5*(c5-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight11*(c11(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight3*(c3(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight6*(c6-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight11*(c11(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight3*(c3(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight7*(c7-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight12*(c12(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight4*(c4(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight8*(c8-delta^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.5*weight12*(c12(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.5*weight4*(c4(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight9*(c9-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight13*(c13(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight5*(c5(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight10*(c10-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight13*(c13(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight5*(c5(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight11*(c11-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight14*(c14(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight6*(c6(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight12*(c12-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight14*(c14(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight6*(c6(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight13*(c13-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight15*(c15(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight7*(c7(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight14*(c14-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight15*(c15(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight7*(c7(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight15*(c15-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight16*(c16(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight8*(c8(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+weight16*(c16-le^(1+1/phi)/(1+1/phi))^-sigma = beta*(1+r(+1))* (0.8*weight16*(c16(+1)-le(+1)^(1+1/phi)/(1+1/phi))^-sigma +0.2*weight8*(c8(+1)-delta^(1+1/phi)/(1+1/phi))^-sigma);
+ 
+K = +a1*S1+a2*S2+a3*S3+a4*S4+a5*S5+a6*S6+a7*S7+a8*S8+a9*S9+a10*S10
++a11*S11+a12*S12+a13*S13+a14*S14+a15*S15+a16*S16;
+le = w^phi;  % first-order condition for labor supply
+w = (1 - alpha)*A(-1)*(K(-1)/(ne*le))^alpha;
+r = alpha*A(-1)*(K(-1)/(ne*le))^(alpha-1)-depr;
+u = rho_u*u(-1) + eps;
+A = 1 + u;
+
+end;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+initval;
+
+a1 = 0;
+c1 = 0.93446;
+a2 = 0.8355;
+c2 = 1.692;
+a3 = 0.8355;
+c3 = 1.2575;
+a4 = 2.228;
+c4 = 1.7477;
+a5 = 0.8355;
+c5 = 1.4023;
+a6 = 2.228;
+c6 = 1.7477;
+a7 = 2.228;
+c7 = 1.3132;
+a8 = 3.6205;
+c8 = 1.8034;
+a9 = 1.114;
+c9 = 0.4723;
+a10 = 2.228;
+c10 = 0.95132;
+a11 = 2.228;
+c11 = 0.51686;
+a12 = 3.6205;
+c12 = 1.007;
+a13 = 2.228;
+c13 = 0.66168;
+a14 = 3.6205;
+c14 = 1.007;
+a15 = 3.6205;
+c15 = 0.57256;
+a16 = 5.013;
+c16 = 1.0627;
+r = 0.04;
+K = 3.4514;
+le = 1.0332;
+w = 1.1149;
+A = 1;
+u = 0;
+end;
+
+steady;
+
+shocks;
+ var eps = 0.0001;
+end;
+stoch_simul (order=1,irf=40) u A K w le r ;

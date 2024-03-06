@@ -1,0 +1,220 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{doublespace}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, July 27, 2010 12:19:57}
+%TCIDATA{LastRevised=Monday, July 28, 2014 12:05:03}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{210mm}
+\setlength{\oddsidemargin}{5mm}
+\setlength{\evensidemargin}{5mm}
+\setlength{\topmargin}{-5mm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\begin{center}
+\textbf{LSE Macroeconomics Summer Program}
+
+\textbf{Part I: The Essentials}
+
+\textbf{Instructor: Wouter J. Den Haan\bigskip }
+
+\textbf{Tuesday Assignment}
+
+\textbf{Solving a model with time-varying risk premium with projection
+methods\bigskip }
+\end{center}
+
+\section{Goal}
+
+The goal of this assignment is to show that solving a model with projection
+methods can actually be quite simple. There is only one somewhat tricky
+step, namely evaluating the conditional expectation using numerical
+integration.
+
+\section{Model}
+
+The solution to the Lucas Asset Pricing Model is characterized as follows%
+\begin{eqnarray*}
+p_{t} &=&\beta \text{E}_{t}\left( \left( \frac{c_{t+1}}{c_{t}}\right)
+^{-\gamma }\left( d_{t+1}+p_{t+1}\right) \right) \\
+c_{t} &=&d_{t} \\
+d_{t} &=&\mu _{d}+\rho _{d}d_{t-1}+\varepsilon _{t} \\
+\varepsilon _{t} &\sim &N\left( 0,\sigma ^{2}\right)
+\end{eqnarray*}%
+Of course, you can choose your own parameters, but to make our programs
+comparable consider\newline
+%TCIMACRO{\TeXButton{center}{\begin{center}}}%
+%BeginExpansion
+\begin{center}%
+%EndExpansion
+\begin{tabular}{l|lllll}
+Parameter & $\mu _{d}$ & $\rho _{d}$ & $\sigma $ & $\beta $ & $\gamma $ \\ 
+\hline
+Value & $0.1$ & $0.9$ & $0.1$ & $0.9$ & $3$.%
+\end{tabular}%
+%TCIMACRO{\TeXButton{center}{\end{center}}}%
+%BeginExpansion
+\end{center}%
+%EndExpansion
+
+\section{Preliminaries}
+
+\subsection{Approximating function}
+
+You always have to take a stand on which function you want to approximate
+and with what kind of approximating function. In this assignment, you should
+approximate the price function using the nth-order polynomial%
+\begin{equation*}
+p_{t}\left( d_{t}\right) =\sum_{i=0}^{n}a_{i}d_{t}^{i}\text{.}
+\end{equation*}%
+The Matlab function pfunc.m, included with the assignment, defines this
+function.
+
+\subsection{Grid}
+
+With projection methods, you have to create a grid for the state variables.
+In the Lucas Asset Pricing Model, $d_{t}$ is the only state variable and we
+can calculate the mean and standard deviation. In this assignment, we
+construct a grid for $d_{t}$ ranging from three standard deviations below
+the mean to three standard deviations above the mean.
+
+\subsection{Numerical integration}
+
+The tricky step is to evaluate the conditional expectation using numerical
+integration. But don't be scared of this. Just realize the following:
+
+\begin{itemize}
+\item The stochastic variable $\varepsilon _{t+1}$ shows up three times
+inside the conditional expecation. Once because $d_{t+1}$ depends on $%
+\varepsilon _{t+1}$, once because $c_{t+1}$ depends on $d_{t+1}$ which in
+turn depends on $\varepsilon _{t+1}$, and once because $p_{t+1}$ depends on $%
+d_{t+1}$ which in turn depends on $\varepsilon _{t+1}$.
+
+\item Numerical integration basically comes down to thinking of $\varepsilon
+_{t+1}$ as a random variable with discrete support with each realization
+having a probability. Remember from the slides that if $x\sim N\left( \mu
+,\sigma ^{2}\right) $,%
+\begin{equation*}
+\text{E}\left( h\left( x\right) \right) \approx \sum_{i=1}^{gh}\left( \frac{%
+\omega _{i}}{\sqrt{\pi }}h\left( \mu +\sigma \sqrt{2}\zeta _{i}\right)
+\right)
+\end{equation*}%
+where $\omega _{i}$ and $\zeta _{i}$ are the Gaussian Hermite weights, sort
+of like probabilities and nodes respectively.
+\end{itemize}
+
+\section{Exercise 1: solve for p}
+
+\begin{enumerate}
+\item Complete the external function that calculates the sum of squared
+Euler equation errors. This is found in the included Matlab file \texttt{%
+errfunc.m}.
+
+\item The main projection program is given in the file main.m. Understand
+the structure of this file. Note that it really does not do much more than
+construct a grid and call a minimization routine. Run this projection
+algorithm. Now you have solved your first projection problem!
+
+\item Figure 1 plots the errors on the grid (when you are done you may want
+to play around a bit with grid size, polynomial order, etc to see how errors
+change).
+
+\item Plot the policy function. Hint: you can use the pfunc.m function.%
+\newline
+\emph{!!! The coefficients used as input in pfunc.m must be ordered in the
+right way. The first element is the element corresponding to the highest
+order and the last element is the constant.}
+\end{enumerate}
+
+\section{Risk premium and expected returns}
+
+The risk premium $x_{t}$ is the difference between the expected rate of
+return E$_{t}\left( r_{t+1}\right) $ and the risk-free rate$~r_{t}^{f}$. The
+two rates and the premium are given by the following equations%
+\begin{eqnarray*}
+1 &=&\left( 1+r_{t}^{f}\right) \beta \text{E}_{t}\left( \left( \frac{c_{t+1}%
+}{c_{t}}\right) ^{-\gamma }\right) \\
+r_{t+1} &=&\frac{d_{t+1}+p_{t+1}}{p_{t}}-1 \\
+x_{t} &=&\text{E}_{t}\left( r_{t+1}\right) -r_{t}^{f}\text{.}
+\end{eqnarray*}%
+We could have solved for $r_{t}^{f}$, E$_{t}\left( r_{t+1}\right) $, and $%
+x_{t}$ simultaneously with $p_{t}$. But given the solution for $p_{t}$, it
+is very easy to solve for these objects. You are asked to approximate the
+expected risk premium function using the $n^{\text{th}}$-order polynomial%
+\begin{equation*}
+x_{t}\left( d_{t}\right) =\sum_{i=0}^{n}b_{i}d_{t}^{i}\text{.}
+\end{equation*}%
+The Matlab function \texttt{xfunc.m} defines this function.
+
+\textbf{Before doing any calculations} ask yourself whether $r_{t}^{f}$, E$%
+_{t}\left( r_{t+1}\right) $, and $x_{t}$ are increasing or decreasing in $%
+d_{t}$.
+
+\section{Exercise 2: solve for expected returns}
+
+\begin{enumerate}
+\item To solve for the values of $b_{i}$, i.e. the coefficients of the
+approximating function for the expected risk premium, you do \emph{not} have
+to use a minimization routine. You can simply implement the following two
+steps:
+
+\begin{enumerate}
+\item Calculate $r_{t}^{f}$, E$_{t}\left( r_{t+1}\right) $, and $x_{t}$ at
+each grid point, where $r_{t}^{f}$ is defined by%
+\begin{equation*}
+r_{t}^{f}=\frac{1}{\beta \text{E}_{t}\left( \left( \frac{c_{t+1}}{c_{t}}%
+\right) ^{-\gamma }\right) }-1\text{ and}
+\end{equation*}
+
+\item find the coefficients $b_{i}$ by running a projection (regression).
+\end{enumerate}
+
+\item Plot the three objects as a function of $d$. Do the results correspond
+to what you expected?
+
+\item Next, plot time series for the three objects to evaluate how much
+time-variation there is in these three objects.
+
+\item How would the simulation for the risk premium look like if you would
+use first-order perturbation? And if you would use second-order perturbation?
+\end{enumerate}
+
+\end{document}

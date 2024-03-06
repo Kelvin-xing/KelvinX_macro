@@ -1,0 +1,66 @@
+\ProvidesPackage{KUstyle}
+
+\RequirePackage{eso-pic}
+\RequirePackage{graphicx}
+\RequirePackage[absolute]{textpos}
+\RequirePackage{hyperref}
+
+\definecolor{KUrod}{RGB}{144,26,30}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\newcommand*{\advisor}[1]{\def\@advisor{#1}}
+\newcommand*{\ptype}[1]{\def\@ptype{#1}}
+\newcommand*{\keystrokes}[1]{\def\@keystrokes{#1}}
+\newcommand*{\ects}[1]{\def\@ects{#1}}
+\newcommand*{\contribution}[1]{\def\@contribution{#1}}
+
+\def\maketitle{
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{ucph.pdf}}
+    \
+    
+    
+    \begin{textblock}{10}(1.5,3.3) \noindent\fontsize{23}{23}\selectfont \textbf{\@ptype}
+    \end{textblock}
+    
+
+    \ifdefined\@title
+        \begin{textblock}{10}(1.5,8)
+        \noindent\fontsize{23}{23}\selectfont \textbf{\@title}
+        \end{textblock}
+    \fi
+    
+
+    \ifdefined\@author
+        \begin{textblock}{10}(1.5,5) 
+        \noindent\fontsize{17}{17}\selectfont \textbf{\@author}
+        \end{textblock}
+    \fi
+    
+    \begin{textblock}{10}(1.5,12.5)
+    \noindent\fontsize{15}{15}\selectfont \textbf{\@date}
+    \end{textblock}
+    
+    \ifdefined\@contribution
+        \begin{textblock}{10}(1.5,13.5)
+        \noindent\fontsize{15}{15}\selectfont \textbf{\@contribution}
+        \end{textblock}
+    \fi
+
+    \ifdefined\@keystrokes
+        \begin{textblock}{10}(1.5,13)
+        \noindent\fontsize{15}{15}\selectfont \textbf{\@keystrokes}
+        \end{textblock}
+    \fi
+
+    
+    \newpage
+    \noindent
+}

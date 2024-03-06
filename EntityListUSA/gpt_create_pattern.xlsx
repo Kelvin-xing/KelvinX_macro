@@ -1,0 +1,3 @@
+To accomplish this task, I will first read the series of strings and then classify the entity name, alias, subordinate/affiliate, and address. After that, I will conclude the patterns of each classification in regular expressions and output the lists of each into a spreadsheet.
+
+Let's start by processing the series of strings and classifying the elements.

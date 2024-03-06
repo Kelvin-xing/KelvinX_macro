@@ -1,0 +1,92 @@
+%***********************************************************************************************************************
+%                                      `        Tools for Macroeconomists
+%                                                  PartI: The essentials
+%***********************************************************************************************************************
+
+
+% Parametrize a simplified search and matching model
+
+clear all
+clc
+format shortG
+
+% "Naive calibration"
+
+%% 1. Parametrization
+%=======================================================================================================================
+
+y       = 1;            % normalization
+
+beta    = 0.99;         % discount factor (quarterly frequency)
+s       = 0.04;         % separation rate (CPS quarterly value)
+mu      = 0.5;          % elasticity of matching function (estimate)
+m       = 1;            % level of matching function
+alpha   = 0.66;         % wage share in income
+kappa   = 0.66;         % indirect hiring cost
+
+%% 2. Implied steady state values
+%=======================================================================================================================
+theta   = (beta*(1-alpha)*y*m/(kappa*(1-beta*(1-s))))^(1/mu);
+f       = m*theta^(1-mu);
+u       = s/(s+f);
+
+disp('LM tightness, job finding probability (in %), unemployment rate (in %)')
+disp([theta,f*100,u*100])
+
+pause 
+
+% "Informed calibration: alternative 1"
+
+%% 0. Targets
+%=======================================================================================================================
+tu  = 0.06;             % target an unemployment rate of 6%
+
+% implied job finding probability
+f   = s*(1-tu)/tu;
+
+% implied labor market tightness
+theta = beta*(1-alpha)*y*f/(kappa*(1-beta*(1-s)));
+
+% implied matching function level
+m   = f/(theta^(1-mu));
+
+disp('LM tightness, job finding probability (in %), unemployment rate (in %), job filling probability (in %)')
+disp([theta,f*100,tu*100,f/theta*100])
+
+pause 
+
+% "Informed calibration: alternative 2"
+
+%% 0. Targets
+%=======================================================================================================================
+tu  = 0.06;             % target an unemployment rate of 6%
+tq  = 0.7;              % target job filling probability
+
+% implied job finding probability
+f   = s*(1-tu)/tu;
+
+% implied labor market tightness
+theta = f/tq;
+
+% implied matching function level
+m   = f/(theta^(1-mu));
+
+% implied hiring cost
+kappa = beta*(1-alpha)*y*tq/(1-beta*(1-s));
+
+disp('LM tightness, job finding probability (in %), unemployment rate (in %), job filling probability (in %)')
+disp([theta,f*100,tu*100,tq*100])
+
+
+
+
+
+
+
+
+
+
+
+
+
+

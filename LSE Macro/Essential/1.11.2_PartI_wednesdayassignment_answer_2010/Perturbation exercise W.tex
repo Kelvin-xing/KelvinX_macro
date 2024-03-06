@@ -1,0 +1,229 @@
+%Needed to produce a figure
+%\usepackage{savetrees}
+%\usepackage[hmargin=2cm,vmargin=2.5cm]{geometry}
+%\pdfpagewidth 8.5in
+%\pdfpageheight 11in 
+
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{footmisc}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{epsfig}
+\usepackage{float}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=Latex.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Thursday, July 29, 2010 11:09:10}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\widowpenalty=3000000
+\clubpenalty=3000000
+
+%\input{tcilatex}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Amsterdam Macroeconomics Summer School 2010}
+
+\textbf{Part I: The Essentials}
+
+\textbf{University of Amsterdam\bigskip }
+
+\textbf{Wednesday Assignment}
+
+\textbf{1. The difference between linear and loglinear perturbation}
+
+\textbf{2. The difference between first-order and seconder-order perturbation%
+}
+
+\textbf{3. Calculate IRFs for non-linear models}
+
+\textbf{4. TFP versus investment-specific technology shocks}{\huge \\[0pt]
+}
+\end{center}
+
+\section{Objective}
+
+The objectives of this assignment are the following:
+
+\begin{enumerate}
+\item Understand that there are several first-order perturbation solutions.
+Here we focus on two of them, namely linear in levels and linear in logs.
+
+\item We will investigate whether a second-order perturbation solution is
+different from a first-order perturbation solution.
+
+\item Learn how to calculate IRFs for non-linear policy functions.
+
+\item We will investigate the behavior of a standard RBC model when there
+are TFP shocks and when there are investment specific shocks. Several
+articles point at the importance of investment-specific shocks (e.g. Jonas
+Fisher's 2006 JPE paper). This paper shows that in a \emph{standard} RBC
+model investment-specific shocks have some odd implications.
+\end{enumerate}
+
+\section{Comparing perturbation solutions}
+
+\noindent Consider the following RBC model:
+
+\begin{gather*}
+\max_{\left\{ c_{t},k_{t}\right\} _{t=1}^{\infty }}\hspace{2mm}\displaystyle%
+\text{E}\sum_{t=1}^{\infty }\beta ^{t}\frac{c_{t}^{1-\nu }}{1-\nu }, \\
+\text{s.t.}
+\end{gather*}
+
+\begin{equation}
+c_{t}+k_{t}=z_{t}k_{t-1}^{\alpha }+(1-\delta )k_{t-1}
+\end{equation}%
+\begin{equation}
+z_{t}=(1-\rho )+\rho z_{t-1}+e_{t}
+\end{equation}
+
+\noindent The first-order condition for this problem is: 
+\begin{equation}
+c_{t}^{-\nu }=\text{E}_{t}\left[ \beta c_{t+1}^{-\nu }\left( z_{t+1}\alpha
+k_{t}^{\alpha -1}+1-\delta \right) \right] 
+\end{equation}
+
+You will solve this model using perturbation methods in four ways:
+
+\begin{itemize}
+\item 1st order approximation in levels
+
+\item 2nd order approximation in levels
+
+\item 1st order approximation in logs
+
+\item 2nd order approximation in logs
+\end{itemize}
+
+The Matlab file \texttt{Perturbation.m} is the master file. In particular,
+it sets the values of $\nu $ and $\sigma $ (and the Dynare files will use
+these). These two parameters are the key parameters for this problem because
+the problem becomes more nonlinear if the values of these parameters
+increase. The files \texttt{RBClevels1st.mod}  and \texttt{RBClevels2nd.mod}
+are the Dynare programs to generate a polynomial solution in levels for
+first and second-order, respectively. 
+
+You are asked to do the following:
+
+\begin{enumerate}
+\item Using the provided *.mod files as an example write the Dynare files
+that will generate a solution in \emph{log levels}. !!! Do not change the
+law of motion for $z_{t}$. That is, you should only consider transformations
+of $c_{t}$ and $k_{t}$.
+
+\item Open the main file, \texttt{Perturbation.m}. It already generates
+artificial data series for \texttt{RBClevels1st.mod} and \texttt{%
+RBClogs1st.mod} (i.e., the file you have just created). What you are asked
+to do is to write the part to generate  artificial data from decision rules
+obtained from the two second-order approximations.
+
+\item In the program provided the values of $\sigma $ and $\nu $ are set
+equal to 0.007 and $3$, two very reasonable values. Investigate what happens
+if you consider different values.\newline
+For example, consider $\sigma =0.07$. Are solutions very different when
+uncertainty is high? In which case does the approximation in logs make more
+sense than approximation in levels (hint: have a look at the consumption
+series for the models in levels)?
+\end{enumerate}
+
+\section{IRFs for non-linear models}
+
+\noindent For linear models the IRF is unique. For non-linear models the
+responses to a shock depend on (i) the values the state variables take on,
+(ii) the values \emph{future} shocks take on (iii) they depend on the sign
+and the size of the shock even when the responses are scaled by the shock. 
+
+The file \texttt{IRFRBClevels2nd.m} computes the impulse responses for the
+three variables in the model.
+
+\begin{enumerate}
+\item Run the file \texttt{IRFRBClevels2nd.m} with the given parameters. It
+generates three impulse responses. Do not close the figure window.
+
+\item Now change the starting values for the computation of the impulse
+response. For example, multiply the starting value for capital (k0) by 1.5
+(so that the computation of the impulse response will start with capital
+50\% above the steady state). Compare the results with those you obtained in
+part \#1. Are they the same?
+
+\item Now undo the change made in part \#2 and run the file again (that is
+do part \#1 again). Again keep the figure window open. Now change the seed
+used to generate the random numbers. You'll see that there are some
+differences, although small (an easy way to see them is to click on the icon
+'Data Cursor' on the figure an then click on one of the lines in the
+figure). Think why these differences occur. What would you have to do to if
+you wanted to obtain a 'typical' impulse-response function for the second
+order approximation?
+\end{enumerate}
+
+\section{A simple investment technology shock model}
+
+\noindent Consider the following model with investment-specific technology
+shocks. 
+\begin{gather*}
+\max_{\left\{ c_{t},i_{t},k_{t}\right\} }\hspace{2mm}\displaystyle\text{E}%
+\sum_{t=1}^{\infty }\beta ^{t}\frac{c_{t}^{1-\nu }}{1-\nu }, \\
+\text{s.t.}
+\end{gather*}
+
+\begin{eqnarray*}
+c_t + i_t = k_{t-1}^{\alpha}
+\end{eqnarray*}
+\begin{eqnarray*}
+k_t=(1-\delta)k_{t-1} + exp(z_t)i_t
+\end{eqnarray*}
+\begin{eqnarray*}
+z_t=\rho z_{t-1} + e_t
+\end{eqnarray*}
+
+\noindent \textbf{First-order condition:} 
+\begin{equation*}
+\frac{c_{t}^{-\nu }}{exp(z_{t})}=\text{E}_{t}\left[ \beta c_{t+1}^{-\nu
+}\left( \alpha k_{t}^{\alpha -1}+\frac{1-\delta }{exp(z_{t+1})}\right) %
+\right] 
+\end{equation*}
+
+\noindent The purpose of this exercise is to investigate the differences
+between investment technology shocks and productivity shocks, and especially
+of the consequences they have for the comovement between variables. The file
+to solve this model with Dynare can be found in \texttt{RBCInvestment.mod}.
+The corresponding program for the model with productivity shocks is given in 
+\texttt{RBCTechnology.mod}).\footnote{%
+Note that the model with productivity shocks is exactly the same as the
+model \texttt{RBClevels1st.mod}, with the only difference that investment
+series has been made explicit.} The file \texttt{Correlations.m} \ runs both
+models and computes business cycle statistics. 
+
+You are asked to do the following:
+
+\begin{enumerate}
+\item In \texttt{Correlations.m} the part that computes artificial time
+series for technology shocks has alredy been written. To investigate
+investment technology shocks, write the second part that (1) runs \texttt{%
+RBCInvestment.mod} using Dynare, (2) loads the coefficient matrix (decision
+rules) and (3) generates artificial time series for output, consumption, and
+investment. Hint: you can draw heavily on what has already been written in
+the first part of \texttt{Correlations.m}.
+
+\item When you complete part \#1, the program will display the Dynare
+impulse responses and display correlations between output, consumption, and
+investment for the two models. Using US data we observe that corr(c,y)=0.78
+and corr(i,y)=0.88. Does the model with investment technology shocks come
+close to these values? Think how you can explain the negative correlation
+between consumption and investment by looking at the impulse responses of
+the model with investment technology shocks.
+\end{enumerate}
+
+\end{document}
