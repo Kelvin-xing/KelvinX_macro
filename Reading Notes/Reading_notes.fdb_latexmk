@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Reading_notes"] 1709722303 "Reading_notes.aux" "Reading_notes.bbl" "Reading_notes" 1709722303
+["bibtex Reading_notes"] 1709729981 "Reading_notes.aux" "Reading_notes.bbl" "Reading_notes" 1709729982
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Reading_notes.aux" 1709451978 16854 44388b1226640c735e84c71c404b3a90 "pdflatex"
-  "Reading_notes.bib" 1709722303 68265 864b0ed906d7c309016fa2f03d0ac240 ""
+  "Reading_notes.aux" 1709729982 17393 490373dd4a0af498b0dda9c63f3e4739 "pdflatex"
+  "Reading_notes.bib" 1709729578 69843 57043252b3388391d2dc454a48bc10c9 ""
   (generated)
   "Reading_notes.bbl"
   "Reading_notes.blg"
-["pdflatex"] 1709451977 "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" "Reading_notes.pdf" "Reading_notes" 1709722303
-  "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" 1709451974 30005 1162d903e9ff5567a8d499ddb630488e ""
+["pdflatex"] 1709729981 "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" "Reading_notes.pdf" "Reading_notes" 1709729982
+  "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" 1709729979 31210 5762f756a853a2d861d041e9bda74224 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -133,10 +133,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663576759 2826438 1ae54c060c8f7bb1b3b78240a682546f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Reading_notes.aux" 1709451978 16854 44388b1226640c735e84c71c404b3a90 "pdflatex"
-  "Reading_notes.bbl" 1709722303 12531 01474845be7e977311e61e89295e5b2a "bibtex Reading_notes"
-  "Reading_notes.tex" 1709451974 30005 1162d903e9ff5567a8d499ddb630488e ""
-  "Reading_notes.toc" 1709451978 6349 f29fb6c6ec18deead92aa228b02c1e5f "pdflatex"
+  "Reading_notes.aux" 1709729982 17393 490373dd4a0af498b0dda9c63f3e4739 "pdflatex"
+  "Reading_notes.bbl" 1709729981 12898 390487da76156028601239536e277210 "bibtex Reading_notes"
+  "Reading_notes.tex" 1709729979 31210 5762f756a853a2d861d041e9bda74224 ""
+  "Reading_notes.toc" 1709729982 6544 3f22fd2365a94459a23bca13b49e231e "pdflatex"
   (generated)
   "Reading_notes.aux"
   "Reading_notes.log"
