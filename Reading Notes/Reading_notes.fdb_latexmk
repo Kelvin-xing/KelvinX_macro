@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Reading_notes"] 1709451977 "Reading_notes.aux" "Reading_notes.bbl" "Reading_notes" 1709451978
+["bibtex Reading_notes"] 1709722303 "Reading_notes.aux" "Reading_notes.bbl" "Reading_notes" 1709722303
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   "Reading_notes.aux" 1709451978 16854 44388b1226640c735e84c71c404b3a90 "pdflatex"
-  "Reading_notes.bib" 1709451967 67954 49fef886002a87b47d6fd9a282da3f49 ""
+  "Reading_notes.bib" 1709722303 68265 864b0ed906d7c309016fa2f03d0ac240 ""
   (generated)
   "Reading_notes.bbl"
   "Reading_notes.blg"
-["pdflatex"] 1709451977 "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" "Reading_notes.pdf" "Reading_notes" 1709451978
+["pdflatex"] 1709451977 "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" "Reading_notes.pdf" "Reading_notes" 1709722303
   "/Users/mingjiexing/Desktop/Python/Macro/Reading Notes/Reading_notes.tex" 1709451974 30005 1162d903e9ff5567a8d499ddb630488e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -134,7 +134,7 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663576759 2826438 1ae54c060c8f7bb1b3b78240a682546f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Reading_notes.aux" 1709451978 16854 44388b1226640c735e84c71c404b3a90 "pdflatex"
-  "Reading_notes.bbl" 1709451977 12531 01474845be7e977311e61e89295e5b2a "bibtex Reading_notes"
+  "Reading_notes.bbl" 1709722303 12531 01474845be7e977311e61e89295e5b2a "bibtex Reading_notes"
   "Reading_notes.tex" 1709451974 30005 1162d903e9ff5567a8d499ddb630488e ""
   "Reading_notes.toc" 1709451978 6349 f29fb6c6ec18deead92aa228b02c1e5f "pdflatex"
   (generated)
