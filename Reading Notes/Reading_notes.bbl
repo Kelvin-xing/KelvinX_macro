@@ -1,5 +1,22 @@
 \begin{thebibliography}{}
 
+\bibitem[Acemoglu, 1998]{Acemoglu1998}
+Acemoglu, D. (1998).
+\newblock Why do new technologies complement skills? directed technical change
+  and wage inequality.
+\newblock {\em The Quarterly Journal of Economics}, 113(4):1055--1089.
+
+\bibitem[Acemoglu, 2002]{Acemoglu2002}
+Acemoglu, D. (2002).
+\newblock {Directed Technical Change}.
+\newblock {\em The Review of Economic Studies}, 69(4):781--809.
+
+\bibitem[Acemoglu and Restrepo, 2018]{AcemogluRestrepo2018}
+Acemoglu, D. and Restrepo, P. (2018).
+\newblock The race between man and machine: Implications of technology for
+  growth, factor shares, and employment.
+\newblock {\em American Economic Review}, 108(6):1488--1542.
+
 \bibitem[Adão et~al., 2020]{AdaoBerajaPandalaiNayar2020}
 Adão, R., Beraja, M., and Pandalai-Nayar, N. (2020).
 \newblock Technological transitions with skill heterogeneity across
@@ -20,6 +37,16 @@ Aghion, P., Bloom, N., Blundell, R., Griffith, R., and Howitt, P. (2005).
 Aghion, P., Harris, C., Howitt, P., and Vickers, J. (2001).
 \newblock Competition, imitation and growth with step-by-step innovation.
 \newblock {\em The Review of Economic Studies}, 68(3):467--492.
+
+\bibitem[Agrawal et~al., 2019]{Agrawaletal2019}
+Agrawal, A., Gans, J., and Goldfarb, A., editors (2019).
+\newblock {\em The Economics of Artificial Intelligence: An Agenda}.
+\newblock University of Chicago Press.
+
+\bibitem[Agrawal et~al., 2023]{Agrawaletal2023}
+Agrawal, A., Gans, J.~S., and Goldfarb, A. (2023).
+\newblock Artificial intelligence adoption and system-wide change.
+\newblock {\em Journal of Economics \& Management Strategy}, pages 1--11.
 
 \bibitem[Aiginger and Rodrik, 2020]{AigingerRodrik2020}
 Aiginger, K. and Rodrik, D. (2020).
@@ -78,6 +105,16 @@ Bai, Y., Jin, K., and Lu, D. (2023).
 \newblock Technological rivalry and optimal dynamic policy in an open economy.
 \newblock Working Paper 31703, National Bureau of Economic Research.
 
+\bibitem[Bresnahan, 2023]{Bresnahan2023}
+Bresnahan, T. (2023).
+\newblock What innovation paths for ai to become a gpt?
+\newblock {\em Journal of Economics \& Management Strategy}, n/a(n/a):1--12.
+
+\bibitem[Bresnahan and Trajtenberg, 1995]{BRESNAHANTrajtenberg1995}
+Bresnahan, T.~F. and Trajtenberg, M. (1995).
+\newblock General purpose technologies ‘engines of growth’?
+\newblock {\em Journal of Econometrics}, 65(1):83--108.
+
 \bibitem[Buera and Oberfield, 2020]{BueraOberfield2020}
 Buera, F.~J. and Oberfield, E. (2020).
 \newblock The global diffusion of ideas.
@@ -97,7 +134,7 @@ Burchardi, K.~B. and Hassan, T.~A. (2013).
 \bibitem[Chen et~al., 2022]{ChenIoannidesRauch2022}
 Chen, Y., Ioannides, Y.~M., and Rauch, F. (2022).
 \newblock Asymmetric trading costs and ancient greek cities.
-\newblock (DP17204).
+\newblock Technical Report DP17204, CEPR.
 
 \bibitem[COHEN et~al., 2017]{CohenGurunMalloy2017}
 COHEN, L., GURUN, U.~G., and MALLOY, C. (2017).
@@ -118,6 +155,7 @@ Costinot, A., Rodríguez-Clare, A., and Werning, I. (2020).
 \bibitem[de~Souza et~al., 2022]{deSouzaetal2022}
 de~Souza, G., Hu, N., Li, H., and Mei, Y. (2022).
 \newblock (trade) war and peace: How to impose international trade sanctions.
+\newblock Technical report, SSRN.
 \newblock Available at SSRN: \url{https://ssrn.com/abstract=4153921} or
   \url{http://dx.doi.org/10.2139/ssrn.4153921}.
 
@@ -142,16 +180,35 @@ Docquier, F., Machado, J., and Sekkat, K. (2015).
 \newblock Efficiency gains from liberalizing labor mobility.
 \newblock {\em The Scandinavian Journal of Economics}, 117(2):303--346.
 
+\bibitem[Eloundou et~al., 2023]{Eloundouetal2023}
+Eloundou, T., Manning, S., Mishkin, P., and Rock, D. (2023).
+\newblock Gpts are gpts: An early look at the labor market impact potential of
+  large language models.
+
 \bibitem[Feenstra et~al., 2002]{FeenstraRomalisSchott2002}
 Feenstra, R.~C., Romalis, J., and Schott, P.~K. (2002).
 \newblock U.s. imports, exports, and tariff data, 1989-2001.
-\newblock (w9387).
+\newblock Technical Report w9387, National Bureau of Economic Research.
+
+\bibitem[Felten et~al., 2023]{Feltenetal2023}
+Felten, E.~W., Raj, M., and Seamans, R. (2023).
+\newblock How will language modelers like chatgpt affect occupations and
+  industries?
+\newblock Technical report, SSRN.
+\newblock Available at SSRN: \url{https://ssrn.com/abstract=4375268} or
+  \url{http://dx.doi.org/10.2139/ssrn.4375268}.
 
 \bibitem[Fernandes et~al., 2023]{Fernandesetal2023}
 Fernandes, A.~M., Klenow, P.~J., Meleshchuk, S., Pierola, M.~D., and
   Rodr{\'\i}guez-Clare, A. (2023).
 \newblock The intensive margin in trade: How big and how important?
 \newblock {\em American economic journal. Macroeconomics}, 15(3):320--354.
+
+\bibitem[Goldfarb et~al., 2023]{GOLDFARBTaskaTeodoridis2023}
+Goldfarb, A., Taska, B., and Teodoridis, F. (2023).
+\newblock Could machine learning be a general purpose technology? a comparison
+  of emerging technologies using data from online job postings.
+\newblock {\em Research Policy}, 52(1):104653.
 
 \bibitem[Hopenhayn, 1992]{Hopenhayn1992}
 Hopenhayn, H.~A. (1992).
@@ -170,6 +227,17 @@ Hornung, E. (2014).
   prussia.
 \newblock {\em The American Economic Review}, 104(1):84--122.
 
+\bibitem[Hémous et~al., 2019]{Hemousetal2019}
+Hémous, D., Dechezleprêtre, A., Olsen, M., and Zanella, C. (2019).
+\newblock Automating labor: Evidence from firm-level patent data.
+\newblock CEPR Discussion Papers 14249, C.E.P.R. Discussion Papers.
+
+\bibitem[Hémous and Olsen, 2022]{HemousOlsen2022}
+Hémous, D. and Olsen, M. (2022).
+\newblock The rise of the machines: Automation, horizontal innovation, and
+  income inequality.
+\newblock {\em American Economic Journal: Macroeconomics}, 14(1):179--223.
+
 \bibitem[Jovanovic, 1982]{Jovanovic1982}
 Jovanovic, B. (1982).
 \newblock Selection and the evolution of industry.
@@ -179,6 +247,11 @@ Jovanovic, B. (1982).
 Juhász, R., Lane, N.~J., and Rodrik, D. (2023).
 \newblock The new economics of industrial policy.
 \newblock Working Paper 31538, National Bureau of Economic Research.
+
+\bibitem[Katz and Murphy, 1992]{KatzMurphy1992}
+Katz, L.~F. and Murphy, K.~M. (1992).
+\newblock Changes in relative wages, 1963-1987: Supply and demand factors.
+\newblock {\em The Quarterly Journal of Economics}, 107(1):35--78.
 
 \bibitem[Klette and Kortum, 2004]{KletteKortum2004}
 Klette, T. and Kortum, S. (2004).
@@ -246,6 +319,11 @@ Melitz, M.~J. (2003).
   industry productivity.
 \newblock {\em Econometrica}, 71(6):1695--1725.
 
+\bibitem[Mookherjee and Ray, 2022]{MookherjeeRay2022}
+Mookherjee, D. and Ray, D. (2022).
+\newblock Growth, automation and the long-run share of labor.
+\newblock {\em Review of Economic Dynamics}, 46:1--26.
+
 \bibitem[Mortensen and Pissarides, 1994]{MortensenPissarides1994}
 Mortensen, D.~T. and Pissarides, C.~A. (1994).
 \newblock Job creation and job destruction in the theory of unemployment.
@@ -255,6 +333,17 @@ Mortensen, D.~T. and Pissarides, C.~A. (1994).
 Munch, J. and Schaur, G. (2018).
 \newblock The effect of export promotion on firm-level performance.
 \newblock {\em American Economic Journal: Economic Policy}, 10(1):357--387.
+
+\bibitem[Oberfield and Raval, 2021]{OberfieldRaval2021}
+Oberfield, E. and Raval, D. (2021).
+\newblock Micro data and macro technology.
+\newblock {\em Econometrica}, 89(2):703--732.
+
+\bibitem[Ohanian et~al., 2023]{OhanianOrakShen2023}
+Ohanian, L., Orak, M., and Shen, S. (2023).
+\newblock Revisiting capital-skill complementarity, inequality, and labor
+  share.
+\newblock {\em Review of Economic Dynamics}, 51:479--505.
 
 \bibitem[Parsons and Vézina, 2018]{ParsonsVezina2018}
 Parsons, C. and Vézina, P.-L. (2018).
@@ -266,7 +355,7 @@ Parsons, C. and Vézina, P.-L. (2018).
 Prato, M. (2022).
 \newblock The global race for talent: Brain drain, knowledge transfer, and
   growth.
-\newblock Ssrn working paper.
+\newblock Ssrn working paper, SSRN.
 
 \bibitem[Rodrik, 2016]{Rodrik2016}
 Rodrik, D. (2016).
@@ -280,10 +369,20 @@ Rodrik, D. (2018).
 \newblock What do trade agreements really do?
 \newblock {\em Journal of Economic Perspectives}, 23(2):73--90.
 
+\bibitem[Sachs and Kotlikoff, 2012]{SachsKotlikoff2012}
+Sachs, J.~D. and Kotlikoff, L.~J. (2012).
+\newblock {Smart Machines and Long-Term Misery}.
+\newblock NBER Working Papers 18629, National Bureau of Economic Research, Inc.
+
 \bibitem[Shimer, 2005]{Shimer2005}
 Shimer, R. (2005).
 \newblock The cyclical behavior of equilibrium unemployment and vacancies.
 \newblock {\em American Economic Review}, 95(1):25--49.
+
+\bibitem[Shimizu and Momoda, 2023]{ShimizuMomoda2023}
+Shimizu, R. and Momoda, S. (2023).
+\newblock Does automation technology increase wage?
+\newblock {\em Journal of Macroeconomics}, 77(C):S0164070423000411.
 
 \bibitem[Steinwender, 2018]{Steinwender2018}
 Steinwender, C. (2018).
@@ -301,5 +400,17 @@ Suesse, M. (2018).
 Zhang, L. and Wang, S. (2023).
 \newblock Trusting talent: Cross-country differences in hiring.
 \newblock Working Paper.
+
+\bibitem[Zhang, 2023]{Zhang2023}
+Zhang, P. (2023).
+\newblock Endogenous capital-augmenting r&d, intersectoral labor reallocation,
+  and the movement of the labor share.
+\newblock {\em Journal of Economics}, 140(1):1--36.
+
+\bibitem[Zucman, 2014]{Zucman2014}
+Zucman, G. (2014).
+\newblock Taxing across borders: Tracking personal wealth and corporate
+  profits.
+\newblock {\em Journal of Economic Perspectives}, 28(4):121--48.
 
 \end{thebibliography}
