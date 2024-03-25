@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Reading_notes.aux
+The style file: apalike.bst
+Database file #1: Reading_notes.bib
+Warning--entry type for "MazzucatoRodrik2023" isn't style-file defined
+--line 224 of file Reading_notes.bib
+Warning--empty booktitle in AcemogluAutor2011
+Warning--empty publisher in Bresnahan2021
+Warning--empty institution in Feltenetal2023
+You've used 104 entries,
+            1935 wiz_defined-function locations,
+            1133 strings with 21488 characters,
+and the built_in function-call counts, 39811 in all, are:
+= -- 3933
+> -- 1502
+< -- 80
++ -- 519
+- -- 486
+* -- 3473
+:= -- 7012
+add.period$ -- 315
+call.type$ -- 104
+change.case$ -- 769
+chr.to.int$ -- 103
+cite$ -- 107
+duplicate$ -- 1409
+empty$ -- 2807
+format.name$ -- 658
+if$ -- 7734
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 75
+newline$ -- 525
+num.names$ -- 313
+pop$ -- 539
+preamble$ -- 1
+purify$ -- 763
+quote$ -- 0
+skip$ -- 1075
+stack$ -- 0
+substring$ -- 3087
+swap$ -- 120
+text.length$ -- 20
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 620
+warning$ -- 3
+while$ -- 308
+width$ -- 0
+write$ -- 1349
+(There were 4 warnings)

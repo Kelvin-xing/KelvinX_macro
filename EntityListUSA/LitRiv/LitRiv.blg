@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: LitRiv.aux
+The style file: apalike.bst
+Database file #1: LitRiv.bib
+Warning--empty chapter and pages in AntrasChor2022
+You've used 34 entries,
+            1935 wiz_defined-function locations,
+            721 strings with 9880 characters,
+and the built_in function-call counts, 12998 in all, are:
+= -- 1281
+> -- 489
+< -- 32
++ -- 176
+- -- 158
+* -- 1152
+:= -- 2289
+add.period$ -- 103
+call.type$ -- 34
+change.case$ -- 249
+chr.to.int$ -- 34
+cite$ -- 35
+duplicate$ -- 460
+empty$ -- 917
+format.name$ -- 224
+if$ -- 2512
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 27
+newline$ -- 174
+num.names$ -- 102
+pop$ -- 171
+preamble$ -- 1
+purify$ -- 249
+quote$ -- 0
+skip$ -- 347
+stack$ -- 0
+substring$ -- 986
+swap$ -- 34
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 202
+warning$ -- 1
+while$ -- 104
+width$ -- 0
+write$ -- 446
+(There was 1 warning)

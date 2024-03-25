@@ -1,0 +1,83 @@
+\contentsline {section}{\numberline {1}Trade}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}\cite {BueraOberfield2020}}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}\cite {ChenIoannidesRauch2022}}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}\cite {AmitiKongWeinstein2020}}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}\cite {AkcigitAtesImpullitti2018}}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}\cite {Fernandesetal2023}}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}\cite {MartinMejeanParenti2023}}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}\cite {DemidovaRodriguezClare2009}}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}\cite {Demidova2017}}{5}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}\cite {CostinotRodriguezClareIvan2020}}{5}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}\cite {AtkesonBurstein2008}}{5}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}\cite {Allen2014}}{5}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}\cite {Steinwender2018}}{5}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}\cite {Suesse2018}}{5}{subsection.1.13}%
+\contentsline {section}{\numberline {2}Industrial Policy}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\cite {JuhaszLaneRodrik2023}}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}\cite {MazzucatoRodrik2023}}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}\cite {Rodrik2018}}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}\cite {AigingerRodrik2020}}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}\cite {McMillanRodrikSepulveda2017}}{6}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Innovation}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}\cite {AghionHarrisHowittVickers2001}}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\cite {Prato2022}}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}\cite {BaharRapoport2018}}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}\cite {Hornung2014}}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}\cite {BaiJinLu2023}}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}\cite {AdaoBerajaPandalaiNayar2020}}{7}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}\cite {LiuMa2023}}{7}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}\cite {KoganPapanikolaouSeruStoffman2017}}{7}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}\cite {AghionBloomBlundellGriffithHowitt2005}}{7}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}\cite {KoenigLorenzZilibotti2016}}{7}{subsection.3.10}%
+\contentsline {section}{\numberline {4}Search and Unemployment}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\cite {MortensenPissarides1994}}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}\cite {Shimer2005}}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\cite {HornsteinKrusellViolante2011}}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}\cite {LenoirMartinMejean2022}}{8}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Heterogenous Agents}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}\cite {Aiyagari1994}}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\cite {KrusellSmith1998}}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Firm Dynamics}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}\cite {Hopenhayn1992}}{8}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}\cite {Kochen2023}}{8}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}\cite {ArellanoBaiZhang2012}}{8}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}\cite {CooleyQuadrini2001}}{8}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}\cite {Jovanovic1982}}{8}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}\cite {KletteKortum2004}}{9}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}\cite {Melitz2003}}{9}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Uncertainty}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}\cite {ArellanoBaiKehoe2019}}{9}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Empirical}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}\cite {OberfieldRaval2021}}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}\cite {ZhangWang2023}}{9}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}\cite {deSouzaetal2022}}{9}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}\cite {DiaoElllisMcMillanRodrik2021}}{9}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}\cite {LaplaneMazzucato2020}}{10}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}\cite {Rodrik2016}}{10}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}\cite {AghionAkcigitHyytinenToivanen2018}}{10}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}\cite {Akcigitetal2018}}{10}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}\cite {MunchuSchaur2018}}{11}{subsection.8.9}%
+\contentsline {section}{\numberline {9}Migration}{11}{section.9}%
+\contentsline {subsection}{\numberline {9.1}\cite {DocquierMachadoSekkat2015}}{11}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}\cite {ParsonsVezina2018}}{11}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}\cite {BurchardiChaneyHassan2019}}{11}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}\cite {CohenGurunMalloy2017}}{11}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}\cite {BurchardiHassan2013}}{12}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Tax}{12}{section.10}%
+\contentsline {subsection}{\numberline {10.1}\cite {Zucman2014}}{12}{subsection.10.1}%
+\contentsline {section}{\numberline {11}AI}{12}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Economic Essence}{12}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Productivity}{12}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Labor}{13}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Inequality}{13}{subsection.11.4}%
+\contentsline {section}{\numberline {12}Data}{14}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Macro}{14}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Medical}{14}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Trade}{14}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Legal}{14}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Innovation}{14}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Firm}{14}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Transport}{15}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Migration}{15}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}Others}{15}{subsection.12.9}%
+\contentsline {section}{Bibliography}{16}{section*.2}%

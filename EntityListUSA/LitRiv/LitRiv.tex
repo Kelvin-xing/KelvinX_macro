@@ -1,0 +1,163 @@
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[10pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\usepackage{setspace}
+\usepackage{parskip}
+\parskip = 0.3 \baselineskip %\advance\parskip by 0pt plus 2pt% to change between paragraphs space
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+% \usepackage{gravarphicx} % support the \includegravarphics command and options
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{natbib}
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage[table,xcdraw]{xcolor}
+
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{plain} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\rmfamily\bfseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\usepackage[colorlinks,citecolor=black,urlcolor=black,bookmarks=false,hypertexnames=true]{hyperref} 
+%%% END Article customizations
+
+
+
+%%% The "real" document content comes below...
+
+\title{Literature Review on US and Japan etc. semiconductor dispute}
+\author{Xing Mingjie}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Economics of Intellectual Property}
+    \subsection{Learning by doing}
+    % \cite{LevittListSyverson2013} used auto producer assembly plant data to investigate in learning by doing.
+    % \cite{Kellogg2011}
+    \cite{IrwinKlenow1994} finds that the US semiconductor industry has a learning rate of 20\%, firms learn three times more from own-grown production, spillover effect similar across and within countries, Japanese firms no faster learning, and inter-generational learning is weak.
+\section{Model}
+    \subsection{Tariff}
+        \cite{BOWN2021} marks the timing of tariff changes, highlights two additional channels through which tariffs changed, provides an initial exploration into why China fell more than 40\% short of meeting the goods purchase commitments, and considers additional trade policy actions.
+
+        \subsubsection{Welfare loss}
+        \cite{Fajgelbaumetal2019} embed the estimated trade elasticities in a general-equilibrium model of the US economy to account for tariff revenue and gains to domestic producers. The aggregate real income loss was \$7.2 billion or 0.04\% of GDP. Import tariffs favored sectors concentrated in politically competitive counties.
+
+        \cite{AmitiReddingWeinstein2019} implies a reduction in aggregate US real income of \$1.4 billion per month by the end of 2018.
+
+        \cite{HandleyKamalMonarch2020} identify firms that eventually faced tariff increases. They accounted for 84\% of all exports and represented 65\% of manufacturing employment.
+
+        \cite{HandleyKamalMonarch2023} find that decline in imports of tariffed goods was driven by discontinuations of U.S. buyer-foreign supplier relationships
+
+        \subsubsection{GVC change}
+        \cite{FajgelbaumGoldbergKennedyKhandelwalTaglioni2021} find that countries that operate along downward-sloping supplies whose exports substitute (complement) US and China are among the larger (smaller) beneficiaries of the trade war.
+
+        \cite{Latipovetal2022} quantify the impact of EU's mirror sanctions on Russia following US and find they would inflict on Russia welfare losses of at least \$996 million per year — at an overall cost of \$150 million to EU consumers.
+
+        \cite{AntrasChor2022} surveys the recent body of work in economics on the importance of global value chains (GVCs) in shaping international trade flows and multinational activity
+
+        \cite{Changetal2022} empirically examines the determinants of the utilization of regional trade agreements (RTAs).
+
+        \cite{ChenHuLi2021} shows that the export control policy has increased the export price of rare earth downstream products from China, whereas the effects on export quantity and value have been heterogeneous across sectors: they are significant for sectors in which the rare earth cost share is high, and the elasticity of substitution is low.
+
+
+
+    
+
+\section{Disputes}
+    \subsection{East Asia}
+    \cite{Ning2008} examines the role of the state in ICT sector over the course of its evolution in Japan Korea Taiwan and China. 
+    \subsection{Japan}
+    \cite{LangloisSteinmueller2000} argues that the American success is the result of the capabilities developed in earlier heyday American dominance.
+
+    \cite{Irwin1994} examines how the U.S. semiconductor industry became the beneficiary of this unique and unprecedented sectoral trade agreement by analyzing the political and economic forces leading up to the 1986 accord and shaping subsequent events.
+
+    \cite{Baldwin1990} argues that the semiconductor arrangement has the exactly opposite effect of enhancing free trade.
+
+    \subsection{Korea}
+    \cite{FlaaenHortacsuTintelnot2020} finds that the US tariffs on washing machines increases price of washers by nearly 12 percent. The price of dryers—not subject to tariffs—increased by an equivalent amount
+
+    \subsection{Taiwan}
+
+    \subsection{EU}
+    \cite{AndreescuRadu2013} presents the main transatlantic trade disputes, explaining the ways in which they were solved with the help of the WTO.
+
+    \subsection{General}
+    \cite{Conconietal2017} finds that US presidents are more likely to file dispute in the year preceding re-election. They are more likely to involve industries important in swing states.
+    \subsection{Others}
+    \cite{VandenbusscheViegelahn2018} studies within-firm input reallocation from trade protection on imported raw material inputs used in firm-level production in Indian antidumping cases.
+        \subsubsection{Japan-Korea}
+        \cite{MakiokaZhang2023} examines Japan-Korea trade dispute in semiconductor industry in 2019 and finds .
+        \cite{Kim2021} measures the impact of the recent Korea-Japan trade dispute on the Korean economy using supply-driven input-output analysis
+    
+
+    \cite{BownReynolds2014} establishes a set of basic facts and pattern regarding the trade that countries fight about under WTO dispute settlement.
+
+
+\section{Data}
+
+\section{Trade disputes and agreement design}
+\cite{MaggiStaiger2018}'s model of trade agreements with renegotiatoin and imperfectly varifiable information yields predictions on how the dispute outcome depends on the contracting environment and how it correlates with the optimal contract form. (\cite{MaggiStaiger2011}, \cite{MaggiStaiger2015})
+
+\subsection{Protectionism}
+\cite{Mayer1984}, \cite{GrossmanHelpman1994}, \cite{GrossmanHelpman1995}, \cite{GrossmanHelpman1996}, \cite{GoldbergMaggi1999}, \cite{GawandeBandyopadhyay2000}, \cite{EderingtonMinier2008}
+
+\subsection{Chad Bown}
+great explanation of the semiconductor history since its invention in America \cite{Bown2020}
+
+\subsection{Santacreu}
+\cite{Santacreu2022}
+
+\newpage
+\footnotesize
+\bibliographystyle{apalike}
+\bibliography{LitRiv}
+
+\end{document}
