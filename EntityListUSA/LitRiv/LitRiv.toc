@@ -18,4 +18,5 @@
 \contentsline {subsection}{\numberline {5.1}Protectionism}{4}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Chad Bown}{4}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Santacreu}{4}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Semiconductor}{4}{subsection.5.4}%
 \contentsline {section}{Bibliography}{5}{section*.2}%
