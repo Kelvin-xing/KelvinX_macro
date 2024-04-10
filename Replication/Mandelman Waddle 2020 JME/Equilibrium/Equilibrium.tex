@@ -80,11 +80,81 @@
 \section{Setting}
 \begin{itemize}
     \item Based on \cite{GhironiMelits2005} and \cite{HolmesMcGrattanPrescott2015}
-    \item two-country Melitz
+    \item two-country, differ in productivity, tech capital production ability, protection of intellectual property rights
+    \item Home more developed, two representative agents: Entrepreneurs produce tech capital, HH supply labor and own firms.
+    \item Foreign less developed, only HH supply labor and own two firms: licensed and appropriating firms. only licensed firms can do trade.
+    \item Licensed entrants buy tech capital from entrepreneurs and pay royalty fee as sunk-cost to use it.
+    \item Appropriating firms replicate goods with higher cost (identical to lower quality proved by \cite{HolmesMcGrattanPrescott2015})
+    \item Policy instruments: tariffs and intellectual property protection
 \end{itemize}
 
 \section{Consumption}
+    \begin{itemize}
+        \item HH utility: $C_t = (\int_{\omega\in\Omega_t}c_t(\omega)^\frac{\theta-1}{\theta}d\omega)^\frac{\theta}{\theta-1}$
+        \item $\theta>1$: elasticity of substitution between goods, $\omega$: variety of goods, one firm one good, $\Omega_t$: continuum of goods at time $t$
+        \item CPI index: $P_t = (\int_{\omega\in\Omega_t}p_t(\omega)^{1-\theta}d\omega)^\frac{1}{\theta-1}$
+        \item $p_t(\omega)$: price of good $\omega$ at time $t$
+        \item Aggregate consumption: $C_t = C_{h,t} + C_{e,t}$
+    \end{itemize}
 
+\section{Entrepreneurs}
+    \begin{itemize}
+        \item $C_{e,t} = \mathbb{E}_t\sum\limits_{s=t}^{\infty}\beta^{s-t}\frac{C_{e,s}^{1-\gamma}}{1-\gamma}$
+        \item $\gamma$: elasticity of inter-temporal substitution
+        \item $L_{e,t} \equiv L_t \equiv 1$: labor supply and do not receive wage
+        \item technology capital: $M_t = X_t + (1-\delta_M)M_{t-1}$
+        \item $X_t$: investment in new technology, $\delta_M$: depreciation rate
+        \item royalty fee: $R_t M_{t-1}$
+    \end{itemize}
+    \subsection{Deployment of technology in Foreign}
+    \begin{itemize}
+        \item appropriated tech capital by foreign: $h(q_t) = \Theta_t[q_t \exp(-\eta(1-q_t))]$
+        \item $\Theta_t$: exogenous changes in policy, $q_t$: intensity of tech capital deployed, or fraction of capital rented
+        \item foreign tech capital law of motion $M_t^* = X_t + (1-\delta_M) (1-h(q_t))M_{t-1}^*$
+    \end{itemize}
+    \subsection{Optimality}
+    Entrepreneur maximization problem:
+    \[
+        \max\limits_{C_{e,t}, X_t, q_t} \mathbb{E}_t\sum\limits_{s=t}^{\infty}\beta^{s-t}\frac{C_{e,s}^{1-\gamma}}{1-\gamma}
+    \]
+    s.t.\begin{align*}
+        C_{e,t} + X_t = R_t M_{t-1}N_{E,t} + \mathbb{Q}_t R_t^* q_t M_{t-1}^* N_{E,t}^* + \Pi_{e,t}\\
+        M_t^* = X_t + (1-\delta_M) (1-h(q_t))M_{t-1}^*\\
+        M_t = X_t + (1-\delta_M)M_{t-1}
+    \end{align*}
+    where $\mathbb{Q}_t = \varepsilon_t P_t^*/P_t$ is the real exchange rate, $N_{E,t}$ is the number of prospective entrants in Home, $N_{E,t}^*$ is the number of prospective entrants in Foreign, $\Pi_{e,t}$ is the lump-sum transfer of tariffs.
+
+    Lagrangian reads:
+    \begin{equation}
+        \begin{aligned}
+        & L = \mathbb{E}_t\sum\limits_{s=t}^{\infty} \beta_{s-t}(C_{e,s}^{1-\gamma}/(1-\gamma)\\
+        & +\lambda_s^*\left(X_s+\left(1-\delta_m\right)(1-h{q_t}) M_{s-1}^*-M_s^*\right) \\
+        & +\lambda_s\left(X_s+\left(1-\delta_m\right) M_{s-1}-M_s\right) \\
+        & +\mu_s\left(C_{e, s}+X_s-R_s M_{s-1} N_{E,s}-Q_s R_t^* q_s M_{s-1}^* N_{E, s}^*-\Pi_{e, s}\right)) \\
+        \end{aligned}
+    \end{equation}
+    FOCs read:
+    \begin{equation}
+        \begin{aligned}
+        & \frac{\partial}{\partial C_{e,t}}=C_{e,t}^{-\gamma}+\mu_t=0 \\
+        & \frac{\partial}{\partial x_t}=\lambda_t^*+\lambda_t+\mu_t=0 \\
+        & \frac{\partial}{\partial M_t}=-\lambda_t+\beta \mathbb{E}_t\left(\lambda_{t+1}\left(1-\delta_m\right)-\mu_{t+1} R_{t+1} N_{E, t+1}\right)=0 \\
+        & \frac{\partial}{\partial M_t^*}=-\lambda_t^*+\beta_t\mathbb{E}\left(\lambda_{t+1}^*\left(1-\delta_M\right)\left(1-h\left(q_{t+1}\right)\right)-\mu_{t+1} \mathbb{Q}_{t+1} R_{t+1}^* q_{t+1} N_{E, t+1}^*\right)=0 \\
+        & \frac{\partial}{\partial q_t}=\lambda_t^*\left(1-\delta_m\right) h^{\prime}\left(q_t\right) M_{t-1}^*-\mu_t \mathbb{Q}_t R_t^* M_{t-1}^* N_{E, t}^* =0\\
+        \end{aligned}
+        \end{equation}
+        Gives equilibrium conditions:
+        \begin{equation}
+            \begin{aligned}
+            &C_{e,t}^{-\gamma}=-\left(\lambda_t^*+\lambda_t\right) \\
+            & \lambda_t=\rho \mathbb{E}_t\left(C_{e, t+1}^{-\nu} R_{t+1} N_{t, t+1}+\lambda_{t+1}\left(1-\delta_m\right)\right. \\
+            & \lambda \hat{i}=\beta E_t\left(C_{, t+1}^{-\nu} Q_{t+1} R_{t+1}^* q_{t+1} N_{E, t+1}^*+\lambda_{t+1}^*\left(1-\partial_m\right)\left(1-h\left(q_{t+1}\right)\right)\right. \\
+            & C e_{e, t}^{-\nu} Q_t R_t^* M_{t-1}^* N_{E, t}^{+}=-\nu_t^t\left(1-J_m\right) \otimes h^{\prime}\left(q_t\right) \phi M_{t-1}^{+} \text {. } \\
+            & h^{\prime}\left(q_t\right)=\left(x_t \exp \left(-\eta\left(1-q_t\right)\right)+\left(q_{+} q_t \exp \left(-\eta\left(1-q_t\right)\right) \cdot \eta\right.\right. \\
+            & =\theta_t\left(1+\eta q_t\right) \exp \left(-\eta\left(1-q_t\right)\right. \\
+            &
+            \end{aligned}
+            \end{equation}
 
 \newpage
 
