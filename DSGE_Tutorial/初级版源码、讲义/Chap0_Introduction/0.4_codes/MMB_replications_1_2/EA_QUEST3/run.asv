@@ -1,0 +1,100 @@
+% Run and plot IRF of replication file and compare plotted results to
+% original IRF (stored)
+
+clear all;
+clc;
+
+% Adjust path to folder where replication file is stored
+cd([cd '/QUEST3_rep']);
+
+% Run replication dynare file
+dynare Quest3_rep
+
+% Display replication results
+% disp('Replication Results:')
+% disp(' ');
+% disp('Inflation')
+% disp(inflation_interest_)
+% disp(' ');
+% disp('Output')
+% disp(output_interest_)
+% disp(' ');
+% disp('Interest rate')
+% disp(interest_interest_)
+
+infirf = E_PHIC_E_EPS_M
+
+intirf = E_INOM_E_EPS_M;  
+
+
+yirf =  E_GY_E_EPS_M; 
+
+
+
+
+% Go back to original path
+cd('..');
+
+% Load original IRF
+% irpinf = (xlsread('\AW_rep_results',1,'A6:A46'));
+% irq = (xlsread('\AW_rep_results',1,'C6:C46'));
+% irr = (xlsread('\AW_rep_results',1,'E6:E46'));
+% 
+% irpinf = [0; irpinf];
+% irq = [0; irq];
+
+
+% Plot original IRF and replicated IRF
+t = 1:1:length(infirf)+1;
+zeroline = ones(length(t),1)*0;
+
+
+subplot(2,2,1);
+plot(t,infirf,'LineWidth',2);
+axis([0 22 -0.15 0.05]);
+%ylabel('annualized quarterly inflation','FontSize',8);
+xlabel('quarters','FontSize',8);
+%legend1 = legend('replication','original');
+%set(legend1,'Position',[0.6435 0.2317 0.2089 0.1]);
+title('Annualized quarerly inflation','FontSize',10);
+
+subplot(2,2,2);
+plot(t,yirf,'LineWidth',2);
+axis([0 22 -0.4 0]);
+%ylabel('output','FontSize',8);
+xlabel('quarters','FontSize',8);
+title('Output','FontSize',10);
+
+% subplot(2,3,3);
+% plot(t,cirf,'LineWidth',2);
+% axis([0 22 -0.5 1.5]);
+% ylabel('consumption','FontSize',8);
+% xlabel('quarters','FontSize',8);
+% title('IRF to monetary shock','FontSize',10);
+
+subplot(2,2,3);
+plot(t,Eirf,'LineWidth',2);
+axis([0 22 -0.4 0]);
+%ylabel('employment','FontSize',8);
+xlabel('quarters','FontSize',8);
+title('Employment','FontSize',10);
+
+% subplot(2,3,5);
+% plot(t,xirf,'LineWidth',2);
+% axis([0 22 -0.8 0]);
+% ylabel('real exchange rate','FontSize',8);
+% xlabel('quarters','FontSize',8);
+% title('IRF to monetary shock','FontSize',10);
+
+subplot(2,2,4);
+plot(t,intirf,'LineWidth',2);
+axis([0 22 -0.2 0.6]);
+%ylabel('annualized interest rate','FontSize',8);
+xlabel('quarters','FontSize',8);
+title('Annualized Interest Rate','FontSize',10);
+
+% Uncomment to compare annual inflation and annualized quarterly inflation
+% in replication:
+% plot(t,inflation_interest_,t,inflationq_interest_);
+% legend('annual inflation','annualized quarterly inflation');
+

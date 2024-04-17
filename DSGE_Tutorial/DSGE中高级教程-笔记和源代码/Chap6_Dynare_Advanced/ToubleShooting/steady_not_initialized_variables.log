@@ -1,0 +1,124 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 7 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY:  The Jacobian contains Inf or NaN. The problem arises from: 
+
+STEADY:  Derivative of Equation 5 with respect to Variable h  (initial value of h: 1) 
+STEADY:  Derivative of Equation 5 with respect to Variable pie  (initial value of pie: 1) 
+STEADY:  Derivative of Equation 5 with respect to Variable C  (initial value of C: 1) 
+STEADY:  Derivative of Equation 5 with respect to Variable A  (initial value of A: 0) 
+STEADY:  Derivative of Equation 7 with respect to Variable A  (initial value of A: 0) 
+
+STEADY:  The problem most often occurs, because a variable with
+STEADY:  exponent smaller than 1 has been initialized to 0. Taking the derivative
+STEADY:  and evaluating it at the steady state then results in a division by 0.
+{Error using <a href="matlab:helpUtils.errorDocCallback('dynare_solve', 'G:\dynare\4.4.3\matlab\dynare_solve.m', 60)" style="font-weight:bold">dynare_solve</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare_solve.m',60,0)">line 60</a>)
+An element of the Jacobian is not finite or NaN
+Error in <a href="matlab:helpUtils.errorDocCallback('evaluate_steady_state', 'G:\dynare\4.4.3\matlab\evaluate_steady_state.m', 66)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\evaluate_steady_state.m',66,0)">line 66</a>)
+            [ys,check] = dynare_solve([M.fname '_static'],...
+Error in <a href="matlab:helpUtils.errorDocCallback('steady_', 'G:\dynare\4.4.3\matlab\steady_.m', 54)" style="font-weight:bold">steady_</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\steady_.m',54,0)">line 54</a>)
+[steady_state,params,info] = evaluate_steady_state(oo_.steady_state,M_,options_,oo_,~options_.steadystate.nocheck);
+Error in <a href="matlab:helpUtils.errorDocCallback('steady', 'G:\dynare\4.4.3\matlab\steady.m', 81)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\steady.m',81,0)">line 81</a>)
+[steady_state,M_.params,info] = steady_(M_,options_,oo_);
+Error in <a href="matlab:helpUtils.errorDocCallback('steady_not_initialized_variables', 'D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\steady_not_initialized_variables.m', 182)" style="font-weight:bold">steady_not_initialized_variables</a> (<a href="matlab: opentoline('D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\steady_not_initialized_variables.m',182,0)">line 182</a>)
+steady;
+Error in <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+evalin('base',fname) ;} 
+dynare steady_not_initialized_variables
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 7 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+STEADY-STATE RESULTS:
+
+R    		 0.010101
+h    		 1
+pie  		 1
+C    		 1
+Util 		 -0.5
+Welf 		 -50
+A    		 1
+
+MODEL SUMMARY
+
+  Number of variables:         7
+  Number of stochastic shocks: 1
+  Number of state variables:   1
+  Number of jumpers:           3
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     eps_A  
+eps_A        0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                    pie             h               R               C               A   
+Constant                    1.000000        1.000000        0.010101        1.000000        1.000000
+A(-1)                      -0.164986       -0.179835       -0.222731        0.720165        0.900000
+eps_A                      -0.183318       -0.199817       -0.247479        0.800183        1.000000
+
+
+THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+pie            1.0000     0.0042     0.0000
+h              1.0000     0.0046     0.0000
+R              0.0101     0.0057     0.0000
+C              1.0000     0.0184     0.0003
+A              1.0000     0.0229     0.0005
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables     pie      h       R       C       A   
+pie          1.0000  1.0000  1.0000 -1.0000 -1.0000
+h            1.0000  1.0000  1.0000 -1.0000 -1.0000
+R            1.0000  1.0000  1.0000 -1.0000 -1.0000
+C           -1.0000 -1.0000 -1.0000  1.0000  1.0000
+A           -1.0000 -1.0000 -1.0000  1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order      1       2       3       4       5   
+pie      0.9000  0.8100  0.7290  0.6561  0.5905
+h        0.9000  0.8100  0.7290  0.6561  0.5905
+R        0.9000  0.8100  0.7290  0.6561  0.5905
+C        0.9000  0.8100  0.7290  0.6561  0.5905
+A        0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m02s

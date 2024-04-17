@@ -1,0 +1,124 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 23 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+{Error using <a href="matlab:helpUtils.errorDocCallback('print_info', 'G:\dynare\4.4.3\matlab\print_info.m', 45)" style="font-weight:bold">print_info</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\print_info.m',45,0)">line 45</a>)
+Blanchard Kahn conditions are not satisfied: indeterminacy
+Error in <a href="matlab:helpUtils.errorDocCallback('stoch_simul', 'G:\dynare\4.4.3\matlab\stoch_simul.m', 98)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\stoch_simul.m',98,0)">line 98</a>)
+    print_info(info, options_.noprint, options_);
+Error in <a href="matlab:helpUtils.errorDocCallback('chap7_book', 'D:\DSGE_Video\Chap7_Papers\Gali_Book\chap7\chap7_book.m', 299)" style="font-weight:bold">chap7_book</a> (<a href="matlab: opentoline('D:\DSGE_Video\Chap7_Papers\Gali_Book\chap7\chap7_book.m',299,0)">line 299</a>)
+info = stoch_simul(var_list_);
+Error in <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+evalin('base',fname) ;} 
+dynare chap7_book
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 23 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+MODEL SUMMARY
+
+  Number of variables:         23
+  Number of stochastic shocks: 4
+  Number of state variables:   7
+  Number of jumpers:           4
+  Number of static variables:  12
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables       eps_a    eps_y_star  eps_a_star     eps_v   
+eps_a           1.000000    0.000000    0.000000    0.000000
+eps_y_star      0.000000    0.000000    0.000000    0.000000
+eps_a_star      0.000000    0.000000    0.000000    0.000000
+eps_v           0.000000    0.000000    0.000000    0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                               ygap            pi_h            R               pi              e               q               p_h             cpi_level
+a(-1)                              0               0       -0.224400        0.264000        0.660000        0.396000               0        0.264000
+s(-1)                              0               0               0       -0.400000       -1.000000               0               0       -0.400000
+e(-1)                              0               0               0               0        1.000000               0               0               0
+p_h(-1)                            0               0               0               0               0               0        1.000000               0
+cpi_level(-1)                      0               0               0               0               0               0               0        1.000000
+a_star(-1)                         0               0               0       -0.360000       -0.900000       -0.540000               0       -0.360000
+v(-1)                      -0.361459       -1.138541       -0.988541       -1.283125       -1.500000       -0.216875       -1.138541       -1.283125
+eps_a                              0               0       -0.340000        0.400000        1.000000        0.600000               0        0.400000
+eps_a_star                         0               0       -0.102000       -0.280000       -0.700000       -0.420000               0       -0.280000
+eps_v                      -0.401621       -1.265045       -1.098379       -1.425694       -1.666667       -0.240973       -1.265045       -1.425694
+
+
+THEORETICAL MOMENTS
+
+VARIABLE       MEAN    STD. DEV.   VARIANCE 
+ygap            0.0000     0.0921     0.0085
+pi_h            0.0000     0.2902     0.0842
+R               0.0000     0.5180     0.2683
+pi              0.0000     0.5286     0.2794
+e                  NaN        NaN        NaN
+q               0.0000     0.8006     0.6409
+p_h                NaN        NaN        NaN
+cpi_level          NaN        NaN        NaN
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+              eps_a    eps_y_star  eps_a_star     eps_v   
+ygap          0.00        0.00        0.00      100.00
+pi_h          0.00        0.00        0.00      100.00
+R            76.34        0.00        0.00       23.66
+pi           68.99        0.00        0.00       31.01
+q            99.52        0.00        0.00        0.48
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables    ygap    pi_h      R      pi       q   
+ygap         1.0000  1.0000  0.4865  0.5560  0.0691
+pi_h         1.0000  1.0000  0.4865  0.5560  0.0691
+R            0.4865  0.4865  1.0000 -0.0287 -0.8380
+pi           0.5560  0.5560 -0.0287  1.0000  0.3800
+q            0.0691  0.0691 -0.8380  0.3800  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order      1       2       3       4       5   
+ygap     0.9000  0.8100  0.7290  0.6561  0.5905
+pi_h     0.9000  0.8100  0.7290  0.6561  0.5905
+R        0.7168  0.5242  0.3920  0.3001  0.2353
+pi       0.1536  0.1664  0.1683  0.1637  0.1555
+q        0.6611  0.4374  0.2896  0.1920  0.1275
+Total computing time : 0h00m05s

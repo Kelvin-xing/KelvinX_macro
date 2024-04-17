@@ -1,0 +1,48 @@
+[Warning: Some of the parameters have no value (A_SS, h_SS, R_SS, pie_SS, C_SS) when using steady. If these
+parameters are not initialized in a steadystate file, Dynare may not be able to solve the model...] 
+[> In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\test_for_deep_parameters_calibration.m',46,1)">test_for_deep_parameters_calibration at 46</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\steady.m',33,1)">steady at 33</a>
+  In <a href="matlab: opentoline('D:\DSGE_Video\Chap7_Papers\Ramsey_optimal_policy\Rotemberg_codes\DIY\modelout.m',170,1)">modelout at 170</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\dynare.m',132,1)">dynare at 132</a>] 
+STEADY:  numerical initial values incompatible with the following equations
+     1     2     3     4     5     6     7     8     9
+{Error using <a href="matlab:helpUtils.errorDocCallback('dynare_solve', 'G:\dynare\4.2.0\matlab\dynare_solve.m', 94)" style="font-weight:bold">dynare_solve</a> (<a href="matlab: opentoline('G:\dynare\4.2.0\matlab\dynare_solve.m',94,0)">line 94</a>)
+exiting ...
+Error in <a href="matlab:helpUtils.errorDocCallback('steady_', 'G:\dynare\4.2.0\matlab\steady_.m', 120)" style="font-weight:bold">steady_</a> (<a href="matlab: opentoline('G:\dynare\4.2.0\matlab\steady_.m',120,0)">line 120</a>)
+    [oo_.steady_state,check] = dynare_solve([M_.fname '_static'],...
+Error in <a href="matlab:helpUtils.errorDocCallback('steady', 'G:\dynare\4.2.0\matlab\steady.m', 54)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('G:\dynare\4.2.0\matlab\steady.m',54,0)">line 54</a>)
+steady_;
+Error in <a href="matlab:helpUtils.errorDocCallback('modelout', 'D:\DSGE_Video\Chap7_Papers\Ramsey_optimal_policy\Rotemberg_codes\DIY\modelout.m', 170)" style="font-weight:bold">modelout</a> (<a href="matlab: opentoline('D:\DSGE_Video\Chap7_Papers\Ramsey_optimal_policy\Rotemberg_codes\DIY\modelout.m',170,0)">line 170</a>)
+steady;
+Error in <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.2.0\matlab\dynare.m', 132)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.2.0\matlab\dynare.m',132,0)">line 132</a>)
+evalin('base',fname) ;} 
+dynare Rotemberg_DIY
+ 
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+ 
+Starting Dynare (version 4.2.0).
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+[Warning: The RandStream.setDefaultStream static method will be removed in a future release.  Use
+RandStream.setGlobalStream instead.] 
+[> In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2012b\toolbox\matlab\randfun\@RandStream\RandStream.m',456,1)">RandStream.RandStream>RandStream.setDefaultStream at 456</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\set_dynare_seed.m',35,1)">set_dynare_seed at 35</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\global_initialization.m',319,1)">global_initialization at 319</a>
+  In <a href="matlab: opentoline('D:\DSGE_Video\Chap7_Papers\Ramsey_optimal_policy\Rotemberg_codes\DIY\Rotemberg_DIY.m',15,1)">Rotemberg_DIY at 15</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\dynare.m',132,1)">dynare at 132</a>] 

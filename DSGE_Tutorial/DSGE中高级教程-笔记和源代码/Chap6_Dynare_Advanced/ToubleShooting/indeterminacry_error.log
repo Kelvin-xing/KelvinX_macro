@@ -1,0 +1,400 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+           0.495            0.495                0
+             0.9              0.9                0
+       1.707e+16        1.707e+16                0
+
+
+There are 1 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition ISN'T verified!
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('print_info', 'G:\dynare\4.4.3\matlab\print_info.m', 45)" style="font-weight:bold">print_info</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\print_info.m',45,0)">line 45</a>)
+Blanchard Kahn conditions are not satisfied: indeterminacy
+Error in <a href="matlab:helpUtils.errorDocCallback('stoch_simul', 'G:\dynare\4.4.3\matlab\stoch_simul.m', 98)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\stoch_simul.m',98,0)">line 98</a>)
+    print_info(info, options_.noprint, options_);
+Error in <a href="matlab:helpUtils.errorDocCallback('indeterminacry_error', 'D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\indeterminacry_error.m', 218)" style="font-weight:bold">indeterminacry_error</a> (<a href="matlab: opentoline('D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\indeterminacry_error.m',218,0)">line 218</a>)
+info = stoch_simul(var_list_);
+Error in <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+evalin('base',fname) ;} 
+dynare indeterminacry_error
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+ERROR: indeterminacry_error.mod: line 63, cols 5-9: To use an external function (K) within the model block, you must first declare it via the external_function() statement.
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 174)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',174,0)">line 174</a>)
+DYNARE: preprocessing failed} 
+To use an external function (K) 
+{Undefined function 'To' for input arguments of type 'char'.} 
+dynare indeterminacry_error
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+             0.9              0.9                0
+           1.485            1.485                0
+       1.707e+16        1.707e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     eps_A     eps_m  
+eps_A        1.000000  0.000000
+eps_m        0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                            Y               C               pi              R               r               m_growth_ann
+Constant                   -0.134160       -0.134160               0        0.010050        0.010050               0
+A(-1)                       0.900000        0.900000       -0.153846       -0.228462       -0.090000        6.640000
+R(-1)                              0               0               0               0               0       16.000000
+Y(-1)                              0               0               0               0               0       -4.000000
+eps_A                       1.000000        1.000000       -0.170940       -0.253846       -0.100000        7.377778
+eps_m                              0               0       -0.666667               0               0       -2.666667
+
+
+THEORETICAL MOMENTS
+
+VARIABLE          MEAN    STD. DEV.   VARIANCE 
+Y                 -0.1342     2.2942     5.2632
+C                 -0.1342     2.2942     5.2632
+pi                 0.0000     0.7735     0.5982
+R                  0.0101     0.5824     0.3391
+r                  0.0101     0.2294     0.0526
+m_growth_ann       0.0000     8.4958    72.1784
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+               eps_A  eps_m 
+Y              100.00   0.00
+C              100.00   0.00
+pi              25.71  74.29
+R              100.00   0.00
+r              100.00   0.00
+m_growth_ann    90.15   9.85
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables            Y             C            pi             R             r       m_growth_ann 
+Y                     1.0000        1.0000       -0.5070       -1.0000       -1.0000        0.0331
+C                     1.0000        1.0000       -0.5070       -1.0000       -1.0000        0.0331
+pi                   -0.5070       -0.5070        1.0000        0.5070        0.5070        0.2538
+R                    -1.0000       -1.0000        0.5070        1.0000        1.0000       -0.0331
+r                    -1.0000       -1.0000        0.5070        1.0000        1.0000       -0.0331
+m_growth_ann          0.0331        0.0331        0.2538       -0.0331       -0.0331        1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order             1       2       3       4       5   
+Y               0.9000  0.8100  0.7290  0.6561  0.5905
+C               0.9000  0.8100  0.7290  0.6561  0.5905
+pi              0.2314  0.2082  0.1874  0.1687  0.1518
+R               0.9000  0.8100  0.7290  0.6561  0.5905
+r               0.9000  0.8100  0.7290  0.6561  0.5905
+m_growth_ann   -0.0127 -0.0114 -0.0103 -0.0092 -0.0083
+Total computing time : 0h00m04s
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+
+STEADY-STATE RESULTS:
+
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+if system_dependent('IsDebugMode')==1, dbquit; end
+dynare steady_states_cal_imcomp_error
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+
+STEADY-STATE RESULTS:
+
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+if system_dependent('IsDebugMode')==1, dbstep; end
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+             0.9              0.9                0
+           1.485            1.485                0
+       1.707e+16        1.707e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+clcl
+{Undefined function or variable 'clcl'.} 
+clc
+clear all
+clc
+gk =
+    0.9801
+ga =
+    0.0631
+gk =
+    0.9801
+ga =
+    0.0631
+clc
+clear all
+dynare dynaremod
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+ERROR: dynaremod.mod: line 47, cols 1-0: syntax error, unexpected $end
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 174)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',174,0)">line 174</a>)
+DYNARE: preprocessing failed} 
+dynare dynaremod
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 4 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+

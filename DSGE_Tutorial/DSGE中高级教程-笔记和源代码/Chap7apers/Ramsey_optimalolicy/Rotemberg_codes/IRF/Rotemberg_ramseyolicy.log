@@ -1,0 +1,85 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Ramsey Problem: added 5 Multipliers.
+Found 5 equation(s).
+Found 11 FOC equation(s) for Ramsey Problem.
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Computing static model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+MODEL SUMMARY
+
+  Number of variables:         11
+  Number of stochastic shocks: 1
+  Number of state variables:   4
+  Number of jumpers:           3
+  Number of static variables:  5
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     eps_A  
+eps_A        0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                  R               h               pie             C               A               Util  
+Constant                    0.010101        1.000000        1.000000        1.000000        1.000000       -0.500000
+A(-1)                      -0.090909               0               0        0.900000        0.900000        0.900000
+MULT_1(-1)                 -0.464647        0.399666        0.030067        0.399666               0               0
+MULT_2(-1)                 -1.010090        2.508343        0.498331        2.508343               0               0
+eps_A                      -0.101010               0               0        1.000000        1.000000        1.000000
+
+
+THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+R              0.0101     0.0023     0.0000
+h              1.0000     0.0000     0.0000
+pie            1.0000     0.0000     0.0000
+C              1.0000     0.0229     0.0005
+A              1.0000     0.0229     0.0005
+Util          -0.5000     0.0229     0.0005
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables      R       C       A     Util  
+R            1.0000 -1.0000 -1.0000 -1.0000
+C           -1.0000  1.0000  1.0000  1.0000
+A           -1.0000  1.0000  1.0000  1.0000
+Util        -1.0000  1.0000  1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order      1       2       3       4       5   
+R        0.9000  0.8100  0.7290  0.6561  0.5905
+C        0.9000  0.8100  0.7290  0.6561  0.5905
+A        0.9000  0.8100  0.7290  0.6561  0.5905
+Util     0.9000  0.8100  0.7290  0.6561  0.5905
+
+STEADY-STATE RESULTS:
+
+R      		 0.010101
+h      		 1
+pie    		 1
+C      		 1
+A      		 1
+Util   		 -0.5
+
+Approximated value of planner objective function
+    - with initial Lagrange multipliers set to 0: -50
+    - with initial Lagrange multipliers set to steady state: -50
+
+Total computing time : 0h00m00s

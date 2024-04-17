@@ -1,0 +1,27 @@
+ 
+STEADY-STATE RESULTS:
+ 
+c 		 0.642645
+k 		 1.48996
+ 
+STEADY-STATE RESULTS:
+ 
+c 		 0.442645
+k 		 1.48995
+-----------------------------------------------------
+MODEL SIMULATION :
+
+1 -     err = 0.59794
+     Time of iteration       :0.187
+2 -     err = 0.013131
+     Time of iteration       :0.031
+3 -     err = 0.00022202
+     Time of iteration       :0.031
+4 -     err = 2.2233e-008
+     Time of iteration       :0.032
+
+ Total time of simulation        :0.312
+
+ Convergency obtained.
+
+-----------------------------------------------------

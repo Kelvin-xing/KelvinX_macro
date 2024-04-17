@@ -1,0 +1,150 @@
+ 
+ 
+ 
+ 
+Residuals of the static equations:
+ 
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
+ 
+ 
+ 
+STEADY-STATE RESULTS:
+ 
+c         		 -0.0526803
+i         		 0.0100503
+pi        		 0
+n         		 -0.0526803
+w         		 -0.105361
+m         		 4.55249
+mc        		 -0.105361
+a         		 0
+y         		 -0.0526803
+vp        		 0
+pisharp   		 0
+x1        		 1.25138
+x2        		 1.35674
+dlnm      		 0
+yf        		 -0.0526803
+outputgap 		 0
+r         		 0.010101
+ 
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+       1.416e-16       -1.416e-16                0
+          0.6653           0.6653                0
+            0.75             0.75                0
+            0.95             0.95                0
+            1.01             1.01                0
+           1.347            1.347                0
+           1.518            1.518                0
+             Inf              Inf                0
+
+
+There are 4 eigenvalue(s) larger than 1 in modulus 
+for 4 forward-looking variable(s)
+ 
+The rank condition is verified.
+ 
+ 
+MODEL SUMMARY
+ 
+  Number of variables:         17
+  Number of stochastic shocks: 2
+  Number of state variables:   5
+  Number of jumpers:           4
+  Number of static variables:  9
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables    ea        em        
+ea           0.000100  0.000000
+em           0.000000  0.000100
+ 
+POLICY AND TRANSITION FUNCTIONS
+                               i               pi              n               r               m               mc              a               y               yf              outputgap
+Constant                    0.010050               0       -0.052680        0.010101        4.552490       -0.105361               0       -0.052680       -0.052680               0
+m(-1)                              0        0.334651        0.665349       -0.222660        0.665349        1.330697               0        0.665349               0        0.665349
+a(-1)                              0       -0.289941       -0.660059        0.178415        0.289941       -1.320119        0.950000        0.289941        0.950000       -0.660059
+vp(-1)                             0        0.084651        0.665349       -0.035160       -0.084651        0.580697               0       -0.084651               0       -0.084651
+ea                                 0       -0.305201       -0.694799        0.187805        0.305201       -1.389599        1.000000        0.305201        1.000000       -0.694799
+em                                 0        0.334651        0.665349       -0.222660        0.665349        1.330697               0        0.665349               0        0.665349
+
+
+THEORETICAL MOMENTS
+
+VARIABLE     MEAN       STD. DEV.  VARIANCE   
+i               0.0101     0.0000     0.0000
+pi              0.0000     0.0060     0.0000
+n              -0.0527     0.0128     0.0002
+r               0.0101     0.0039     0.0000
+m               4.5525     0.0290     0.0008
+mc             -0.1054     0.0256     0.0007
+a               0.0000     0.0320     0.0010
+y              -0.0527     0.0290     0.0008
+yf             -0.0527     0.0320     0.0010
+outputgap       0.0000     0.0128     0.0002
+ 
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+             ea      em      
+i             99.76    0.24
+pi            43.69   56.31
+n             51.53   48.47
+r             41.37   58.63
+m             90.54    9.46
+mc            51.53   48.47
+a            100.00    0.00
+y             90.54    9.46
+yf           100.00    0.00
+outputgap     51.53   48.47
+ 
+
+
+MATRIX OF CORRELATIONS
+
+Variables    pi         n          r          m          mc         a          y          yf         outputgap  
+pi              1.0000     0.9767    -0.9925     0.1857     0.9767    -0.2224     0.1857    -0.2224     0.9767
+n               0.9767     1.0000    -0.9431    -0.0295     1.0000    -0.4264    -0.0295    -0.4264     1.0000
+r              -0.9925    -0.9431     1.0000    -0.3045    -0.9431     0.1014    -0.3045     0.1014    -0.9431
+m               0.1857    -0.0295    -0.3045     1.0000    -0.0295     0.9167     1.0000     0.9167    -0.0295
+mc              0.9767     1.0000    -0.9431    -0.0295     1.0000    -0.4264    -0.0295    -0.4264     1.0000
+a              -0.2224    -0.4264     0.1014     0.9167    -0.4264     1.0000     0.9167     1.0000    -0.4264
+y               0.1857    -0.0295    -0.3045     1.0000    -0.0295     0.9167     1.0000     0.9167    -0.0295
+yf             -0.2224    -0.4264     0.1014     0.9167    -0.4264     1.0000     0.9167     1.0000    -0.4264
+outputgap       0.9767     1.0000    -0.9431    -0.0295     1.0000    -0.4264    -0.0295    -0.4264     1.0000
+ 
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order        1       2       3       4       5       
+pi           0.6472  0.4133  0.2586  0.1564  0.0893
+n            0.6597  0.4336  0.2834  0.1837  0.1176
+r            0.6533  0.4232  0.2706  0.1697  0.1031
+m            0.9591  0.9171  0.8753  0.8342  0.7943
+mc           0.6597  0.4336  0.2834  0.1837  0.1176
+a            0.9500  0.9025  0.8574  0.8145  0.7738
+y            0.9591  0.9171  0.8753  0.8342  0.7943
+yf           0.9500  0.9025  0.8574  0.8145  0.7738
+outputgap    0.6597  0.4336  0.2834  0.1837  0.1176

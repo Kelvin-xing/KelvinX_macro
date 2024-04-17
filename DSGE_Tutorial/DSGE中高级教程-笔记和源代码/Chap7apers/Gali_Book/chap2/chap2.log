@@ -1,0 +1,116 @@
+ 
+ 
+ 
+ 
+Residuals of the static equations:
+ 
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+ 
+ 
+ 
+STEADY-STATE RESULTS:
+ 
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+ 
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+       7.009e-18       -7.009e-18                0
+             0.9              0.9                0
+           1.485            1.485                0
+             Inf              Inf                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+ 
+The rank condition is verified.
+ 
+ 
+MODEL SUMMARY
+ 
+  Number of variables:         9
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables    eps_A     eps_m     
+eps_A        1.000000  0.000000
+eps_m        0.000000  1.000000
+ 
+POLICY AND TRANSITION FUNCTIONS
+                            Y               C               pi              R               r               m_growth_ann
+Constant                   -0.134160       -0.134160        0.000000        0.010050        0.010050        0.000000
+A(-1)                       0.900000        0.900000       -0.153846       -0.228462       -0.090000        3.441538
+R(-1)                      -0.000000       -0.000000        0.000000       -0.000000       -0.000000        2.000000
+Y(-1)                      -0.000000       -0.000000        0.000000       -0.000000       -0.000000       -4.000000
+eps_A                       1.000000        1.000000       -0.170940       -0.253846       -0.100000        3.823932
+eps_m                       0.000000        0.000000       -0.666667       -0.000000        0.000000       -2.666667
+
+
+THEORETICAL MOMENTS
+
+VARIABLE        MEAN       STD. DEV.  VARIANCE   
+Y                 -0.1342     2.2942     5.2632
+C                 -0.1342     2.2942     5.2632
+pi                 0.0000     0.7735     0.5982
+R                  0.0101     0.5824     0.3391
+r                  0.0101     0.2294     0.0526
+m_growth_ann       0.0000     5.2646    27.7161
+ 
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+                eps_A   eps_m   
+Y               100.00    0.00
+C               100.00    0.00
+pi               25.71   74.29
+R               100.00    0.00
+r               100.00    0.00
+m_growth_ann     74.34   25.66
+ 
+
+
+MATRIX OF CORRELATIONS
+
+Variables        Y             C             pi            R             r             m_growth_ann  
+Y                     1.0000        1.0000       -0.5070       -1.0000       -1.0000       -0.1015
+C                     1.0000        1.0000       -0.5070       -1.0000       -1.0000       -0.1015
+pi                   -0.5070       -0.5070        1.0000        0.5070        0.5070        0.4881
+R                    -1.0000       -1.0000        0.5070        1.0000        1.0000        0.1015
+r                    -1.0000       -1.0000        0.5070        1.0000        1.0000        0.1015
+m_growth_ann         -0.1015       -0.1015        0.4881        0.1015        0.1015        1.0000
+ 
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order           1       2       3       4       5       
+Y               0.9000  0.8100  0.7290  0.6561  0.5905
+C               0.9000  0.8100  0.7290  0.6561  0.5905
+pi              0.2314  0.2082  0.1874  0.1687  0.1518
+R               0.9000  0.8100  0.7290  0.6561  0.5905
+r               0.9000  0.8100  0.7290  0.6561  0.5905
+m_growth_ann    0.0472  0.0425  0.0382  0.0344  0.0309

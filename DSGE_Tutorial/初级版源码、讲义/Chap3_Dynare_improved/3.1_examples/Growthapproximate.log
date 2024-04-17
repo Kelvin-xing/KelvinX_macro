@@ -1,0 +1,67 @@
+Starting Dynare (version 4.4.1).
+Starting preprocessing of the model file ...
+Found 4 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+c   		 1.49163
+k   		 29.2885
+lab 		 0.291593
+z   		 0
+
+MODEL SUMMARY
+
+  Number of variables:         4
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  0
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables       e    
+e            0.000049
+
+POLICY AND TRANSITION FUNCTIONS
+                                     c               k               lab             z  
+Constant                    1.491626       29.288520        0.291593               0
+k(-1)                       0.028175        0.977868       -0.001880               0
+z(-1)                       0.598385        1.900349        0.197182        0.950000
+e                           0.629879        2.000368        0.207560        1.000000
+
+
+MOMENTS OF SIMULATED VARIABLES
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE   SKEWNESS   KURTOSIS 
+c            1.466383   0.037485   0.001405   0.178809   0.174561
+k           28.568196   1.013067   1.026305   0.114177   0.002563
+lab          0.291320   0.003973   0.000016  -0.191769   0.078141
+z           -0.007843   0.022039   0.000486   0.170511   0.259799
+
+
+CORRELATION OF SIMULATED VARIABLES
+
+VARIABLE      c       k      lab      z   
+c           1.0000  0.9588  0.4134  0.7532
+k           0.9588  1.0000  0.1375  0.5352
+lab         0.4134  0.1375  1.0000  0.9103
+z           0.7532  0.5352  0.9103  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+
+VARIABLE      1       2       3       4       5   
+c           0.9921  0.9840  0.9746  0.9650  0.9552
+k           0.9983  0.9962  0.9929  0.9885  0.9831
+lab         0.9323  0.8645  0.7953  0.7349  0.6820
+z           0.9496  0.8989  0.8467  0.8006  0.7597
+Total computing time : 0h00m07s

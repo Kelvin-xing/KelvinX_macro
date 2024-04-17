@@ -1,0 +1,150 @@
+ 
+ 
+ 
+ 
+Residuals of the static equations:
+ 
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+ 
+ 
+[Warning: Some of the parameters have no value (ps) when using steady. If these parameters are not initialized in a steadystate file,
+Dynare may not be able to solve the model...] 
+[> In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\test_for_deep_parameters_calibration.m',46,1)">test_for_deep_parameters_calibration at 46</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\steady.m',33,1)">steady at 33</a>
+  In <a href="matlab: opentoline('D:\DSGE_Video\Chap4_RBC_NK_Model\4.1_RBC_money\MIU.m',206,1)">MIU at 206</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\dynare.m',132,1)">dynare at 132</a>] 
+ 
+STEADY-STATE RESULTS:
+ 
+c    		 -0.244191
+n    		 -1.09861
+w    		 0.719991
+R    		 -3.34953
+i    		 0.029853
+k    		 2.27776
+a    		 0
+y    		 0.0268443
+I    		 -1.41112
+dlnm 		 0
+pi   		 0.0198026
+m    		 3.28217
+r    		 0.0100503
+[Warning: Some of the parameters have no value (ps) when using stoch_simul. If these parameters are not initialized in a steadystate file,
+Dynare may not be able to solve the model...] 
+[> In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\test_for_deep_parameters_calibration.m',46,1)">test_for_deep_parameters_calibration at 46</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\stoch_simul.m',22,1)">stoch_simul at 22</a>
+  In <a href="matlab: opentoline('D:\DSGE_Video\Chap4_RBC_NK_Model\4.1_RBC_money\MIU.m',217,1)">MIU at 217</a>
+  In <a href="matlab: opentoline('G:\dynare\4.2.0\matlab\dynare.m',132,1)">dynare at 132</a>] 
+ 
+MODEL SUMMARY
+ 
+  Number of variables:         13
+  Number of stochastic shocks: 2
+  Number of state variables:   5
+  Number of jumpers:           3
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables    ea        em        
+ea           0.000100  0.000000
+em           0.000000  0.000100
+ 
+POLICY AND TRANSITION FUNCTIONS
+                                    c               n               w               R               i               k               a               y               I               dlnm            pi              m               r   
+Constant                   -0.244191       -1.098612        0.719991       -3.349525        0.029853        2.277757               0        0.026844       -1.411122               0        0.019803        3.282170        0.010050
+k(-1)                       0.540709       -0.248851        0.416284       -0.832567               0        0.949211               0        0.167433       -1.031576        0.540709       -0.540709        0.540709       -0.027462
+a(-1)                       0.066138        0.520634        0.326455        0.847090               0        0.083890        0.500000        0.847090        3.355601        0.066138       -0.066138        0.066138        0.012291
+dlnm(-1)                           0               0               0               0        0.014286               0               0               0               0       -0.471429        0.971429       -0.471429               0
+m(-1)                              0               0               0               0               0               0               0               0               0       -1.000000        1.000000               0               0
+pi(-1)                             0               0               0               0        0.014286               0               0               0               0       -0.471429        0.971429       -0.471429               0
+ea                          0.132276        1.041269        0.652910        1.694179               0        0.167780        1.000000        1.694179        6.711202        0.132276       -0.132276        0.132276        0.024582
+em                                 0               0               0               0        0.028571               0               0               0               0       -0.942857        1.942857       -0.942857               0
+
+
+THEORETICAL MOMENTS
+
+VARIABLE    MEAN       STD. DEV.  VARIANCE   
+c             -0.2442     0.0060     0.0000
+n             -1.0986     0.0118     0.0001
+w              0.7200     0.0093     0.0001
+R             -3.3495     0.0199     0.0004
+i              0.0299     0.0003     0.0000
+k              2.2778     0.0103     0.0001
+a              0.0000     0.0115     0.0001
+y              0.0268     0.0199     0.0004
+I             -1.4111     0.0763     0.0058
+dlnm           0.0000     0.0110     0.0001
+pi             0.0198     0.0195     0.0004
+m              3.2822     0.0125     0.0002
+r              0.0101     0.0004     0.0000
+ 
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+        ea      em      
+c       100.00    0.00
+n       100.00    0.00
+w       100.00    0.00
+R       100.00    0.00
+i         0.00  100.00
+k       100.00    0.00
+a       100.00    0.00
+y       100.00    0.00
+I       100.00    0.00
+dlnm      1.56   98.44
+pi        0.50   99.50
+m        23.54   76.46
+r       100.00    0.00
+ 
+
+
+MATRIX OF CORRELATIONS
+
+Variables    c        n        w        R        i        k        a        y        I        dlnm     pi       m        r        
+c            1.0000  0.2144  0.7844 -0.0072  0.0000  0.9979  0.4179  0.4938  0.2893  0.0142 -0.0080  0.4852 -0.4286
+n            0.2144  1.0000  0.7741  0.9752  0.0000  0.1500  0.9770  0.9552  0.9970  0.1203 -0.0678  0.1040  0.7906
+w            0.7844  0.7741  1.0000  0.6147  0.0000  0.7420  0.8913  0.9267  0.8207  0.0856 -0.0482  0.3805  0.2243
+R           -0.0072  0.9752  0.6147  1.0000  0.0000 -0.0727  0.9055  0.8660  0.9551  0.1200 -0.0676 -0.0035  0.9066
+i            0.0000  0.0000  0.0000  0.0000  1.0000  0.0000  0.0000  0.0000  0.0000 -0.4961  0.8722 -0.8744  0.0000
+k            0.9979  0.1500  0.7420 -0.0727  0.0000  1.0000  0.3575  0.4357  0.2260  0.0063 -0.0035  0.4841 -0.4869
+a            0.4179  0.9770  0.8913  0.9055  0.0000  0.3575  1.0000  0.9964  0.9905  0.1150 -0.0648  0.2027  0.6417
+y            0.4938  0.9552  0.9267  0.8660  0.0000  0.4357  0.9964  1.0000  0.9753  0.1114 -0.0628  0.2396  0.5740
+I            0.2893  0.9970  0.8207  0.9551  0.0000  0.2260  0.9905  0.9753  1.0000  0.1190 -0.0671  0.1404  0.7409
+dlnm         0.0142  0.1203  0.0856  0.1200 -0.4961  0.0063  0.1150  0.1114  0.1190  1.0000 -0.8574  0.4407  0.1024
+pi          -0.0080 -0.0678 -0.0482 -0.0676  0.8722 -0.0035 -0.0648 -0.0628 -0.0671 -0.8574  1.0000 -0.7666 -0.0577
+m            0.4852  0.1040  0.3805 -0.0035 -0.8744  0.4841  0.2027  0.2396  0.1404  0.4407 -0.7666  1.0000 -0.2079
+r           -0.4286  0.7906  0.2243  0.9066  0.0000 -0.4869  0.6417  0.5740  0.7409  0.1024 -0.0577 -0.2079  1.0000
+ 
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order    1       2       3       4       5       
+c        0.9742  0.9372  0.8959  0.8535  0.8117
+n        0.4636  0.1973  0.0659  0.0019 -0.0286
+w        0.7024  0.5434  0.4541  0.4002  0.3644
+R        0.4762  0.2155  0.0863  0.0228 -0.0079
+i        0.5000  0.2500  0.1250  0.0625  0.0313
+k        0.9828  0.9496  0.9098  0.8678  0.8258
+a        0.5000  0.2500  0.1250  0.0625  0.0313
+y        0.5264  0.2883  0.1679  0.1065  0.0747
+I        0.4714  0.2086  0.0785  0.0148 -0.0158
+dlnm    -0.2427 -0.1217 -0.0612 -0.0309 -0.0158
+pi       0.0158  0.0078  0.0038  0.0018  0.0008
+m        0.6116  0.4118  0.3065  0.2487  0.2150
+r        0.6301  0.4386  0.3365  0.2795  0.2454

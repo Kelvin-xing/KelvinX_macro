@@ -1,0 +1,98 @@
+Starting Dynare (version 4.4.1).
+Starting preprocessing of the model file ...
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+y   		 0.611448
+c   		 0.39987
+k   		 3.37721
+i   		 -1.04564
+lab 		 -1.23239
+z   		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+            0.95             0.95                0
+          0.9779           0.9779                0
+           1.035            1.035                0
+       2.468e+16       -2.468e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         6
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  2
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables       e    
+e            0.000049
+
+POLICY AND TRANSITION FUNCTIONS
+                                     y               c               k               i               lab             z  
+Constant                    0.611449        0.399868        3.377211       -1.045625       -1.232392               0
+(correction)                0.000001       -0.000002               0        0.000012        0.000002               0
+k(-1)                       0.286727        0.553225        0.977868       -0.844294       -0.188789               0
+z(-1)                       1.355736        0.401161        0.064884        5.406960        0.676227        0.950000
+e                           1.427091        0.422275        0.068298        5.691536        0.711818        1.000000
+k(-1),k(-1)                -0.020610        0.017525        0.008490       -0.972765       -0.034350               0
+z(-1),k(-1)                 0.111687       -0.076899       -0.039344        6.573707        0.186144               0
+z(-1),z(-1)                -0.145297        0.063691        0.039242      -11.172050       -0.242162               0
+e,e                        -0.160994        0.070572        0.043481      -12.379003       -0.268324               0
+k(-1),e                     0.117565       -0.080946       -0.041415        6.919692        0.195941               0
+z(-1),e                    -0.305889        0.134087        0.082614      -23.520106       -0.509815               0
+
+
+MOMENTS OF SIMULATED VARIABLES
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE   SKEWNESS   KURTOSIS 
+y            0.593333   0.037439   0.001402   0.255249   0.400053
+c            0.383333   0.025179   0.000634   0.174355   0.174902
+k            3.353275   0.034680   0.001203   0.110234   0.003415
+i           -1.074596   0.114986   0.013222  -0.237820   0.177960
+lab         -1.233550   0.013656   0.000186  -0.243862   0.118022
+z           -0.007843   0.022039   0.000486   0.170511   0.259799
+
+
+CORRELATION OF SIMULATED VARIABLES
+
+VARIABLE      y       c       k       i      lab      z   
+y           1.0000  0.8830  0.7134  0.8899  0.7890  0.9734
+c           0.8830  1.0000  0.9588  0.5729  0.4084  0.7521
+k           0.7134  0.9588  1.0000  0.3172  0.1324  0.5340
+i           0.8899  0.5729  0.3172  1.0000  0.9809  0.9699
+lab         0.7890  0.4084  0.1324  0.9809  1.0000  0.9087
+z           0.9734  0.7521  0.5340  0.9699  0.9087  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+
+VARIABLE      1       2       3       4       5   
+y           0.9644  0.9284  0.8910  0.8575  0.8273
+c           0.9921  0.9840  0.9747  0.9651  0.9553
+k           0.9983  0.9962  0.9930  0.9886  0.9832
+i           0.9385  0.8766  0.8123  0.7567  0.7076
+lab         0.9327  0.8651  0.7959  0.7357  0.6828
+z           0.9496  0.8989  0.8467  0.8006  0.7597
+Total computing time : 0h00m08s

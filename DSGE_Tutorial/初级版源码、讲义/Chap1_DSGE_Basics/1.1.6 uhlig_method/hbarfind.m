@@ -1,0 +1,10 @@
+alpha=.36;
+delta=.025;
+beta=.99;
+gamma=1.72;
+Btemp=(1-(beta*delta*alpha)/(1-beta*(1-delta)));
+Ctemp=(1/(1-alpha))*Btemp;
+Dtemp=gamma.*Ctemp;
+Etemp=1+Dtemp;
+hbar=1./Etemp;
+%plot(A,hbar1)

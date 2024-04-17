@@ -1,0 +1,54 @@
+% Run and plot IRF of replication file 
+
+clear all;
+clc;
+
+% Adjust path to folder where replication file is stored
+cd([cd '/Sigma_rep']);
+
+% Run replication dynare file
+dynare Sigma_rep
+
+
+realimpirf = realimp_errtaxktf; % real imports (home country)
+realexpirf = realexp_errtaxktf;  % real exports
+realerirf = realerpq_errtaxktf; % exchange rate
+
+
+% Go back to original path
+cd('..');
+
+
+% Plot replicated IRF
+t = 0:1:length(infirf)-1;
+%zeroline = ones(length(t),1)*0;
+
+figure1 = figure('PaperSize',[20.98 29.68],...
+    'Name','Impulse Responses to a Foreign Investment Demand Shock');
+subplot(2,2,1);
+plot(t,realimpirf,'LineWidth',2);
+axis([0 19 -0.2 0.3]);
+xlabel('quarters','FontSize',8);
+%legend1 = legend('replication','original');
+%set(legend1,'Position',[0.6435 0.2317 0.2089 0.1]);
+title('Annualized Quarerly Inflation','FontSize',10);
+
+subplot(2,2,2);
+plot(t,yirf,'LineWidth',2);
+axis([0 19 -0.4 0.4]);
+xlabel('quarters','FontSize',8);
+title('Output','FontSize',10);
+
+subplot(2,2,3);
+plot(t,mirf,'LineWidth',2);
+axis([0 19 -2 2]);
+xlabel('quarters','FontSize',8);
+title('Annualized Money Growth','FontSize',10);
+
+% subplot(2,2,4);
+% plot(t,intirf,'LineWidth',2);
+% axis([0 19 -0.65 0.3]);
+% xlabel('quarters','FontSize',8);
+% title('Annualized Interest Rate','FontSize',10);
+
+

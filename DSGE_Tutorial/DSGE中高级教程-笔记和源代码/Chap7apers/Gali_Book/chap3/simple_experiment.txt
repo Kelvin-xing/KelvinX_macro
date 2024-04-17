@@ -1,0 +1,15 @@
+>> r_ann_eps_nu(1)
+ans =
+    0.5698
+>> R_ann_eps_nu(1)
+ans =
+    0.4260
+>> pi_ann_eps_nu(1)
+ans =
+   -0.2877
+>> pi_ann_eps_nu(2)
+ans =
+   -0.1439
+>> pi_ann_eps_nu(2) + r_ann_eps_nu(1)
+ans =
+    0.4260

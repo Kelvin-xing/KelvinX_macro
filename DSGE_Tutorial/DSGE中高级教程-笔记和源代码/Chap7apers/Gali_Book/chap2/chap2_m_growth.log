@@ -1,0 +1,130 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+             0.9              0.9                0
+             1.5              1.5                0
+       1.707e+16        1.707e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     eps_A     eps_m  
+eps_A        1.000000  0.000000
+eps_m        0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                            Y               C               pi              R               r               m_growth_ann    N           
+Constant                   -0.134160       -0.134160               0        0.010050        0.010050               0       -0.200239
+A(-1)                       0.900000        0.900000       -0.150000       -0.225000       -0.090000        3.450000               0
+R(-1)                              0               0               0               0               0        2.000000               0
+Y(-1)                              0               0               0               0               0       -4.000000               0
+eps_A                       1.000000        1.000000       -0.166667       -0.250000       -0.100000        3.833333               0
+eps_m                              0               0       -0.666667               0               0       -2.666667               0
+
+
+THEORETICAL MOMENTS
+
+VARIABLE          MEAN    STD. DEV.   VARIANCE 
+Y                 -0.1342     2.2942     5.2632
+C                 -0.1342     2.2942     5.2632
+pi                 0.0000     0.7685     0.5906
+R                  0.0101     0.5735     0.3289
+r                  0.0101     0.2294     0.0526
+m_growth_ann       0.0000     5.2543    27.6082
+N                 -0.2002     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+               eps_A  eps_m 
+Y              100.00   0.00
+C              100.00   0.00
+pi              24.75  75.25
+R              100.00   0.00
+r              100.00   0.00
+m_growth_ann    74.24  25.76
+N              100.00   0.00
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables            Y             C            pi             R             r       m_growth_ann 
+Y                     1.0000        1.0000       -0.4975       -1.0000       -1.0000       -0.0946
+C                     1.0000        1.0000       -0.4975       -1.0000       -1.0000       -0.0946
+pi                   -0.4975       -0.4975        1.0000        0.4975        0.4975        0.4873
+R                    -1.0000       -1.0000        0.4975        1.0000        1.0000        0.0946
+r                    -1.0000       -1.0000        0.4975        1.0000        1.0000        0.0946
+m_growth_ann         -0.0946       -0.0946        0.4873        0.0946        0.0946        1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order             1       2       3       4       5   
+Y               0.9000  0.8100  0.7290  0.6561  0.5905
+C               0.9000  0.8100  0.7290  0.6561  0.5905
+pi              0.2228  0.2005  0.1804  0.1624  0.1462
+R               0.9000  0.8100  0.7290  0.6561  0.5905
+r               0.9000  0.8100  0.7290  0.6561  0.5905
+m_growth_ann    0.0434  0.0390  0.0351  0.0316  0.0285
+Total computing time : 0h00m04s

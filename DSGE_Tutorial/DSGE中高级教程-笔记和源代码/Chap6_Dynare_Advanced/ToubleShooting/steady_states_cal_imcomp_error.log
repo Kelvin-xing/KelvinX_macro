@@ -1,0 +1,198 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : -Inf
+Equation number 2 : 0
+Equation number 3 : -Inf
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : NaN
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+
+STEADY:  The Jacobian contains Inf or NaN. The problem arises from: 
+
+STEADY:  Derivative of Equation 1 with respect to Variable C  (initial value of C: Inf) 
+STEADY:  Derivative of Equation 3 with respect to Variable C  (initial value of C: Inf) 
+STEADY:  Derivative of Equation 7 with respect to Variable C  (initial value of C: Inf) 
+STEADY:  Derivative of Equation 1 with respect to Variable N  (initial value of N: -0.200239) 
+STEADY:  Derivative of Equation 7 with respect to Variable Y  (initial value of Y: Inf) 
+
+STEADY:  The problem most often occurs, because a variable with
+STEADY:  exponent smaller than 1 has been initialized to 0. Taking the derivative
+STEADY:  and evaluating it at the steady state then results in a division by 0.
+{Error using <a href="matlab:helpUtils.errorDocCallback('dynare_solve', 'G:\dynare\4.4.3\matlab\dynare_solve.m', 60)" style="font-weight:bold">dynare_solve</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare_solve.m',60,0)">line 60</a>)
+An element of the Jacobian is not finite or NaN
+Error in <a href="matlab:helpUtils.errorDocCallback('evaluate_steady_state', 'G:\dynare\4.4.3\matlab\evaluate_steady_state.m', 66)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\evaluate_steady_state.m',66,0)">line 66</a>)
+            [ys,check] = dynare_solve([M.fname '_static'],...
+Error in <a href="matlab:helpUtils.errorDocCallback('steady_', 'G:\dynare\4.4.3\matlab\steady_.m', 54)" style="font-weight:bold">steady_</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\steady_.m',54,0)">line 54</a>)
+[steady_state,params,info] = evaluate_steady_state(oo_.steady_state,M_,options_,oo_,~options_.steadystate.nocheck);
+Error in <a href="matlab:helpUtils.errorDocCallback('steady', 'G:\dynare\4.4.3\matlab\steady.m', 81)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\steady.m',81,0)">line 81</a>)
+[steady_state,M_.params,info] = steady_(M_,options_,oo_);
+Error in <a href="matlab:helpUtils.errorDocCallback('steady_states_cal_imcomp_error', 'D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\steady_states_cal_imcomp_error.m', 163)" style="font-weight:bold">steady_states_cal_imcomp_error</a> (<a href="matlab: opentoline('D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\steady_states_cal_imcomp_error.m',163,0)">line 163</a>)
+steady;
+Error in <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+evalin('base',fname) ;} 
+log(0)
+ans =
+  -Inf
+dynare steady_states_cal_imcomp_error
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+C            		 -0.13416
+w            		 -0.334399
+pi           		 0
+A            		 0
+N            		 -0.200239
+R            		 0.0100503
+r            		 0.0100503
+Y            		 -0.13416
+m_growth_ann 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+             0.9              0.9                0
+             1.5              1.5                0
+       1.707e+16        1.707e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     eps_A     eps_m  
+eps_A        1.000000  0.000000
+eps_m        0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                            Y               C               pi              R               r               m_growth_ann
+Constant                   -0.134160       -0.134160               0        0.010050        0.010050               0
+A(-1)                       0.900000        0.900000       -0.150000       -0.225000       -0.090000        6.600000
+R(-1)                              0               0               0               0               0       16.000000
+Y(-1)                              0               0               0               0               0       -4.000000
+eps_A                       1.000000        1.000000       -0.166667       -0.250000       -0.100000        7.333333
+eps_m                              0               0       -0.660000               0               0       -2.640000
+
+
+THEORETICAL MOMENTS
+
+VARIABLE          MEAN    STD. DEV.   VARIANCE 
+Y                 -0.1342     2.2942     5.2632
+C                 -0.1342     2.2942     5.2632
+pi                 0.0000     0.7628     0.5818
+R                  0.0101     0.5735     0.3289
+r                  0.0101     0.2294     0.0526
+m_growth_ann       0.0000     8.4299    71.0632
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+
+               eps_A  eps_m 
+Y              100.00   0.00
+C              100.00   0.00
+pi              25.13  74.87
+R              100.00   0.00
+r              100.00   0.00
+m_growth_ann    90.19   9.81
+
+
+
+MATRIX OF CORRELATIONS
+
+Variables            Y             C            pi             R             r       m_growth_ann 
+Y                     1.0000        1.0000       -0.5013       -1.0000       -1.0000        0.0363
+C                     1.0000        1.0000       -0.5013       -1.0000       -1.0000        0.0363
+pi                   -0.5013       -0.5013        1.0000        0.5013        0.5013        0.2528
+R                    -1.0000       -1.0000        0.5013        1.0000        1.0000       -0.0363
+r                    -1.0000       -1.0000        0.5013        1.0000        1.0000       -0.0363
+m_growth_ann          0.0363        0.0363        0.2528       -0.0363       -0.0363        1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+
+Order             1       2       3       4       5   
+Y               0.9000  0.8100  0.7290  0.6561  0.5905
+C               0.9000  0.8100  0.7290  0.6561  0.5905
+pi              0.2262  0.2035  0.1832  0.1649  0.1484
+R               0.9000  0.8100  0.7290  0.6561  0.5905
+r               0.9000  0.8100  0.7290  0.6561  0.5905
+m_growth_ann   -0.0138 -0.0124 -0.0112 -0.0101 -0.0091
+Total computing time : 0h00m05s

@@ -1,0 +1,17 @@
+% Run and plot IRFs of replication file 
+
+clear all;
+clc;
+
+
+cd([cd '/replication_code_orig']);
+dynare replication_code_orig;
+
+cd('..');
+cd([cd '/replication_code']);
+
+clear all;
+dynare replication_code;
+
+disp('The first two figures result from the original code, the latter two from the corrected code.');
+

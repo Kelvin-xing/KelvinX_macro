@@ -1,0 +1,49 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 17 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+{Error using <a href="matlab:helpUtils.errorDocCallback('print_info', 'G:\dynare\4.4.3\matlab\print_info.m', 37)" style="font-weight:bold">print_info</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\print_info.m',37,0)">line 37</a>)
+The generalized Schur (QZ) decomposition failed. For more information, see the documentation for Lapack function
+dgges: info=13, n=11. You can also run model_diagnostics to get more information on what may cause this problem.
+Error in <a href="matlab:helpUtils.errorDocCallback('stoch_simul', 'G:\dynare\4.4.3\matlab\stoch_simul.m', 98)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\stoch_simul.m',98,0)">line 98</a>)
+    print_info(info, options_.noprint, options_);
+Error in <a href="matlab:helpUtils.errorDocCallback('MJDGGES_error_code_13', 'D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\MJDGGES_error_code_13.m', 242)" style="font-weight:bold">MJDGGES_error_code_13</a> (<a href="matlab: opentoline('D:\DSGE_Video\Chap6_Dynare_Advanced\ToubleShooting\MJDGGES_error_code_13.m',242,0)">line 242</a>)
+info = stoch_simul(var_list_);
+Error in <a href="matlab:helpUtils.errorDocCallback('dynare', 'G:\dynare\4.4.3\matlab\dynare.m', 180)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\dynare.m',180,0)">line 180</a>)
+evalin('base',fname) ;} 
+model_diagnostics
+{Error using <a href="matlab:helpUtils.errorDocCallback('model_diagnostics', 'G:\dynare\4.4.3\matlab\model_diagnostics.m', 38)" style="font-weight:bold">model_diagnostics</a> (<a href="matlab: opentoline('G:\dynare\4.4.3\matlab\model_diagnostics.m',38,0)">line 38</a>)
+Not enough input arguments.} 
+model_diagnostics(M_,options_,oo_)
+model_diagnostic: the Jacobian of the static model is singular
+there is 3 colinear relationships between the variables and the equations
+Relation 1
+Colinear variables:
+p_h      
+Relation 2
+Colinear variables:
+e        
+Relation 3
+Colinear variables:
+cpi_level
+Relation 1
+Colinear equations
+     1     2     3     9    11    14    15    17
+Relation 2
+Colinear equations
+     1     2     3     9    11    14    15    17
+Relation 3
+Colinear equations
+     1     2     3     9    11    14    15    17
+The presence of a singularity problem typically indicates that there is one
+redundant equation entered in the model block, while another non-redundant equation
+is missing. The problem often derives from Walras Law.
+indeterminacry_error

@@ -1,0 +1,26 @@
+
+
+POLICY AND TRANSITION FUNCTIONS
+                      lmult1          lmult2          lmult3          Welf  
+Constant                 0               0       -1.000000      -50.000000
+A(-1)                    0               0        0.900000        8.256881
+lmult1(-1)               0       -0.020067       -0.500000               0
+lmult2(-1)               0        0.501669               0               0
+eps_A                    0               0        1.000000        9.174312
+
+
+THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+pie            1.0000     0.0000     0.0000
+h              1.0000     0.0000     0.0000
+R              0.0101     0.0023     0.0000
+C              1.0000     0.0229     0.0005
+A              1.0000     0.0229     0.0005
+lmult1         0.0000     0.0000     0.0000
+lmult2         0.0000     0.0000     0.0000
+lmult3        -1.0000     0.0229     0.0005
+Welf         -50.0000     0.2105     0.0443
+
+
+

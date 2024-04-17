@@ -1,0 +1,89 @@
+ 
+ 
+ 
+ 
+Residuals of the static equations:
+ 
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
+Equation number 18 : 0
+Equation number 19 : 0
+Equation number 20 : 0
+ 
+ 
+ 
+STEADY-STATE RESULTS:
+ 
+c                 		 -0.147837
+i                 		 0.0100503
+pi                		 0
+r                 		 0.0100503
+n                 		 0.0424764
+w                 		 -0.105361
+mc                		 -0.105361
+a                 		 0
+y                 		 0.0424764
+yf                		 0.0424764
+vp                		 0
+pisharp           		 0
+x1                		 1.44169
+x2                		 1.54705
+g                 		 -1.91439
+nex               		 -3.39954
+s1                		 0.0100503
+s2                		 0.0100503
+s3                		 0.0100503
+s4                		 0.0100503
+ 
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0                0
+       5.842e-07        5.842e-07                0
+       5.847e-07       -2.921e-07        5.066e-07
+       5.847e-07       -2.921e-07       -5.066e-07
+            0.75             0.75                0
+          0.8257           0.8257                0
+            0.95             0.95                0
+          0.9658           0.9658                0
+           1.117            1.084           0.2685
+           1.117            1.084          -0.2685
+           1.347            1.347                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+
+
+There are 19 eigenvalue(s) larger than 1 in modulus 
+for 19 forward-looking variable(s)
+ 
+The rank condition is verified.
+ 

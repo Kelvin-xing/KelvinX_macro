@@ -1,0 +1,56 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : -0.4607
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 1.0005
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+y 		 1.07435
+i 		 -0.250765
+r 		 0.010101
+n 		 -0.650251
+w 		 1.21378
+k 		 3.66126
+a 		 0
+R 		 -3.5032
+c 		 0.765417
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+           0.968            0.968                0
+            0.97             0.97                0
+           1.044            1.044                0
+       7.858e+15       -7.858e+15                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+Total computing time : 0h00m00s

@@ -1,0 +1,70 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 4 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+MODEL SUMMARY
+
+  Number of variables:         4
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables     eps_a  
+eps_a        0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                       c               k               a               f
+Constant                    1.122302        3.877427               0        3.939087
+(correction)               -0.000189        0.000012               0               0
+k(-1)                       0.470841        0.980149               0        0.949688
+a(-1)                       0.306741        0.059920        0.950000        0.074682
+eps_a                       0.322886        0.063074        1.000000        0.078613
+k(-1),k(-1)                 0.014439        0.007102               0        0.014834
+a(-1),k(-1)                -0.094121       -0.033335               0       -0.044039
+a(-1),a(-1)                 0.039994        0.030399               0        0.032685
+eps_a,eps_a                 0.044314        0.033683               0        0.036217
+k(-1),eps_a                -0.099074       -0.035089               0       -0.046357
+a(-1),eps_a                 0.084197        0.063997               0        0.068811
+
+
+APROXIMATED THEORETICAL MOMENTS
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE 
+c              1.1232     0.0320     0.0010
+k              3.8792     0.0540     0.0029
+a              0.0000     0.0320     0.0010
+f              3.9408     0.0526     0.0028
+
+
+
+APPROXIMATED MATRIX OF CORRELATIONS
+
+Variables      c       k       a       f   
+c            1.0000  0.9693  0.7333  0.9715
+k            0.9693  1.0000  0.5437  1.0000
+a            0.7333  0.5437  1.0000  0.5512
+f            0.9715  1.0000  0.5512  1.0000
+
+
+
+APPROXIMATED COEFFICIENTS OF AUTOCORRELATION
+
+Order      1       2       3       4       5   
+c        0.9948  0.9890  0.9826  0.9756  0.9682
+k        0.9995  0.9980  0.9957  0.9925  0.9885
+a        0.9500  0.9025  0.8574  0.8145  0.7738
+f        0.9995  0.9980  0.9956  0.9924  0.9884
+Total computing time : 0h00m06s
