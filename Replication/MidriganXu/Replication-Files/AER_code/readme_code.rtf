@@ -1,0 +1,159 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13500\viewh13200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs36 \cf0 This file describes how to replicate the quantitative results in the paper using the programs available on the AER website. To use these programs, one must have Miranda and Fackler's Compecon Library installed on the Matlab path. The Compecon Library is available at http://www4.ncsu.edu/~pfackler/compecon/toolbox.html.\
+\
+1. To replicate the 
+\b "Benchmark model"
+\b0  (second column of 
+\b Table 1
+\b0 , first column of 
+\b Table 2
+\b0 , 
+\b Tables 3
+\b0  and 
+\b 4
+\b0 ), run start.m in the 
+\b "/AER_code/Benchmark/"
+\b0  folder. \
+\
+Simply running start.m, without modifications, will reproduce the results reported in the second column of 
+\b Table 1
+\b0  (labeled Benchmark), second column of 
+\b Table 3
+\b0  (labeled Korea) (see lines 8-50 for the parameter values used, these are reported in 
+\b Table 2
+\b0 ). \
+\
+Note that we always report consumption and output in all economies we study relative to the level of consumption in the Benchmark model (1.153) and the TFP in the modern sector relative to the level of TFP in the modern sector of the Benchmark model (1.228). \
+\
+\
+2. To replicate all other columns in 
+\b Tables 3 and 4
+\b0  for theta < 1, simply uncomment the relevant portion of rows 70 to 215 in the start.m file of the 
+\b "/AER_code/Benchmark/"
+\b0  folder. \
+\
+For example, to replicate the results for the theta = 0.75, xai>0 closed economy model, simply uncomment rows 71-73: in addition to adjusting theta, this will also use the W and r that characterize the equilibrium of this economy. \
+\
+3. To replicate the theta = 1 columns in 
+\b Table 3 and 4
+\b0 , one needs to use the start.m file in a different folder:
+\b  /AER_code/Unconstrained/
+\b0 . Running this file would reproduce the xai>0, closed economy results in Table 4. To reproduce the xai = 0 as well as the open economy results, one needs to uncomment the relevant rows in start.m. For example, to reproduce the open economy, xai>0 results, simply uncomment rows 57-58. \
+\
+4. To reproduce the column labeled 
+\b "Efficient"
+\b0  in 
+\b Table 3
+\b0 , one needs to run the start.m file in a new folder: 
+\b /AER_code/Efficient/
+\b0 . \
+\
+5. To reproduce 
+\b Table 5
+\b0 , one needs to use the start.m file in 
+\b /AER_code/Experiments with phi/
+\b0  folder. \
+\
+Running this file would reproduce the \\phi = 0.4 / (1-\\eta) economy evaluated at the values of theta and xai from the Benchmark model. To replicate the other experiments one needs to uncomment the respective rows on lines 63-77. \
+\
+6. To reproduce the 
+\b "Adoption" Column of Table 6
+\b0 , run start.m in the 
+\b /AER_code/Adoption/
+\b0  folder for the "Korea" results. To reproduce the 
+\b "No Finance"
+\b0  economy, simply uncomment lines 56-58 of start.m.\
+\
+7. To reproduce the
+\b  "Exit" Column of Table 6
+\b0 , run start.m in the 
+\b /AER_code/Exit/ 
+\b0 folder for the "Korea" results. Uncomment lines 55-56 for the "No finance" economy. \
+\
+8. To reproduce the 
+\b "Baseline" Results of Table 7
+\b0  (Economy without Entry), run \
+start.m in 
+\b /AER_code/No entry/Baseline/
+\b0 . Uncommenting the respective lines in rows 36-66 will allow one to reproduce the "No Finance" experiments, as well as the economies with Volatile and Persistent productivity shocks. \
+\
+9. The folder 
+\b /AER_code/No entry/
+\b0  also contains the folders necessary to run the experiments in the 
+\b "Capital Specific Shocks"
+\b0 , 
+\b "Predetermined Capital,"
+\b0  
+\b "Variable Markups", "Low Elasticity of Substitution" (Table 7)
+\b0 . As usual, running the original start.m will produce results for the economy calibrated to Korea's level of financial development, while uncommenting the respective rows at the beginning of start.m will reproduce the economy with theta = 0. \
+\
+10. To run the experiment in
+\b  Table 8, Column labelled "Borrowing Rates"
+\b0 , run /
+\b AER_code/No entry/Heterogeneity r/start.m
+\b0 \
+\
+11. The folder 
+\b /AER_code/No entry/
+\b0  also contains the folders necessary to run the experiments in the first 3 columns of Table 8 in which we introduce heterogeneity in alpha, eta, and theta. As usual, running the original start.m will produce results for the economy calibrated to Korea's level of financial development, while uncommenting the respective rows at the beginning of start.m will reproduce the economy with theta = 0. \
+\
+12. The first 2 columns of 
+\b Table 9
+\b0  can be reproduced by running the Benchmark model and Model with Exit experiments discussed above. \
+\
+13. To reproduce 
+\b Table A1
+\b0 . in the Appendix, run start.m in /AER_code/Heterogeneity Initial Wealth/\
+\
+14. The numbers in 
+\b Table A9-A10, A12
+\b0  can be obtained by reproducing the results in the Benchmark, Adoption, Exit models discussed above. \
+\
+15. The numbers in 
+\b Table A14
+\b0  can be reproduced by running start.m in
+\b  /AER_code/Experiments on Age Channel/
+\b0  and choosing the desired level of gamma. \
+\
+16. 
+\b Table A15
+\b0  can be reproduced by running the various economies in start.m in 
+\b /AER_code/Fixed vs Sunk Costs/
+\b0 \
+\
+17. Table A16 can be reproduced by running start.m in
+\b  /AER_code/Benchmark No Transitory/
+\b0  (uncomment lines 62-65 to reproduce the economy with theta = 0.5).\
+\
+18. To reproduce the first column of results in Panel A of Table 17 (economy with sunk costs and destruction shocks), run 
+\b /AER_code/Wealth Heterogeneity BKS/ 
+\b0 start.m for the theta = 1 economy, and uncomment rows 44-46 for the theta = 0 economy. \
+\
+To reproduce the first column of results in Panel B of Table 17 (economy with sunk costs and no destruction shocks), uncomment rows 48-51 and 53-55 of this same start.m file for the theta = 1 economy and rows 48-51 and 57-59 for the theta = 0 economy. \
+\
+19. To reproduce the second column of results in 
+\b Panel A of Table 17
+\b0  (economy with no sunk costs and destruction shocks), run 
+\b /AER_code/Wealth Heterogeneity BKS No Sunk Cost/start.m 
+\b0 for the theta = 1 economy and uncomment rows 44-46 for the theta = 0 economy. \
+\
+To reproduce the second column of results in 
+\b Panel B of Table 17
+\b0  (economy with no sunk costs and no destruction shocks), uncomment rows 48-51 and 53-55 of start.m for the theta = 1 economy and rows 48-51 and 57-59 for the theta = 0 economy. \
+\
+20. To reproduce the second column of 
+\b Table A 18
+\b0 , run start.m in 
+\b /AER_code/Wealth Heterogeneity BKS Imperfect Correlation/ 
+\b0  to reproduce the Frictionless model. For the "No Borrowing" results, simply uncomment lines 43-45. \
+\
+21. To reproduce the Korean crisis experiments 
+\b (Figures 3 and A1)
+\b0 , run start_transitions.m in the 
+\b /AER_code/Korea crisis/
+\b0  folder. }

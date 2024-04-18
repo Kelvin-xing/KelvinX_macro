@@ -1,0 +1,43 @@
+clear;
+clc;
+
+format short;
+
+
+theta  = 0.58; 
+
+rho    = 0.35;             % persistence transitory productivity
+se     = 0.83;
+
+W      = 0.835;
+r      = 0.033;
+
+lb = [0.55;  0.3;  0.80;  0.82;   0.03];          
+ub = [0.63;  0.4;  0.86;  0.85;   0.036];
+
+% guess for calibrated parameters 
+
+xstart = [theta; rho; se; W; r];
+
+%objective(xstart)
+%break
+
+
+theta  = 0.70; 
+
+rho    = 0.40;             % persistence transitory productivity
+se     = 0.65;
+
+W      = 0.82;
+r      = 0.06;
+
+
+gaoptions = gaoptimset(gaoptions,'UseParallel','always','Display','iter','InitialPopulation',xstart);
+gaoptions = gaoptimset('UseParallel', 'always', 'Display','iter','InitialPopulation',xstart');
+x = ga(@objective,size(xstart,1),[],[],[],[],lb,ub,[],gaoptions); 
+
+
+
+%x = neldmead_bounds('objective',xstart,lb,ub);
+
+%save x x
