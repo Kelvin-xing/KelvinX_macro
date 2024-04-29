@@ -1,48 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Reading_notes.aux
-I found no \citation commands---while reading file Reading_notes.aux
-I found no \bibdata command---while reading file Reading_notes.aux
-I found no \bibstyle command---while reading file Reading_notes.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 500 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
+The style file: apalike.bst
+Database file #1: Reading_notes.bib
+Warning--entry type for "MazzucatoRodrik2023" isn't style-file defined
+--line 224 of file Reading_notes.bib
+Warning--empty booktitle in AcemogluAutor2011
+Warning--empty publisher in Bresnahan2021
+Warning--empty institution in Feltenetal2023
+You've used 117 entries,
+            1935 wiz_defined-function locations,
+            1210 strings with 23707 characters,
+and the built_in function-call counts, 45127 in all, are:
+= -- 4443
+> -- 1740
+< -- 85
++ -- 601
+- -- 566
+* -- 3962
+:= -- 7953
+add.period$ -- 355
+call.type$ -- 117
+change.case$ -- 874
+chr.to.int$ -- 116
+cite$ -- 120
+duplicate$ -- 1588
+empty$ -- 3170
+format.name$ -- 757
+if$ -- 8757
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+missing$ -- 87
+newline$ -- 591
+num.names$ -- 352
+pop$ -- 614
+preamble$ -- 1
+purify$ -- 868
 quote$ -- 0
-skip$ -- 0
+skip$ -- 1208
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 3478
+swap$ -- 133
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 698
+warning$ -- 3
+while$ -- 347
 width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+write$ -- 1520
+(There were 4 warnings)
