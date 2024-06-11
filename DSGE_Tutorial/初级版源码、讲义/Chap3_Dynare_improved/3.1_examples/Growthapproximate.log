@@ -65,3 +65,28 @@ k           0.9983  0.9962  0.9929  0.9885  0.9831
 lab         0.9323  0.8645  0.7953  0.7349  0.6820
 z           0.9496  0.8989  0.8467  0.8006  0.7597
 Total computing time : 0h00m07s
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('make_ex_', '/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m', 30)" style="font-weight:bold">make_ex_</a> (<a href="matlab: opentoline('/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m',30,0)">line 30</a>)
+if isempty(oo_.exo_steady_state)
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Growthapproximate', '/Users/mingjiexing/Desktop/Python/Macro/DSGE_Tutorial/初级版源码、讲义/Chap3_Dynare_improved/3.1_examples/Growthapproximate.m', 130)" style="font-weight:bold">Growthapproximate</a> (<a href="matlab: opentoline('/Users/mingjiexing/Desktop/Python/Macro/DSGE_Tutorial/初级版源码、讲义/Chap3_Dynare_improved/3.1_examples/Growthapproximate.m',130,0)">line 130</a>)
+make_ex_;
+} 
+Growthapproximate
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('make_ex_', '/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m', 30)" style="font-weight:bold">make_ex_</a> (<a href="matlab: opentoline('/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m',30,0)">line 30</a>)
+if isempty(oo_.exo_steady_state)
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Growthapproximate', '/Users/mingjiexing/Desktop/Python/Macro/DSGE_Tutorial/初级版源码、讲义/Chap3_Dynare_improved/3.1_examples/Growthapproximate.m', 130)" style="font-weight:bold">Growthapproximate</a> (<a href="matlab: opentoline('/Users/mingjiexing/Desktop/Python/Macro/DSGE_Tutorial/初级版源码、讲义/Chap3_Dynare_improved/3.1_examples/Growthapproximate.m',130,0)">line 130</a>)
+make_ex_;
+} 
+matlab.lang.internal.introspective.errorDocCallback('make_ex_', '/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m', 30)
+[Warning: Class 'dates' is an unknown object class or does not have a valid
+'loadobj' method.  Element(s) of this class in array 'options_' have been
+converted to structures.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('uiimport/runImportdata', '/Applications/MATLAB_R2024a.app/toolbox/matlab/codetools/uiimport.m', 459)" style="font-weight:bold">uiimport/runImportdata</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/codetools/uiimport.m',459,0)">line 459</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('uiimport/gatherFilePreviewData', '/Applications/MATLAB_R2024a.app/toolbox/matlab/codetools/uiimport.m', 438)" style="font-weight:bold">uiimport/gatherFilePreviewData</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/codetools/uiimport.m',438,0)">line 438</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('uiimport', '/Applications/MATLAB_R2024a.app/toolbox/matlab/codetools/uiimport.m', 260)" style="font-weight:bold">uiimport</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/codetools/uiimport.m',260,0)">line 260</a>)] 
+Growthestimate

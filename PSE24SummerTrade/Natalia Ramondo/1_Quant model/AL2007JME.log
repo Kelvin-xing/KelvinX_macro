@@ -1,0 +1,5 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: noclearall
+Starting preprocessing of the model file ...
+ERROR: AL2007JME.mod: line 12, col 1 - line 14, col 4: Symbol end declared twice with different types!
+Preprocessing time: 0h00m01s.

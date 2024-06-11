@@ -38,7 +38,7 @@ x3 = x1.*x2;      % creates a 5x1 vector multiply element by element
                   % x1*x2 would not be allowed
 x3 = x1.^2        % squares each element of x1
                   % x1^2 would not be allowed
-x3 = fcn1(x1,x2); % fcn1 is an external function defined for multiplication
+% x3 = fcn1(x1,x2); % fcn1 is an external function defined for multiplication
 
 %
 % Creating a grid
@@ -98,7 +98,7 @@ for i = 1:20
                  % would occur in the last figure window and overwrite 
                  % stuff in it
     plot(z1,z2)
-    %pause        % gives you a chance to look at the figure
+    pause        % gives you a chance to look at the figure
 end
 
 %

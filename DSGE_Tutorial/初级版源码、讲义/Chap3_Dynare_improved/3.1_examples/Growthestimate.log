@@ -298,3 +298,11 @@ standard deviation of shocks
 
 e          0.950       1.0381      0.8702      1.2280   invg       30.0000
 Total computing time : 0h02m43s
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('make_ex_', '/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m', 30)" style="font-weight:bold">make_ex_</a> (<a href="matlab: opentoline('/Applications/Dynare/6.1-arm64/matlab/perfect-foresight-models/make_ex_.m',30,0)">line 30</a>)
+if isempty(oo_.exo_steady_state)
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Growthestimate', '/Users/mingjiexing/Desktop/Python/Macro/DSGE_Tutorial/初级版源码、讲义/Chap3_Dynare_improved/3.1_examples/Growthestimate.m', 133)" style="font-weight:bold">Growthestimate</a> (<a href="matlab: opentoline('/Users/mingjiexing/Desktop/Python/Macro/DSGE_Tutorial/初级版源码、讲义/Chap3_Dynare_improved/3.1_examples/Growthestimate.m',133,0)">line 133</a>)
+make_ex_;
+} 
